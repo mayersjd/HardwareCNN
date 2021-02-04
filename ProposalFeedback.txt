@@ -1,0 +1,18 @@
+- Need a good title.
+- How are we dividing up the workload?
+- What are our specific deliverables?
+- Can we use a network trained on a specific component, or on the whole SDR, or both? What are the trade-offs?
+- How are we going to allocate resources on the FPGA for this?
+
+- Tasks (Corey):
+1. Investigate the tradeoff of how many components to train the CNN.
+2. Calculate resource requirement for different network types and compare/contrast.
+3. How is the network trained?
+	Pre-train network in software, and then drop the model into the two different hardware implementations.
+- Tasks (Josh):
+1. Perform the matrix multiplication (convolutional layer), then convert the signal to digital format for interfacing with FPGA
+	Hardware acceleration of matrix multiplaction in CNN
+2. Implement using FeFETs
+
+- We will need to break the proposal up into deliverables and upload to canvas.
+
