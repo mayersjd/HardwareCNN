@@ -26,7 +26,7 @@ Vground GND 0 0
 Vsl0 sl0 0 1
 Vsl1 sl1 0 1
 *First input
-Vin0-1 in0-1 0 0
+Vin0-1 in0-1 0 1
 Vin0-0 in0-0 0 1
 *Second input
 Vin1-1 in1-1 0 1
@@ -253,19 +253,67 @@ X1-ha node11 c2 p3 p4 HA1B
 X0-fa node9 node10 c1 p2 c2 FA1B
 .ends
 
+.subckt DECODER3 a b c ap bp cp o1 o2 o3 o4
+X0-nand3 ap bp c o1p NAND3
+X1-nand3 ap b cp o2p NAND3
+X2-nand3 ap b c o3p NAND3
+X3-nand3 a bp cp o4p NAND3
+
+X0-inv o1p o1 INV
+X1-inv o2p o2 INV
+X2-inv o3p o3 INV
+X3-inv o4p o4 INV
+.ends
+
 
 **Circuit Definitions** 
 *Crossbar array of fefets
-X0-fefet bl0 wl0 sl0 n-fefet-LVT
-X1-fefet bl1 wl0 sl1 n-fefet-HVT
-X2-fefet bl0 wl1 sl0 n-fefet-LVT
-X3-fefet bl1 wl1 sl1 n-fefet-LVT
+X0-fefet-w0 bl0 wl0 sl0 n-fefet-LVT
+X1-fefet-w0 bl1 wl0 sl1 n-fefet-LVT
+*X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
+*X3-fefet-w0 bl3 wl0 sl3 n-fefet-LVT
+*X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
+*X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
+*X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
+*X7-fefet-w0 bl7 wl0 sl7 n-fefet-LVT
+*X8-fefet-w0 bl8 wl0 sl8 n-fefet-LVT
+*X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
+*X10-fefet-w0 bl10 wl0 sl10 n-fefet-LVT
+*X11-fefet-w0 bl11 wl0 sl11 n-fefet-LVT
+*X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
+*X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
+*X14-fefet-w0 bl14 wl0 sl14 n-fefet-LVT
+*X15-fefet-w0 bl15 wl0 sl15 n-fefet-LVT
 
-*NAND/INV gates for word-line loading
-X0-nand5 node6 se2p se1p se0 in0-0 node1 NAND5
-X1-nand5 node6 se2p se1 se0 in0-1 node2 NAND5
-X2-nand5 node6 se2p se1 se0p in1-0 node3 NAND5
-X3-nand5 node6 se2 se1p se0p in1-1 node4 NAND5
+X0-fefet-w1 bl0 wl1 sl0 n-fefet-LVT
+X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
+*X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
+*X3-fefet-w1 bl3 wl1 sl3 n-fefet-LVT
+*X4-fefet-w1 bl4 wl1 sl4 n-fefet-LVT
+*X5-fefet-w1 bl5 wl1 sl5 n-fefet-LVT
+*X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
+*X7-fefet-w1 bl7 wl1 sl7 n-fefet-LVT
+*X8-fefet-w1 bl8 wl1 sl8 n-fefet-LVT
+*X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
+*X10-fefet-w1 bl10 wl1 sl10 n-fefet-LVT
+*X11-fefet-w1 bl11 wl1 sl11 n-fefet-LVT
+*X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
+*X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
+*X14-fefet-w1 bl14 wl1 sl14 n-fefet-LVT
+*X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
+
+*Decoder for enabling word-line loading
+X0-decoder se2 se1 se0 se2p se1p se0p en1 en2 en3 en4 DECODER3
+
+*NAND gates for word-line loading
+*X0-nand5 node6 se2p se1p se0 in0-0 node1 NAND5
+*X1-nand5 node6 se2p se1 se0 in0-1 node2 NAND5
+*X2-nand5 node6 se2p se1 se0p in1-0 node3 NAND5
+*X3-nand5 node6 se2 se1p se0p in1-1 node4 NAND5
+X0-nand3 node6 en1 in0-0 node1 NAND3
+X1-nand3 node6 en3 in0-1 node2 NAND3
+X2-nand3 node6 en2 in1-0 node3 NAND3
+X3-nand3 node6 en4 in1-1 node4 NAND3
 
 X0-nand2 node1 node2 wl0 NAND2
 X1-nand2 node3 node4 wl1 NAND2
@@ -335,7 +383,7 @@ Cbl1 bl1 GND 5fF
 Csl0 sl0 GND 5fF
 Csl1 sl1 GND 5fF
 Cse se GND 5fF
-C5 node5 GND 50fF
+C5 node5 GND 10fF
 
 **Simulation Control**
 
