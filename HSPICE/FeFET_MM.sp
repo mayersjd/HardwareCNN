@@ -29,10 +29,10 @@ Vsl2 sl2 0 1
 
 *First input
 Vin0-1 in0-1 0 1
-Vin0-0 in0-0 0 1
+Vin0-0 in0-0 0 0
 
 *Second input
-Vin1-1 in1-1 0 1
+Vin1-1 in1-1 0 0
 Vin1-0 in1-0 0 1
 
 **Circuit Definitions**
@@ -44,6 +44,13 @@ MN1 d g s GND nfet0 L=45n W=120n
 *High threshold voltage FeFET (logic 0)
 .subckt n-fefet-HVT d g s
 MN1 d g s GND nfet1 L=45n W=120n
+.ends
+
+*T-gate 
+.subckt T in out
+M0 out VDD in GND nfet2 L=45n W=120n
+M1 out GND in VDD pfet2 L=45n W=240n
+Cout out GND 5fF
 .ends
 
 *Inverter gate
@@ -235,6 +242,15 @@ X0-nand2 a b node1 NAND2
 X0-inv node1 cout INV
 .ends
 
+*Full-adder, carry-lookahead
+.subckt FACL a b cin s cout
+X0-xor2 a b node1 XOR2
+X1-xor2 node1 cin s XOR2
+X0-nand2 node1 cin node2 NAND2
+X1-nand2 a b node3 NAND2
+X2-nand2 node2 node3 cout NAND2
+.ends
+
 *Multiplier, 4bit x 2bit
 .subckt MULT a0 a1 a2 a3 b0 b1 p0 p1 p2 p3 p4 p5
 X0-nand2 a0 b0 node1 NAND2
@@ -334,14 +350,14 @@ X1-sa se bl1 sa1out SA
 X2-sa se bl2 sa2out SA
 
 *Counters after each sense-amp (sized to the number of inputs)
-X0-counter clk r sa0out csa0-0 csa0-1 csa0-0p csa0-1p COUNTER-BSC
-X1-counter clk r sa1out csa1-0 csa1-1 csa1-0p csa1-1p COUNTER-BSC
-X2-counter clk r sa2out csa2-0 csa2-1 csa2-0p csa2-1p COUNTER-BSC
+X0-counter clk rsac sa0out csa0-0 csa0-1 csa0-0p csa0-1p COUNTER-BSC
+X1-counter clk rsac sa1out csa1-0 csa1-1 csa1-0p csa1-1p COUNTER-BSC
+X2-counter clk rsac sa2out csa2-0 csa2-1 csa2-0p csa2-1p COUNTER-BSC
 
 *Counter to track the number of clock cycles that have passed (this should be sized as the number of inputs x size of weights)
 *These outputs will be used to determine the appropriate number to multiply by for each bit-place of the final output. I.e. clock cycles are grouped into sets by the number of inputs. If there are two inputs, then the first two clock cycles are for the LSB of these inputs, and the LSB of the final output, so the multiplier should be 2^0. The next two clock cycles are for the next bit-place of each input/output, and ht emultiplier should be 2^1. 
-X0-counter2 r clk cclk0 cclk1 cclk2 cclk0p cclk1p cclk2p COUNTER-BRC
-X1-counter2 r se se0 se1 se2 se0p se1p se2p COUNTER-BRC
+X0-counter2 rclk clk cclk0 cclk1 cclk2 cclk0p cclk1p cclk2p COUNTER-BRC
+X1-counter2 rclk se se0 se1 se2 se0p se1p se2p COUNTER-BRC
 
 *Adding the MSBs of the least-significant sense amplifier counter outputs to the more significant sense amplifier counter outputs
 *First bit (from the addition) and carry-out
@@ -359,11 +375,14 @@ X1-nor3 cclk0 cclk1 cclk2p b1 NOR3
 *Multiply the outputs of the sense amplifier counters by the appropriate bit-place position
 X0-mult csa0-0 s0 s1 s2 b0 b1 p0 p1 p2 p3 p4 p5 MULT
 
+
 *Logic to determine when to capture values
 X2-nor3 clk se cclk0 cap NOR3
 
 *Invertering the capture signal for reseting of the sense-amplifier counters (i.e. reset after each bit-place of the inputs has been captured) 
 X0-inv cap r INV
+X0-tgate r rclk T
+X1-tgate r rsac T
 
 *Flip flops to capture values from the multiplier
 *One set of flip flops feeds into the second set, and the outputs of the two sets are added together to get the final result
@@ -400,6 +419,7 @@ Csl1 sl1 GND 5fF
 Csl2 sl2 GND 5fF
 Cse se GND 5fF
 C5 node5 GND 20fF
+*Cr1 r1 GND 5fF
 
 **Simulation Control**
 Vse se GND PULSE (0 1 5n 1p 1p 2.5n 5n)
