@@ -26,13 +26,26 @@ Vground GND 0 0
 Vsl0 sl0 0 1
 Vsl1 sl1 0 1
 Vsl2 sl2 0 1
+Vsl3 sl3 0 1
+Vsl4 sl4 0 1
+Vsl5 sl5 0 1
+Vsl6 sl6 0 1
+Vsl7 sl7 0 1
+Vsl8 sl8 0 1
+Vsl9 sl9 0 1
+Vsl10 sl10 0 1
+Vsl11 sl11 0 1
+Vsl12 sl12 0 1
+Vsl13 sl13 0 1
+Vsl14 sl14 0 1
+Vsl15 sl15 0 1
 
 *First input
 Vin0-1 in0-1 0 1
-Vin0-0 in0-0 0 0
+Vin0-0 in0-0 0 1
 
 *Second input
-Vin1-1 in1-1 0 0
+Vin1-1 in1-1 0 1
 Vin1-0 in1-0 0 1
 
 **Circuit Definitions**
@@ -328,7 +341,7 @@ X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
 *X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
 
 *Decoder for enabling word-line loading
-X0-decoder se2 se1 se0 se2p se1p se0p en1 en2 en3 en4 DECODER3
+X0-decoder cse2 cse1 cse0 cse2p cse1p cse0p en1 en2 en3 en4 DECODER3
 
 *NAND gates for word-line loading
 X0-nand3 node6 en1 in0-0 node1 NAND3
@@ -348,6 +361,19 @@ X2-inv node5 node6 INV
 X0-sa se bl0 sa0out SA
 X1-sa se bl1 sa1out SA
 X2-sa se bl2 sa2out SA
+X3-sa se bl3 sa2out SA
+X4-sa se bl4 sa3out SA
+X5-sa se bl5 sa4out SA
+X6-sa se bl6 sa5out SA
+X7-sa se bl7 sa6out SA
+X8-sa se bl8 sa7out SA
+X9-sa se bl9 sa9out SA
+X10-sa se bl10 sa10out SA
+X11-sa se bl11 sa11out SA
+X12-sa se bl12 sa12out SA
+X13-sa se bl13 sa13out SA
+X14-sa se bl14 sa14out SA
+X15-sa se bl15 sa15out SA
 
 *Counters after each sense-amp (sized to the number of inputs)
 X0-counter clk rsac sa0out csa0-0 csa0-1 csa0-0p csa0-1p COUNTER-BSC
@@ -357,7 +383,7 @@ X2-counter clk rsac sa2out csa2-0 csa2-1 csa2-0p csa2-1p COUNTER-BSC
 *Counter to track the number of clock cycles that have passed (this should be sized as the number of inputs x size of weights)
 *These outputs will be used to determine the appropriate number to multiply by for each bit-place of the final output. I.e. clock cycles are grouped into sets by the number of inputs. If there are two inputs, then the first two clock cycles are for the LSB of these inputs, and the LSB of the final output, so the multiplier should be 2^0. The next two clock cycles are for the next bit-place of each input/output, and ht emultiplier should be 2^1. 
 X0-counter2 rclk clk cclk0 cclk1 cclk2 cclk0p cclk1p cclk2p COUNTER-BRC
-X1-counter2 rclk se se0 se1 se2 se0p se1p se2p COUNTER-BRC
+X1-counter2 rclk se cse0 cse1 cse2 cse0p cse1p cse2p COUNTER-BRC
 
 *Adding the MSBs of the least-significant sense amplifier counter outputs to the more significant sense amplifier counter outputs
 *First bit (from the addition) and carry-out
@@ -414,14 +440,43 @@ Cclk clk GND 5fF
 Cbl0 bl0 GND 5fF
 Cbl1 bl1 GND 5fF
 Cbl2 bl2 GND 5fF
+Cbl3 bl3 GND 5fF
+Cbl4 bl4 GND 5fF
+Cbl5 bl5 GND 5fF
+Cbl6 bl6 GND 5fF
+Cbl7 bl7 GND 5fF
+Cbl8 bl8 GND 5fF
+Cbl9 bl9 GND 5fF
+Cbl10 bl10 GND 5fF
+Cbl11 bl11 GND 5fF
+Cbl12 bl12 GND 5fF
+Cbl13 bl13 GND 5fF
+Cbl14 bl14 GND 5fF
+Cbl15 bl15 GND 5fF
+
 Csl0 sl0 GND 5fF
 Csl1 sl1 GND 5fF
 Csl2 sl2 GND 5fF
+Csl3 sl3 GND 5fF
+Csl4 sl4 GND 5fF
+Csl5 sl5 GND 5fF
+Csl6 sl6 GND 5fF
+Csl7 sl7 GND 5fF
+Csl8 sl8 GND 5fF
+Csl9 sl9 GND 5fF
+Csl10 sl10 GND 5fF
+Csl11 sl11 GND 5fF
+Csl12 sl12 GND 5fF
+Csl13 sl13 GND 5fF
+Csl14 sl14 GND 5fF
+Csl15 sl15 GND 5fF
+
 Cse se GND 5fF
 C5 node5 GND 20fF
 *Cr1 r1 GND 5fF
 
 **Simulation Control**
+Vrman rman GND PWL (0n 0 1n 0 1.001n 1 2n 1 2.001n 0)
 Vse se GND PULSE (0 1 5n 1p 1p 2.5n 5n)
 Vclk clk GND PULSE (0 1 6.5n 1p 1p 2.5n 5n)
 
