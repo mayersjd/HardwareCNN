@@ -201,7 +201,19 @@ Coutp outp GND 5fF
 .ends
 
 *D-flip flop
-.subckt DFF clk r d q qp
+.subckt DFF0 clk r d q qp
+X0-nand2 d r node2 node1 NAND3
+X1-nand2 clk r node4 node3 NAND3
+X2-nand2 node1 node3 node4 NAND2
+X3-nand2 node2 r q qp NAND3
+X4-nand2 node3 qp q NAND2
+X0-nand3 clk node1 node3 node2 NAND3
+Cq q GND 5fF
+Cqp qp GND 5fF
+.ends
+
+*D-flip flop
+.subckt DFF1 clk r d q qp
 X0-nand2 d r node2 node1 NAND3
 X1-nand2 clk r node4 node3 NAND3
 X2-nand2 node1 node3 node4 NAND2
@@ -219,7 +231,7 @@ X1-inv dp d INV
 X0-nor2 q tp node1 NOR2
 X1-nor2 qp t node2 NOR2
 X2-nor2 node1 node2 dp NOR2
-X0-dff clk r d q qp DFF
+X0-dff clk r d q qp DFF0
 .ends
 
 *First counter type, binary synchronous counter, 2bit output
@@ -355,25 +367,23 @@ X1-nand2 node3 node4 wl1 NAND2
 X1-inv se node5 INV
 X2-inv node5 node6 INV
 
-*Delay gates for timing of the sense enable signal
-
 *Sense amplifiers at output of each bitline of the crossbar
 X0-sa se bl0 sa0out SA
 X1-sa se bl1 sa1out SA
 X2-sa se bl2 sa2out SA
-X3-sa se bl3 sa2out SA
-X4-sa se bl4 sa3out SA
-X5-sa se bl5 sa4out SA
-X6-sa se bl6 sa5out SA
-X7-sa se bl7 sa6out SA
-X8-sa se bl8 sa7out SA
-X9-sa se bl9 sa9out SA
-X10-sa se bl10 sa10out SA
-X11-sa se bl11 sa11out SA
-X12-sa se bl12 sa12out SA
-X13-sa se bl13 sa13out SA
-X14-sa se bl14 sa14out SA
-X15-sa se bl15 sa15out SA
+*X3-sa se bl3 sa2out SA
+*X4-sa se bl4 sa3out SA
+*X5-sa se bl5 sa4out SA
+*X6-sa se bl6 sa5out SA
+*X7-sa se bl7 sa6out SA
+*X8-sa se bl8 sa7out SA
+*X9-sa se bl9 sa9out SA
+*X10-sa se bl10 sa10out SA
+*X11-sa se bl11 sa11out SA
+*X12-sa se bl12 sa12out SA
+*X13-sa se bl13 sa13out SA
+*X14-sa se bl14 sa14out SA
+*X15-sa se bl15 sa15out SA
 
 *Counters after each sense-amp (sized to the number of inputs)
 X0-counter clk rsac sa0out csa0-0 csa0-1 csa0-0p csa0-1p COUNTER-BSC
@@ -401,7 +411,6 @@ X1-nor3 cclk0 cclk1 cclk2p b1 NOR3
 *Multiply the outputs of the sense amplifier counters by the appropriate bit-place position
 X0-mult csa0-0 s0 s1 s2 b0 b1 p0 p1 p2 p3 p4 p5 MULT
 
-
 *Logic to determine when to capture values
 X2-nor3 clk se cclk0 cap NOR3
 
@@ -412,19 +421,19 @@ X1-tgate r rsac T
 
 *Flip flops to capture values from the multiplier
 *One set of flip flops feeds into the second set, and the outputs of the two sets are added together to get the final result
-X0-dff cap VDD p0 x0 x0p DFF
-X1-dff cap VDD p1 x1 x1p DFF
-X2-dff cap VDD p2 x2 x2p DFF
-X3-dff cap VDD p3 x3 x3p DFF
-X4-dff cap VDD p4 x4 x4p DFF
-X5-dff cap VDD p5 x5 x5p DFF
+X0-dff cap rman p0 x0 x0p DFF1
+X1-dff cap rman p1 x1 x1p DFF1
+X2-dff cap rman p2 x2 x2p DFF1
+X3-dff cap rman p3 x3 x3p DFF1
+X4-dff cap rman p4 x4 x4p DFF1
+X5-dff cap rman p5 x5 x5p DFF1
 
-X6-dff cap VDD x0 y0 y0p DFF
-X7-dff cap VDD x1 y1 y1p DFF
-X8-dff cap VDD x2 y2 y2p DFF
-X9-dff cap VDD x3 y3 y3p DFF
-X10-dff cap VDD x4 y4 y4p DFF
-X11-dff cap VDD x5 y5 y5p DFF
+X6-dff cap rman x0 y0 y0p DFF1
+X7-dff cap rman x1 y1 y1p DFF1
+X8-dff cap rman x2 y2 y2p DFF1
+X9-dff cap rman x3 y3 y3p DFF1
+X10-dff cap rman x4 y4 y4p DFF1
+X11-dff cap rman x5 y5 y5p DFF1
 
 **Adders for the final result
 X2-ha x0 y0 f0 c0 HA1B
@@ -440,43 +449,43 @@ Cclk clk GND 5fF
 Cbl0 bl0 GND 5fF
 Cbl1 bl1 GND 5fF
 Cbl2 bl2 GND 5fF
-Cbl3 bl3 GND 5fF
-Cbl4 bl4 GND 5fF
-Cbl5 bl5 GND 5fF
-Cbl6 bl6 GND 5fF
-Cbl7 bl7 GND 5fF
-Cbl8 bl8 GND 5fF
-Cbl9 bl9 GND 5fF
-Cbl10 bl10 GND 5fF
-Cbl11 bl11 GND 5fF
-Cbl12 bl12 GND 5fF
-Cbl13 bl13 GND 5fF
-Cbl14 bl14 GND 5fF
-Cbl15 bl15 GND 5fF
+*Cbl3 bl3 GND 5fF
+*Cbl4 bl4 GND 5fF
+*Cbl5 bl5 GND 5fF
+*Cbl6 bl6 GND 5fF
+*Cbl7 bl7 GND 5fF
+*Cbl8 bl8 GND 5fF
+*Cbl9 bl9 GND 5fF
+*Cbl10 bl10 GND 5fF
+*Cbl11 bl11 GND 5fF
+*Cbl12 bl12 GND 5fF
+*Cbl13 bl13 GND 5fF
+*Cbl14 bl14 GND 5fF
+*Cbl15 bl15 GND 5fF
 
 Csl0 sl0 GND 5fF
 Csl1 sl1 GND 5fF
 Csl2 sl2 GND 5fF
-Csl3 sl3 GND 5fF
-Csl4 sl4 GND 5fF
-Csl5 sl5 GND 5fF
-Csl6 sl6 GND 5fF
-Csl7 sl7 GND 5fF
-Csl8 sl8 GND 5fF
-Csl9 sl9 GND 5fF
-Csl10 sl10 GND 5fF
-Csl11 sl11 GND 5fF
-Csl12 sl12 GND 5fF
-Csl13 sl13 GND 5fF
-Csl14 sl14 GND 5fF
-Csl15 sl15 GND 5fF
+*Csl3 sl3 GND 5fF
+*Csl4 sl4 GND 5fF
+*Csl5 sl5 GND 5fF
+*Csl6 sl6 GND 5fF
+*Csl7 sl7 GND 5fF
+*Csl8 sl8 GND 5fF
+*Csl9 sl9 GND 5fF
+*Csl10 sl10 GND 5fF
+*Csl11 sl11 GND 5fF
+*Csl12 sl12 GND 5fF
+*Csl13 sl13 GND 5fF
+*Csl14 sl14 GND 5fF
+*Csl15 sl15 GND 5fF
 
 Cse se GND 5fF
-C5 node5 GND 20fF
-*Cr1 r1 GND 5fF
+C5 node5 GND 5fF
+Cr r GND 5fF
 
 **Simulation Control**
-Vrman rman GND PWL (0n 0 1n 0 1.001n 1 2n 1 2.001n 0)
+Vrman rman GND PWL (0n 1 1n 1 1.001n 0 2n 0 2.001n 1)
 Vse se GND PULSE (0 1 5n 1p 1p 2.5n 5n)
 Vclk clk GND PULSE (0 1 6.5n 1p 1p 2.5n 5n)
 
