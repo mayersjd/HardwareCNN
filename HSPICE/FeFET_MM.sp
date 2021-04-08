@@ -236,19 +236,19 @@ X0-dff clk r d q qp DFF0
 
 *First counter type, binary synchronous counter, 2bit output
 .subckt COUNTER-BSC clk r in c0 c1 cp0 cp1
-X0-inv node1 node2 INV
 X0-nand2 in c0 node1 NAND2
+X0-inv node1 node2 INV
 X0-tff clk r in c0 cp0 TFF
 X1-tff clk r node2 c1 cp1 TFF
 .ends
 
 *Second counter type, binary ripple-counter, 3bit output
 .subckt COUNTER-BRC r in c0 c1 c2 cp0 cp1 cp2
-X0-inv r node1 INV
-X0-nand2 node1 c2 node2 NAND2
-X0-tff in node2 VDD c0 cp0 TFF
-X1-tff cp0 node2 VDD c1 cp1 TFF
-X2-tff cp1 node2 VDD c2 cp2 TFF
+*X0-inv r node1 INV
+*X0-nand2 node1 c2 c1 node2 NAND3
+X0-tff in r VDD c0 cp0 TFF
+X1-tff cp0 r VDD c1 cp1 TFF
+X2-tff cp1 r VDD c2 cp2 TFF
 .ends
 
 *Full-adder, 1bit + 1bit
@@ -303,16 +303,24 @@ X1-ha node15 c3 p4 p5 HA1B
 
 .ends
 
-.subckt DECODER3 a b c ap bp cp o1 o2 o3 o4
-X0-nand3 ap bp c o1p NAND3
-X1-nand3 ap b cp o2p NAND3
-X2-nand3 ap b c o3p NAND3
-X3-nand3 a bp cp o4p NAND3
+.subckt DECODER3 a b c ap bp cp o0 o1 o2 o3 o4 o5 o6 o7
+X0-nand3 ap bp cp o0p NAND3
+X1-nand3 ap bp c o1p NAND3
+X2-nand3 ap b cp o2p NAND3
+X3-nand3 ap b c o3p NAND3
+X4-nand3 a bp cp o4p NAND3
+X5-nand3 a bp c o5p NAND3
+X6-nand3 a b cp o6p NAND3
+X7-nand3 a b c o7p NAND3
 
-X0-inv o1p o1 INV
-X1-inv o2p o2 INV
-X2-inv o3p o3 INV
-X3-inv o4p o4 INV
+X0-inv o0p o0 INV
+X1-inv o1p o1 INV
+X2-inv o2p o2 INV
+X3-inv o3p o3 INV
+X4-inv o4p o4 INV
+X5-inv o5p o5 INV
+X6-inv o5p o6 INV
+X7-inv o7p o7 INV
 .ends
 
 
@@ -353,19 +361,19 @@ X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
 *X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
 
 *Decoder for enabling word-line loading
-X0-decoder cse2 cse1 cse0 cse2p cse1p cse0p en1 en2 en3 en4 DECODER3
+X0-decoder cse2 cse1 cse0 cse2p cse1p cse0p en0 en1 en2 en3 en4 en5 en6 en7 DECODER3
 
 *NAND gates for word-line loading
 X0-nand3 node6 en1 in0-0 node1 NAND3
-X1-nand3 node6 en3 in0-1 node2 NAND3
+X1-nand3 node6 en4 in0-1 node2 NAND3
 X2-nand3 node6 en2 in1-0 node3 NAND3
-X3-nand3 node6 en4 in1-1 node4 NAND3
+X3-nand3 node6 en5 in1-1 node4 NAND3
 
 X0-nand2 node1 node2 wl0 NAND2
 X1-nand2 node3 node4 wl1 NAND2
 
-X1-inv se node5 INV
-X2-inv node5 node6 INV
+X1-inv se sep INV
+X2-inv sep node6 INV
 
 *Sense amplifiers at output of each bitline of the crossbar
 X0-sa se bl0 sa0out SA
@@ -391,7 +399,7 @@ X1-counter clk rsac sa1out csa1-0 csa1-1 csa1-0p csa1-1p COUNTER-BSC
 X2-counter clk rsac sa2out csa2-0 csa2-1 csa2-0p csa2-1p COUNTER-BSC
 
 *Counter to track the number of clock cycles that have passed (this should be sized as the number of inputs x size of weights)
-*These outputs will be used to determine the appropriate number to multiply by for each bit-place of the final output. I.e. clock cycles are grouped into sets by the number of inputs. If there are two inputs, then the first two clock cycles are for the LSB of these inputs, and the LSB of the final output, so the multiplier should be 2^0. The next two clock cycles are for the next bit-place of each input/output, and ht emultiplier should be 2^1. 
+*These outputs will be used to determine the appropriate number to multiply by for each bit-place of the final output. 
 X0-counter2 rclk clk cclk0 cclk1 cclk2 cclk0p cclk1p cclk2p COUNTER-BRC
 X1-counter2 rclk se cse0 cse1 cse2 cse0p cse1p cse2p COUNTER-BRC
 
@@ -405,19 +413,33 @@ X1-ha t0-0 csa2-0 s1 cout1 HA1B
 X1-fa t0-1 csa2-1 cout1 s2 s3 FA1B
 
 *Logic to determine the bit place multiplication values
-X0-nor3 cclk0 cclk2 cclk1p b0 NOR3
-X1-nor3 cclk0 cclk1 cclk2p b1 NOR3
+X0-tgate cclk2p b0 T
+X1-tgate cclk2 b1 T
 
 *Multiply the outputs of the sense amplifier counters by the appropriate bit-place position
 X0-mult csa0-0 s0 s1 s2 b0 b1 p0 p1 p2 p3 p4 p5 MULT
 
 *Logic to determine when to capture values
-X2-nor3 clk se cclk0 cap NOR3
+*X2-nor3 clk se cclk0 cap NOR3
+X0-xor2 cclk0 cclk2 xc0 XOR2
+X2-nand2 clk cclk1 xc0 capp NAND3
+X3-inv capp cap INV
 
-*Invertering the capture signal for reseting of the sense-amplifier counters (i.e. reset after each bit-place of the inputs has been captured) 
-X0-inv cap r INV
-X0-tgate r rclk T
-X1-tgate r rsac T
+*Logic to determine when to reset the counters
+X4-inv clk clkp INV
+X0-inv rman rmanp INV
+
+X4-nand2 clk sep cclk1 xc0 ractp NAND4
+X6-inv ractp ract INV
+X0-nor2 ract rmanp rsac NOR2
+*X0-nor2 cap rmanp ract NOR2
+
+X3-nand2 clk sep cclk2 cclk1 cclk0p rcclkp NAND5
+X5-inv rcclkp rcclk INV
+X1-nor2 rmanp rcclk rclk NOR2
+
+*X0-tgate ract rclk T
+*X1-tgate ract rsac T
 
 *Flip flops to capture values from the multiplier
 *One set of flip flops feeds into the second set, and the outputs of the two sets are added together to get the final result
@@ -446,9 +468,9 @@ X6-fa x5 y5 c4 f5 f6 FA1B
 
 **Capacitor Definitions**
 Cclk clk GND 5fF
-Cbl0 bl0 GND 5fF
-Cbl1 bl1 GND 5fF
-Cbl2 bl2 GND 5fF
+*Cbl0 bl0 GND 5fF
+*Cbl1 bl1 GND 5fF
+*Cbl2 bl2 GND 5fF
 *Cbl3 bl3 GND 5fF
 *Cbl4 bl4 GND 5fF
 *Cbl5 bl5 GND 5fF
@@ -463,9 +485,9 @@ Cbl2 bl2 GND 5fF
 *Cbl14 bl14 GND 5fF
 *Cbl15 bl15 GND 5fF
 
-Csl0 sl0 GND 5fF
-Csl1 sl1 GND 5fF
-Csl2 sl2 GND 5fF
+*Csl0 sl0 GND 5fF
+*Csl1 sl1 GND 5fF
+*Csl2 sl2 GND 5fF
 *Csl3 sl3 GND 5fF
 *Csl4 sl4 GND 5fF
 *Csl5 sl5 GND 5fF
@@ -480,16 +502,15 @@ Csl2 sl2 GND 5fF
 *Csl14 sl14 GND 5fF
 *Csl15 sl15 GND 5fF
 
-Cse se GND 5fF
-C5 node5 GND 5fF
-Cr r GND 5fF
+Cse se GND 20fF
+Csep sep GND 5fF
 
 **Simulation Control**
 Vrman rman GND PWL (0n 1 1n 1 1.001n 0 2n 0 2.001n 1)
 Vse se GND PULSE (0 1 5n 1p 1p 2.5n 5n)
 Vclk clk GND PULSE (0 1 6.5n 1p 1p 2.5n 5n)
 
-.TRAN 0.001n 30n
+.TRAN 0.001n 50n
 
 .OPTION POST
 
