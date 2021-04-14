@@ -323,42 +323,47 @@ X6-inv o5p o6 INV
 X7-inv o7p o7 INV
 .ends
 
-
-**Circuit Definitions** 
-*Crossbar array of fefets
+.subckt CROSSBAR0 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
 X0-fefet-w0 bl0 wl0 sl0 n-fefet-LVT
 X1-fefet-w0 bl1 wl0 sl1 n-fefet-LVT
 X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
-*X3-fefet-w0 bl3 wl0 sl3 n-fefet-LVT
-*X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
-*X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
-*X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
-*X7-fefet-w0 bl7 wl0 sl7 n-fefet-LVT
-*X8-fefet-w0 bl8 wl0 sl8 n-fefet-LVT
-*X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
-*X10-fefet-w0 bl10 wl0 sl10 n-fefet-LVT
-*X11-fefet-w0 bl11 wl0 sl11 n-fefet-LVT
-*X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
-*X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
-*X14-fefet-w0 bl14 wl0 sl14 n-fefet-LVT
-*X15-fefet-w0 bl15 wl0 sl15 n-fefet-LVT
+X3-fefet-w0 bl3 wl0 sl3 n-fefet-LVT
+X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
+X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
+X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
+X7-fefet-w0 bl7 wl0 sl7 n-fefet-LVT
+X8-fefet-w0 bl8 wl0 sl8 n-fefet-LVT
+X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
+X10-fefet-w0 bl10 wl0 sl10 n-fefet-LVT
+X11-fefet-w0 bl11 wl0 sl11 n-fefet-LVT
+X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
+X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
+X14-fefet-w0 bl14 wl0 sl14 n-fefet-LVT
+X15-fefet-w0 bl15 wl0 sl15 n-fefet-LVT
 
 X0-fefet-w1 bl0 wl1 sl0 n-fefet-LVT
 X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
 X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
-*X3-fefet-w1 bl3 wl1 sl3 n-fefet-LVT
-*X4-fefet-w1 bl4 wl1 sl4 n-fefet-LVT
-*X5-fefet-w1 bl5 wl1 sl5 n-fefet-LVT
-*X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
-*X7-fefet-w1 bl7 wl1 sl7 n-fefet-LVT
-*X8-fefet-w1 bl8 wl1 sl8 n-fefet-LVT
-*X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
-*X10-fefet-w1 bl10 wl1 sl10 n-fefet-LVT
-*X11-fefet-w1 bl11 wl1 sl11 n-fefet-LVT
-*X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
-*X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
-*X14-fefet-w1 bl14 wl1 sl14 n-fefet-LVT
-*X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
+X3-fefet-w1 bl3 wl1 sl3 n-fefet-LVT
+X4-fefet-w1 bl4 wl1 sl4 n-fefet-LVT
+X5-fefet-w1 bl5 wl1 sl5 n-fefet-LVT
+X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
+X7-fefet-w1 bl7 wl1 sl7 n-fefet-LVT
+X8-fefet-w1 bl8 wl1 sl8 n-fefet-LVT
+X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
+X10-fefet-w1 bl10 wl1 sl10 n-fefet-LVT
+X11-fefet-w1 bl11 wl1 sl11 n-fefet-LVT
+X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
+X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
+X14-fefet-w1 bl14 wl1 sl14 n-fefet-LVT
+X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
+.ends
+
+
+
+**Circuit Definitions** 
+*Crossbar array of fefets
+X0-crossbar bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 CROSSBAR0
 
 *Decoder for enabling word-line loading
 X0-decoder cse2 cse1 cse0 cse2p cse1p cse0p en0 en1 en2 en3 en4 en5 en6 en7 DECODER3
@@ -379,26 +384,40 @@ X2-inv sep node6 INV
 X0-sa se bl0 sa0out SA
 X1-sa se bl1 sa1out SA
 X2-sa se bl2 sa2out SA
-*X3-sa se bl3 sa2out SA
-*X4-sa se bl4 sa3out SA
-*X5-sa se bl5 sa4out SA
-*X6-sa se bl6 sa5out SA
-*X7-sa se bl7 sa6out SA
-*X8-sa se bl8 sa7out SA
-*X9-sa se bl9 sa9out SA
-*X10-sa se bl10 sa10out SA
-*X11-sa se bl11 sa11out SA
-*X12-sa se bl12 sa12out SA
-*X13-sa se bl13 sa13out SA
-*X14-sa se bl14 sa14out SA
-*X15-sa se bl15 sa15out SA
+X3-sa se bl3 sa3out SA
+X4-sa se bl4 sa4out SA
+X5-sa se bl5 sa5out SA
+X6-sa se bl6 sa6out SA
+X7-sa se bl7 sa7out SA
+X8-sa se bl8 sa8out SA
+X9-sa se bl9 sa9out SA
+X10-sa se bl10 sa10out SA
+X11-sa se bl11 sa11out SA
+X12-sa se bl12 sa12out SA
+X13-sa se bl13 sa13out SA
+X14-sa se bl14 sa14out SA
+X15-sa se bl15 sa15out SA
 
 *Counters after each sense-amp (sized to the number of inputs)
 X0-counter clk rsac sa0out csa0-0 csa0-1 csa0-0p csa0-1p COUNTER-BSC
 X1-counter clk rsac sa1out csa1-0 csa1-1 csa1-0p csa1-1p COUNTER-BSC
 X2-counter clk rsac sa2out csa2-0 csa2-1 csa2-0p csa2-1p COUNTER-BSC
 
-*Counter to track the number of clock cycles that have passed (this should be sized as the number of inputs x size of weights)
+X3-counter clk rsac sa3out csa3-0 csa3-1 csa3-0p csa3-1p COUNTER-BSC
+X4-counter clk rsac sa4out csa4-0 csa4-1 csa4-0p csa4-1p COUNTER-BSC
+X5-counter clk rsac sa5out csa5-0 csa2-1 csa5-0p csa5-1p COUNTER-BSC
+X6-counter clk rsac sa6out csa6-0 csa6-1 csa6-0p csa6-1p COUNTER-BSC
+X7-counter clk rsac sa7out csa7-0 csa7-1 csa7-0p csa7-1p COUNTER-BSC
+X8-counter clk rsac sa8out csa8-0 csa8-1 csa8-0p csa8-1p COUNTER-BSC
+X9-counter clk rsac sa9out csa9-0 csa9-1 csa9-0p csa9-1p COUNTER-BSC
+X10-counter clk rsac sa10out csa10-0 csa10-1 csa10-0p csa10-1p COUNTER-BSC
+X11-counter clk rsac sa11out csa11-0 csa11-1 csa11-0p csa11-1p COUNTER-BSC
+X12-counter clk rsac sa12out csa12-0 csa12-1 csa12-0p csa12-1p COUNTER-BSC
+X13-counter clk rsac sa13out csa13-0 csa13-1 csa13-0p csa13-1p COUNTER-BSC
+X14-counter clk rsac sa14out csa14-0 csa14-1 csa14-0p csa14-1p COUNTER-BSC
+X15-counter clk rsac sa15out csa15-0 csa15-1 csa15-0p csa15-1p COUNTER-BSC
+
+*Counter to track the number of clock cycles that have passed (this should be sized as the number of inputs + size of input)
 *These outputs will be used to determine the appropriate number to multiply by for each bit-place of the final output. 
 X0-counter2 rclk clk cclk0 cclk1 cclk2 cclk0p cclk1p cclk2p COUNTER-BRC
 X1-counter2 rclk se cse0 cse1 cse2 cse0p cse1p cse2p COUNTER-BRC
@@ -408,19 +427,71 @@ X1-counter2 rclk se cse0 cse1 cse2 cse0p cse1p cse2p COUNTER-BRC
 X0-ha csa0-1 csa1-0 s0 cout0 HA1B
 X0-fa GND csa1-1 cout0 t0-0 t0-1 FA1B
 
-*Second, third, and fourth addition bits
+*Second addition bit
 X1-ha t0-0 csa2-0 s1 cout1 HA1B
+*X1-fa t0-1 csa2-1 cout1 t1-0 t1-1 FA1B
 X1-fa t0-1 csa2-1 cout1 s2 s3 FA1B
 
-*Logic to determine the bit place multiplication values
+*Third addition bit
+*X2-ha t1-0 csa3-0 s2 cout2 HA1B
+*X2-fa t1-1 csa3-1 cout2 t2-0 t2-1 FA1B
+
+*Fourth addition bit
+*X3-ha t2-0 csa4-0 s3 cout3 HA1B
+*X3-fa t2-1 csa4-1 cout3 t3-0 t3-1 FA1B
+
+*Fifth addition bit
+*X4-ha t3-0 csa5-0 s4 cout4 HA1B
+*X4-fa t3-1 csa5-1 cout4 t4-0 t4-1 FA1B
+
+*Sixth addition bit
+*X5-ha t4-0 csa6-0 s5 cout5 HA1B
+*X5-fa t4-1 csa6-1 cout5 t5-0 t5-1 FA1B
+
+*Seventh addition bit
+*X6-ha t5-0 csa7-0 s6 cout6 HA1B
+*X6-fa t5-1 csa7-1 cout6 t6-0 t6-1 FA1B
+
+*Eighth addition bit
+*X7-ha t6-0 csa8-0 s7 cout7 HA1B
+*X7-fa t6-1 csa8-1 cout7 t7-0 t7-1 FA1B
+
+*Ninth addition bit
+*X8-ha t7-0 csa9-0 s8 cout8 HA1B
+*X8-fa t7-1 csa9-1 cout8 t8-0 t8-1 FA1B
+
+*Tenth addition bit
+*X9-ha t8-0 csa10-0 s9 cout9 HA1B
+*X9-fa t8-1 csa10-1 cout9 t9-0 t9-1 FA1B
+
+*Eleventh addition bit
+*X10-ha t9-0 csa11-0 s10 cout10 HA1B
+*X10-fa t9-1 csa11-1 cout10 t10-0 t10-1 FA1B
+
+*Twelfth addition bit
+*X11-ha t10-0 csa12-0 s11 cout11 HA1B
+*X11-fa t10-1 csa12-1 cout11 t11-0 t11-1 FA1B
+
+*Thirteenth addition bit
+*X12-ha t11-0 csa13-0 s12 cout12 HA1B
+*X12-fa t11-1 csa13-1 cout12 t12-0 t12-1 FA1B
+
+*Fourteenth addition bit
+*X13-ha t12-0 csa14-0 s13 cout13 HA1B
+*X13-fa t12-1 csa14-1 cout13 t13-0 t13-1 FA1B
+
+*Fifteenth addition bit
+*X14-ha t13-0 csa15-0 s14 cout14 HA1B
+*X14-fa t13-1 csa15-1 cout14 s15 s17 FA1B
+
+*Logic to determine the bit place multiplication values (determined by the width of the inputs)
 X0-tgate cclk2p b0 T
 X1-tgate cclk2 b1 T
 
 *Multiply the outputs of the sense amplifier counters by the appropriate bit-place position
 X0-mult csa0-0 s0 s1 s2 b0 b1 p0 p1 p2 p3 p4 p5 MULT
 
-*Logic to determine when to capture values
-*X2-nor3 clk se cclk0 cap NOR3
+*Logic to determine when to capture values (determined by the number of inputs)
 X0-xor2 cclk0 cclk2 xc0 XOR2
 X2-nand2 clk cclk1 xc0 capp NAND3
 X3-inv capp cap INV
@@ -429,41 +500,54 @@ X3-inv capp cap INV
 X4-inv clk clkp INV
 X0-inv rman rmanp INV
 
+*Resetting the sense-amplifier counters
 X4-nand2 clk sep cclk1 xc0 ractp NAND4
 X6-inv ractp ract INV
 X0-nor2 ract rmanp rsac NOR2
-*X0-nor2 cap rmanp ract NOR2
 
+*Resetting the clock/se counters
 X3-nand2 clk sep cclk2 cclk1 cclk0p rcclkp NAND5
 X5-inv rcclkp rcclk INV
 X1-nor2 rmanp rcclk rclk NOR2
 
-*X0-tgate ract rclk T
-*X1-tgate ract rsac T
-
 *Flip flops to capture values from the multiplier
 *One set of flip flops feeds into the second set, and the outputs of the two sets are added together to get the final result
-X0-dff cap rman p0 x0 x0p DFF1
-X1-dff cap rman p1 x1 x1p DFF1
-X2-dff cap rman p2 x2 x2p DFF1
-X3-dff cap rman p3 x3 x3p DFF1
-X4-dff cap rman p4 x4 x4p DFF1
-X5-dff cap rman p5 x5 x5p DFF1
+X0-x-dff cap rman p0 x0 x0p DFF1
+X1-x-dff cap rman p1 x1 x1p DFF1
+X2-x-dff cap rman p2 x2 x2p DFF1
+X3-x-dff cap rman p3 x3 x3p DFF1
+X4-x-dff cap rman p4 x4 x4p DFF1
+X5-x-dff cap rman p5 x5 x5p DFF1
+*X6-x-dff cap rman p6 x6 x6p DFF1
+*X7-x-dff cap rman p7 x7 x7p DFF1
+*X8-x-dff cap rman p8 x8 x8p DFF1
+*X9-x-dff cap rman p9 x9 x9p DFF1
+*X10-x-dff cap rman p10 x10 x10p DFF1
 
-X6-dff cap rman x0 y0 y0p DFF1
-X7-dff cap rman x1 y1 y1p DFF1
-X8-dff cap rman x2 y2 y2p DFF1
-X9-dff cap rman x3 y3 y3p DFF1
-X10-dff cap rman x4 y4 y4p DFF1
-X11-dff cap rman x5 y5 y5p DFF1
+X0-y-dff cap rman x0 y0 y0p DFF1
+X1-y-dff cap rman x1 y1 y1p DFF1
+X2-y-dff cap rman x2 y2 y2p DFF1
+X3-y-dff cap rman x3 y3 y3p DFF1
+X4-y-dff cap rman x4 y4 y4p DFF1
+X5-y-dff cap rman x5 y5 y5p DFF1
+*X6-y-dff cap rman x6 y6 y6p DFF1
+*X7-y-dff cap rman x7 y7 y7p DFF1
+*X8-y-dff cap rman x8 y8 y8p DFF1
+*X9-y-dff cap rman x9 y9 y9p DFF1
+*X10-y-dff cap rman x10 y10 y10p DFF1
 
 **Adders for the final result
-X2-ha x0 y0 f0 c0 HA1B
-X2-fa x1 y1 c0 f1 c1 FA1B
-X3-fa x2 y2 c1 f2 c2 FA1B
-X4-fa x3 y3 c2 f3 c3 FA1B
-X5-fa x4 y4 c3 f4 c4 FA1B
-X6-fa x5 y5 c4 f5 f6 FA1B
+X0-f-ha x0 y0 f0 c0 HA1B
+X1-f-fa x1 y1 c0 f1 c1 FA1B
+X2-f-fa x2 y2 c1 f2 c2 FA1B
+X3-f-fa x3 y3 c2 f3 c3 FA1B
+X4-f-fa x4 y4 c3 f4 c4 FA1B
+X5-f-fa x5 y5 c4 f5 f6 FA1B
+*X6-f-fa x6 y6 c5 f6 c6 FA1B
+*X7-f-fa x7 y7 c6 f7 c7 FA1B
+*X8-f-fa x8 y8 c7 f8 c8 FA1B
+*X9-f-fa x9 y9 c8 f9 c9 FA1B
+*X10-f-fa x10 y10 c9 f10 c10 FA1B
 
 
 **Capacitor Definitions**
@@ -502,7 +586,7 @@ Cclk clk GND 5fF
 *Csl14 sl14 GND 5fF
 *Csl15 sl15 GND 5fF
 
-Cse se GND 20fF
+Cse se GND 5fF
 Csep sep GND 5fF
 
 **Simulation Control**
