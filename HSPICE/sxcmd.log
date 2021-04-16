@@ -1,453 +1,2177 @@
 ### Custom WaveView ADV log file, revision N-2017.12-SP1-1 (build Apr 03, ) ###
-### created at 11:06:14 on Wed Apr 14 2021 (Linux AMD64) ###
-### Host Name: eecs-810rds-10   User ID: mayersjd   PID: 29767   ###
+### created at 12:16:41 on Thu Apr 15 2021 (Linux AMD64) ###
+### Host Name: eecs-810rds-10   User ID: mayersjd   PID: 3376   ###
 wv_start_log
 # (0) running in waveview only mode
 # (0) SW_SX_PERL_LIB defined
 # (0) SW_SX_TCL_LIB defined
 # (0) HOME defined
-sx_open_sim_file_read {FeFET_MM.tr0}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)} {0} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)} {0} {+sep=@}
-wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)} {0} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)} {0} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)@toplevel(0)} {0} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)@toplevel(0)} {0} {+sep=@}
-wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)@toplevel(0)} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)@toplevel(0)} {0} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)@toplevel(0)} {0} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)} {0} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)} {0} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)@toplevel(0)} {0} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:FeFET_MM.tr0(0)@toplevel(0)} {0} {+sep=@}
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 256 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1654 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 276 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1634 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 323 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1587 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 469 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1441 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 511 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1399 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 570 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1340 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 582 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1328 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 687 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1223 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 694 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1216 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 707 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1203 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 761 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1149 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 803 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1107 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 843 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1067 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 853 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1057 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 855 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1055 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1039 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 871 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1049 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 861 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1050 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 860 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1115 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 795 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1116 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 794 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1115 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 795 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1089 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 821 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 905 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1005 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 871 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1039 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 841 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1069 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 827 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1083 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 819 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1091 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 822 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1088 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 847 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1063 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 952 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 958 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1040 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 870 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1042 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 868 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1064 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 846 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1098 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 812 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1099 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 811 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1095 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 815 796
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 1092 822
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 818 796
+wv_move_window {Custom WaveView} {} 550 272
 wv_select_window {Custom WaveView} 
-wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 56
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 56
-wv_select_list_item {Custom WaveView} {} {sigview} {v(se)} 187
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(se)} 187
-wv_select_list_item {Custom WaveView} {} {sigview} {v(wl0)} 208
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl0)} 208
-wv_select_list_item {Custom WaveView} {} {sigview} {v(wl1)} 209
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl1)} 209
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL3:1.LEGEND
-wv_select_panel WV1.PANEL3:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL3:1.LEGEND
-wv_drag_item_to WV1 56 478
-wv_drag_enter WV1
-wv_drag_to WV1 58 467
-wv_drag_to WV1 68 395
-wv_drag_to WV1 73 326
-wv_drag_to WV1 63 222
-wv_drag_to WV1 59 155
-wv_drag_to WV1 50 55
-wv_drop_on WV1
-wv_drag_item_to WV1 58 467
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL4:1.LEGEND
-wv_select_panel WV1.PANEL4:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL4:1.LEGEND
-wv_drag_item_to WV1 53 640
-wv_drag_enter WV1
-wv_drag_to WV1 58 608
-wv_drag_to WV1 63 581
-wv_drag_to WV1 70 495
-wv_drag_to WV1 73 390
-wv_drag_to WV1 72 338
-wv_drag_to WV1 58 233
-wv_drop_on WV1
-wv_drag_item_to WV1 58 608
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL4:1.LEGEND
-wv_select_panel WV1.PANEL4:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL4:1.LEGEND
-wv_drag_item_to WV1 52 620
-wv_drag_enter WV1
-wv_drag_to WV1 52 620
-wv_drag_to WV1 50 579
-wv_drag_to WV1 50 512
-wv_drag_to WV1 55 408
-wv_drop_on WV1
-wv_drag_item_to WV1 52 620
-wv_select_list_item {Custom WaveView} {} {sigview} {v(cap)} 48
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(cap)} 48
-wv_select_list_item {Custom WaveView} {} {sigview} {v(ract)} 159
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(ract)} 159
-wv_select_list_item {Custom WaveView} {} {sigview} {v(ractp)} 160
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(ractp)} 160
-wv_select_list_item {Custom WaveView} {} {sigview} {v(rcclk)} 161
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(rcclk)} 161
-wv_select_list_item {Custom WaveView} {} {sigview} {v(rclk)} 163
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(rclk)} 163
-wv_select_list_item {Custom WaveView} {} {sigview} {v(rman)} 164
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(rman)} 164
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(rman)} 164
-wv_select_list_item {Custom WaveView} {} {sigview} {v(rsac)} 166
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(rsac)} 166
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL7:1.LEGEND
-wv_drag_item_to WV1 54 444
-wv_select_panel WV1.PANEL7:1.LEGEND
-wv_press_key Delete 1220 597
+#Creating design 'cx_design'...
+wv_resize_window {Custom WaveView} 822 586
+#Design 'cx_design' cleared
+#Map file '/home/mayersjd/Documents/Neuromorphic/Project/HardwareCNN/HSPICE/FeFET_MM.sp' to logical library 'CX_WORK:SPICE'
+#[Time Span : 1618503404s CPU Time : 0.38s]
+##1 : Parsing design file 'FeFET_MM.sp'
+##2 : Parsing design file 'FeFET_MM.sp'
+#WARNING[SNE]: [FeFET_MM.sp:534] Subcircuit 'PERIPHERAL' has no device 
+#Total Error: 0, Warning: 1
+#Creating configuration 'FeFET_MM.sp:topcell:default'
+wv_create_design FeFET_MM.sp
+wv_sim_type hspice
+wv_sim_option FeFET_MM.sp -spice FeFET_MM.sp
+wv_open_dv
+wv_resize_window {Custom WaveView} 1078 586
+wv_resize_browser {Custom WaveView} {} {WV.Browser} 250 443
+wv_resize_browser {Custom WaveView} {} {designview 1:1} 818 439
+wv_resize_browser {Custom WaveView} {} {designview 1:1} 818 417
+wv_resize_browser {Custom WaveView} {} {WV.Browser} 250 822
+wv_resize_browser {Custom WaveView} {} {designview 1(FeFET_MM.sp):1} 1660 796
+wv_move_window {Custom WaveView} {} -10 -10
+wv_select_browser_item {topcell}
+wv_double_click_browser_item {topcell}
+wv_select_waveview 1 {designview 1}
+wv_cv_select_inst {topcell} {0}
+wv_cv_switch_scope {topcell}
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -7 1084 380
+wv_cv_hold_move 2 -6 1084 380
+wv_cv_hold_move -1 -5 1084 380
+wv_cv_hold_move 4 -16 1084 380
+wv_cv_hold_move 2 -86 1084 380
+wv_cv_hold_move 1 -22 1084 380
+wv_cv_hold_move -4 -27 1084 380
+wv_cv_hold_move -5 -33 1084 380
+wv_cv_hold_move -3 -11 1084 380
+wv_cv_hold_move -4 -15 1084 380
+wv_cv_hold_move -3 -7 1084 380
+wv_cv_hold_move -1 -4 1084 380
+wv_cv_hold_move -4 -11 1084 380
+wv_cv_hold_move -2 -9 1084 380
+wv_cv_hold_move 0 -13 1084 380
+wv_cv_hold_move 0 -3 1084 380
+wv_cv_hold_move 0 -3 1084 380
+wv_cv_hold_move 0 -6 1084 380
+wv_cv_hold_move 0 -2 1084 380
+wv_cv_hold_move 0 -2 1084 380
+wv_cv_zoom_in 945 672
+wv_cv_zoom_in 943 674
+wv_cv_zoom_in 943 674
+wv_cv_zoom_in 943 674
+wv_cv_zoom_in 943 674
+wv_cv_zoom_in 949 580
+wv_cv_zoom_in 949 580
+wv_cv_zoom_in 949 580
+wv_cv_zoom_in 846 380
+wv_cv_zoom_in 846 380
+wv_cv_zoom_in 844 378
+wv_cv_zoom_in 831 380
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -2 0 569 419
+wv_cv_hold_move -2 0 569 419
+wv_cv_hold_move -3 -1 569 419
+wv_cv_hold_move -5 -2 569 419
+wv_cv_hold_move -5 -7 569 419
+wv_cv_hold_move -18 -16 569 419
+wv_cv_hold_move 0 -1 569 419
+wv_cv_hold_move -8 -8 569 419
+wv_cv_hold_move -6 -6 569 419
+wv_cv_hold_move -5 -6 569 419
+wv_cv_hold_move -5 -4 569 419
+wv_cv_hold_move -2 -2 569 419
+wv_cv_hold_move 0 -1 569 419
+wv_cv_hold_move -1 0 569 419
+wv_cv_hold_move 0 -2 569 419
+wv_cv_hold_move 0 -1 569 419
+wv_cv_zoom_out 552 369
+wv_cv_zoom_out 568 377
+wv_cv_zoom_out 579 384
+wv_cv_zoom_out 618 403
+wv_cv_zoom_out 648 412
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 8 -12 514 637
+wv_cv_hold_move 12 -13 514 637
+wv_cv_hold_move 29 -50 514 637
+wv_cv_hold_move 14 -38 514 637
+wv_cv_hold_move 17 -42 514 637
+wv_cv_hold_move 10 -19 514 637
+wv_cv_hold_move 15 -42 514 637
+wv_cv_hold_move 6 -15 514 637
+wv_cv_hold_move 7 -19 514 637
+wv_cv_hold_move 7 -26 514 637
+wv_cv_hold_move 5 -23 514 637
+wv_cv_hold_move 2 -2 514 637
+wv_cv_hold_move 4 -10 514 637
+wv_cv_hold_move 2 -9 514 637
+wv_cv_hold_move 3 -4 514 637
+wv_cv_hold_move 1 -1 514 637
+wv_cv_hold_move -2 -2 514 637
+wv_cv_hold_move 2 -2 514 637
+wv_cv_hold_move 0 -1 514 637
+wv_cv_zoom_in 599 585
+wv_cv_zoom_in 600 589
+wv_cv_zoom_in 600 589
+wv_cv_zoom_in 574 361
+wv_cv_zoom_in 574 361
+wv_cv_zoom_in 574 361
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 1 4 761 157
+wv_cv_hold_move 12 32 761 157
+wv_cv_hold_move 9 25 761 157
+wv_cv_hold_move 29 70 761 157
+wv_cv_hold_move 19 68 761 157
+wv_cv_hold_move 24 72 761 157
+wv_cv_hold_move 11 28 761 157
+wv_cv_hold_move 3 7 761 157
+wv_cv_hold_move 2 6 761 157
+wv_cv_hold_move 1 2 761 157
+wv_cv_hold_move 1 0 761 157
+wv_cv_zoom_in 739 364
+wv_cv_zoom_in 739 364
+wv_cv_zoom_in 739 364
+wv_cv_zoom_out 959 539
+wv_cv_zoom_out 954 539
+wv_cv_zoom_out 952 537
+wv_cv_zoom_out 949 535
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 1 -10 949 514
+wv_cv_hold_move -4 -30 949 514
+wv_cv_hold_move -9 -36 949 514
+wv_cv_hold_move -24 -48 949 514
+wv_cv_hold_move -27 -46 949 514
+wv_cv_hold_move -29 -46 949 514
+wv_cv_hold_move -29 -39 949 514
+wv_cv_hold_move -42 -74 949 514
+wv_cv_hold_move -30 -50 949 514
+wv_cv_hold_move -34 -47 949 514
+wv_cv_hold_move -22 -38 949 514
+wv_cv_hold_move -5 -11 949 514
+wv_cv_hold_move -4 -12 949 514
+wv_cv_hold_move -6 -9 949 514
+wv_cv_hold_move -2 -3 949 514
+wv_cv_hold_move -2 -1 949 514
+wv_cv_zoom_in 942 488
+wv_cv_zoom_out 711 454
+wv_cv_zoom_out 710 468
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -2 8 658 110
+wv_cv_hold_move -1 16 658 110
+wv_cv_hold_move 9 81 658 110
+wv_cv_hold_move 6 31 658 110
+wv_cv_hold_move 11 27 658 110
+wv_cv_hold_move 10 29 658 110
+wv_cv_hold_move 7 17 658 110
+wv_cv_hold_move 15 30 658 110
+wv_cv_hold_move 8 18 658 110
+wv_cv_hold_move 4 11 658 110
+wv_cv_hold_move 3 10 658 110
+wv_cv_hold_move 6 12 658 110
+wv_cv_hold_move 4 10 658 110
+wv_cv_hold_move 5 7 658 110
+wv_cv_hold_move 1 2 658 110
+wv_cv_hold_move 2 3 658 110
+wv_cv_hold_move 3 6 658 110
+wv_cv_hold_move 4 11 658 110
+wv_cv_hold_move 3 6 658 110
+wv_cv_hold_move 2 2 658 110
+wv_cv_hold_move 1 5 658 110
+wv_cv_hold_move 1 9 658 110
+wv_cv_hold_move 3 11 658 110
+wv_cv_hold_move 0 3 658 110
+wv_cv_hold_move 1 4 658 110
+wv_cv_hold_move 0 3 658 110
+wv_cv_hold_move 0 6 658 110
+wv_cv_hold_move 1 10 658 110
+wv_cv_hold_move 0 5 658 110
+wv_cv_hold_move 0 5 658 110
+wv_cv_hold_move 0 3 658 110
+wv_cv_hold_move 0 6 658 110
+wv_cv_hold_move 0 6 658 110
+wv_cv_hold_move 0 3 658 110
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -7 36 580 169
+wv_cv_hold_move -5 55 580 169
+wv_cv_hold_move -3 43 580 169
+wv_cv_hold_move -2 30 580 169
+wv_cv_hold_move -4 27 580 169
+wv_cv_hold_move -3 48 580 169
+wv_cv_hold_move 3 26 580 169
+wv_cv_hold_move 0 16 580 169
+wv_cv_hold_move 0 7 580 169
+wv_cv_hold_move 1 5 580 169
+wv_cv_hold_move 1 4 580 169
+wv_cv_hold_move 0 2 580 169
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -2 14 628 220
+wv_cv_hold_move -3 25 628 220
+wv_cv_hold_move -1 31 628 220
+wv_cv_hold_move 10 96 628 220
+wv_cv_hold_move 14 68 628 220
+wv_cv_hold_move 10 60 628 220
+wv_cv_hold_move 7 28 628 220
+wv_cv_hold_move 4 21 628 220
+wv_cv_hold_move 2 19 628 220
+wv_cv_hold_move 3 13 628 220
+wv_cv_hold_move 2 4 628 220
+wv_cv_zoom_out 674 322
+wv_cv_zoom_out 674 322
+wv_cv_zoom_out 674 322
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 1 657 193
+wv_cv_hold_move 1 16 657 193
+wv_cv_hold_move 11 64 657 193
+wv_cv_hold_move 7 33 657 193
+wv_cv_hold_move 21 124 657 193
+wv_cv_hold_move 8 37 657 193
+wv_cv_hold_move 6 50 657 193
+wv_cv_hold_move 3 23 657 193
+wv_cv_hold_move 1 23 657 193
+wv_cv_hold_move 0 14 657 193
+wv_cv_hold_move 0 0 657 193
+wv_cv_hold_move 0 3 657 193
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -15 75 708 199
+wv_cv_hold_move -8 56 708 199
+wv_cv_hold_move -8 58 708 199
+wv_cv_hold_move -9 163 708 199
+wv_cv_hold_move 4 49 708 199
+wv_cv_hold_move 1 26 708 199
+wv_cv_hold_move -2 30 708 199
+wv_cv_hold_move -1 20 708 199
+wv_cv_hold_move 0 16 708 199
+wv_cv_hold_move -1 10 708 199
+wv_cv_hold_move 0 1 708 199
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -11 72 778 238
+wv_cv_hold_move -2 85 778 238
+wv_cv_hold_move 0 118 778 238
+wv_cv_hold_move 3 58 778 238
+wv_cv_hold_move 0 31 778 238
+wv_cv_hold_move 0 20 778 238
+wv_cv_hold_move 1 9 778 238
+wv_cv_hold_move 0 1 778 238
+wv_cv_hold_move 1 0 778 238
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -6 32 569 149
+wv_cv_hold_move -4 145 569 149
+wv_cv_hold_move 24 122 569 149
+wv_cv_hold_move 16 50 569 149
+wv_cv_hold_move 15 55 569 149
+wv_cv_hold_move 12 73 569 149
+wv_cv_hold_move 1 19 569 149
+wv_cv_hold_move 2 9 569 149
+wv_cv_hold_move 0 6 569 149
+wv_cv_hold_move 2 1 569 149
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -20 86 715 202
+wv_cv_hold_move -18 110 715 202
+wv_cv_hold_move -12 80 715 202
+wv_cv_hold_move -3 40 715 202
+wv_cv_hold_move -5 41 715 202
+wv_cv_hold_move -6 51 715 202
+wv_cv_hold_move -6 40 715 202
+wv_cv_hold_move 0 6 715 202
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -12 81 661 279
+wv_cv_hold_move -7 45 661 279
+wv_cv_hold_move 1 129 661 279
+wv_cv_hold_move 8 76 661 279
+wv_cv_hold_move 7 59 661 279
+wv_cv_hold_move 6 18 661 279
+wv_cv_hold_move 2 24 661 279
+wv_cv_hold_move 2 11 661 279
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 9 599 231
+wv_cv_hold_move 3 22 599 231
+wv_cv_hold_move 49 63 599 231
+wv_cv_hold_move 78 56 599 231
+wv_cv_hold_move 45 20 599 231
+wv_cv_hold_move 73 17 599 231
+wv_cv_hold_move 60 1 599 231
+wv_cv_hold_move 45 0 599 231
+wv_cv_hold_move 48 -5 599 231
+wv_cv_hold_move 73 -28 599 231
+wv_cv_hold_move 52 -17 599 231
+wv_cv_hold_move 72 -31 599 231
+wv_cv_hold_move 13 -7 599 231
+wv_cv_hold_move 2 0 599 231
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 3 9 312 248
+wv_cv_hold_move 24 25 312 248
+wv_cv_hold_move 37 24 312 248
+wv_cv_hold_move 55 31 312 248
+wv_cv_hold_move 40 24 312 248
+wv_cv_hold_move 44 25 312 248
+wv_cv_hold_move 88 49 312 248
+wv_cv_hold_move 51 34 312 248
+wv_cv_hold_move 30 17 312 248
+wv_cv_hold_move 9 9 312 248
+wv_cv_hold_move 23 16 312 248
+wv_cv_hold_move 10 9 312 248
+wv_cv_hold_move 3 4 312 248
+wv_cv_hold_move 5 4 312 248
+wv_cv_hold_move 3 5 312 248
+wv_cv_hold_move 5 3 312 248
+wv_cv_hold_move 3 5 312 248
+wv_cv_hold_move 0 3 312 248
+wv_cv_hold_move 3 2 312 248
+wv_cv_hold_move 1 2 312 248
+wv_cv_hold_move 0 3 312 248
+wv_cv_zoom_in 115 104
+wv_cv_zoom_in 106 107
+wv_cv_zoom_in 106 107
+wv_cv_zoom_in 106 107
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 23 6 53 221
+wv_cv_hold_move 15 8 53 221
+wv_cv_hold_move 13 7 53 221
+wv_cv_hold_move 21 12 53 221
+wv_cv_hold_move 27 13 53 221
+wv_cv_hold_move 35 18 53 221
+wv_cv_hold_move 24 14 53 221
+wv_cv_hold_move 23 11 53 221
+wv_cv_hold_move 36 17 53 221
+wv_cv_hold_move 19 12 53 221
+wv_cv_hold_move 22 10 53 221
+wv_cv_hold_move 20 10 53 221
+wv_cv_hold_move 49 22 53 221
+wv_cv_hold_move 43 18 53 221
+wv_cv_hold_move 12 6 53 221
+wv_cv_hold_move 11 7 53 221
+wv_cv_hold_move 17 9 53 221
+wv_cv_hold_move 10 5 53 221
+wv_cv_hold_move 2 2 53 221
+wv_cv_hold_move 8 3 53 221
+wv_cv_hold_move 3 3 53 221
+wv_cv_hold_move 5 5 53 221
+wv_cv_hold_move 6 3 53 221
+wv_cv_hold_move 0 1 53 221
+wv_cv_hold_move 1 0 53 221
+wv_cv_zoom_in 284 254
+wv_cv_zoom_in 283 254
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 37 15 198 151
+wv_cv_hold_move 38 13 198 151
+wv_cv_hold_move 31 10 198 151
+wv_cv_hold_move 64 17 198 151
+wv_cv_hold_move 65 12 198 151
+wv_cv_hold_move 39 7 198 151
+wv_cv_hold_move 69 19 198 151
+wv_cv_hold_move 23 7 198 151
+wv_cv_hold_move 44 3 198 151
+wv_cv_hold_move 19 3 198 151
+wv_cv_hold_move 5 -1 198 151
+wv_cv_hold_move 7 -6 198 151
+wv_cv_hold_move 1 0 198 151
+wv_cv_zoom_out 672 321
+wv_cv_zoom_out 672 321
+wv_cv_zoom_out 676 321
+wv_cv_zoom_in 676 306
+wv_cv_zoom_in 676 306
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 8 1 521 209
+wv_cv_hold_move 69 20 521 209
+wv_cv_hold_move 139 42 521 209
+wv_cv_hold_move 112 33 521 209
+wv_cv_hold_move 49 20 521 209
+wv_cv_hold_move 99 41 521 209
+wv_cv_hold_move 15 7 521 209
+wv_cv_hold_move 20 9 521 209
+wv_cv_hold_move 3 2 521 209
+wv_cv_hold_move 2 0 521 209
+wv_cv_hold_move 1 1 521 209
+wv_cv_hold_move 3 1 521 209
+wv_cv_hold_move 1 2 521 209
+wv_cv_hold_move 1 1 521 209
+wv_cv_zoom_out 612 224
+wv_cv_zoom_out 596 239
+wv_cv_zoom_out 592 245
+wv_cv_zoom_out 593 245
+wv_cv_zoom_out 598 245
+wv_cv_zoom_out 599 245
+wv_cv_zoom_out 748 289
+wv_cv_zoom_out 764 301
+wv_cv_zoom_out 768 304
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 14 -32 628 467
+wv_cv_hold_move 9 -19 628 467
+wv_cv_hold_move 22 -49 628 467
+wv_cv_hold_move 5 -13 628 467
+wv_cv_hold_move 6 -14 628 467
+wv_cv_hold_move 7 -16 628 467
+wv_cv_hold_move 6 -21 628 467
+wv_cv_hold_move 16 -35 628 467
+wv_cv_hold_move 12 -36 628 467
+wv_cv_hold_move 7 -23 628 467
+wv_cv_hold_move 2 -11 628 467
+wv_cv_hold_move 0 -1 628 467
+wv_cv_hold_move 1 0 628 467
+wv_cv_hold_move 0 4 628 467
+wv_cv_hold_move 0 8 628 467
+wv_cv_hold_move 1 5 628 467
+wv_cv_hold_move 0 6 628 467
+wv_cv_hold_move 1 2 628 467
+wv_cv_hold_move 0 2 628 467
+wv_cv_hold_move 1 3 628 467
+wv_cv_hold_move 3 2 628 467
+wv_cv_hold_move 0 1 628 467
+wv_cv_hold_move 1 1 628 467
+wv_cv_hold_move 4 -1 628 467
+wv_cv_hold_move 6 -6 628 467
+wv_cv_hold_move 16 -25 628 467
+wv_cv_hold_move 5 -15 628 467
+wv_cv_hold_move 4 -13 628 467
+wv_cv_hold_move 0 -5 628 467
+wv_cv_hold_move 0 -3 628 467
+wv_cv_zoom_in 249 133
+wv_cv_zoom_in 249 133
+wv_cv_zoom_in 245 136
+wv_cv_zoom_in 239 147
+wv_cv_zoom_in 237 155
+wv_cv_zoom_in 135 237
+wv_cv_zoom_in 132 243
+wv_cv_zoom_in 132 243
+wv_cv_zoom_out 100 431
+wv_cv_zoom_out 143 433
+wv_cv_zoom_out 210 436
+wv_cv_zoom_out 272 436
+wv_cv_zoom_out 321 439
+wv_cv_zoom_out 478 438
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -8 622 460
+wv_cv_hold_move 0 -4 622 460
+wv_cv_hold_move 1 -9 622 460
+wv_cv_hold_move 0 -9 622 460
+wv_cv_hold_move 3 -19 622 460
+wv_cv_hold_move 1 -14 622 460
+wv_cv_hold_move 5 -27 622 460
+wv_cv_hold_move 6 -32 622 460
+wv_cv_hold_move 2 -21 622 460
+wv_cv_hold_move 3 -19 622 460
+wv_cv_hold_move 2 -19 622 460
+wv_cv_hold_move 5 -28 622 460
+wv_cv_hold_move 0 -14 622 460
+wv_cv_hold_move 1 -22 622 460
+wv_cv_hold_move 1 -10 622 460
+wv_cv_hold_move 0 -6 622 460
+wv_cv_hold_move 1 -4 622 460
+wv_cv_hold_move 1 -3 622 460
+wv_cv_hold_move 0 -2 622 460
+wv_cv_zoom_in 397 392
+wv_cv_zoom_in 397 392
+wv_cv_zoom_in 395 394
+wv_cv_zoom_in 395 393
+wv_cv_zoom_in 381 254
+wv_cv_zoom_in 381 254
+wv_cv_zoom_in 384 251
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 3 0 927 75
+wv_cv_hold_move 4 6 927 75
+wv_cv_hold_move 10 26 927 75
+wv_cv_hold_move 7 45 927 75
+wv_cv_hold_move 0 16 927 75
+wv_cv_hold_move 2 33 927 75
+wv_cv_hold_move -1 14 927 75
+wv_cv_hold_move 0 11 927 75
+wv_cv_hold_move 1 9 927 75
+wv_cv_hold_move 1 7 927 75
+wv_cv_hold_move 0 3 927 75
+wv_cv_hold_move 0 3 927 75
+wv_cv_hold_move 0 1 927 75
+wv_cv_hold_move 2 2 927 75
+wv_cv_hold_move 0 2 927 75
+wv_cv_hold_move -1 3 927 75
+wv_cv_zoom_in 815 283
+wv_cv_zoom_out 825 313
+wv_cv_zoom_out 828 315
+wv_cv_zoom_out 832 315
+wv_cv_zoom_out 837 313
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -5 1085 539
+wv_cv_hold_move -4 -19 1085 539
+wv_cv_hold_move -12 -21 1085 539
+wv_cv_hold_move -10 -21 1085 539
+wv_cv_hold_move -21 -42 1085 539
+wv_cv_hold_move -16 -24 1085 539
+wv_cv_hold_move -17 -28 1085 539
+wv_cv_hold_move -18 -35 1085 539
+wv_cv_hold_move -23 -33 1085 539
+wv_cv_hold_move -11 -16 1085 539
+wv_cv_hold_move -9 -12 1085 539
+wv_cv_hold_move -6 -13 1085 539
+wv_cv_hold_move -2 -2 1085 539
+wv_cv_hold_move 0 -2 1085 539
+wv_cv_hold_move -1 -3 1085 539
+wv_cv_zoom_in 607 298
+wv_cv_zoom_in 577 291
+wv_cv_zoom_in 577 289
+wv_cv_zoom_in 576 289
+wv_cv_zoom_in 614 323
+wv_cv_zoom_in 625 337
+wv_cv_zoom_in 637 347
+wv_cv_zoom_out 725 488
+wv_cv_zoom_out 703 479
+wv_cv_zoom_out 749 468
+wv_cv_zoom_out 754 467
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -4 -4 783 548
+wv_cv_hold_move -7 -3 783 548
+wv_cv_hold_move -9 -8 783 548
+wv_cv_hold_move -11 -4 783 548
+wv_cv_hold_move -8 -3 783 548
+wv_cv_hold_move -12 -4 783 548
+wv_cv_hold_move -13 -2 783 548
+wv_cv_hold_move -12 -3 783 548
+wv_cv_hold_move -20 -5 783 548
+wv_cv_hold_move -18 -5 783 548
+wv_cv_hold_move -6 -2 783 548
+wv_cv_hold_move -11 -2 783 548
+wv_cv_hold_move -12 -3 783 548
+wv_cv_hold_move -7 -1 783 548
+wv_cv_hold_move -14 -3 783 548
+wv_cv_hold_move -4 -1 783 548
+wv_cv_hold_move -1 -2 783 548
+wv_cv_hold_move -4 -1 783 548
+wv_cv_hold_move 0 -1 783 548
+wv_cv_hold_move -1 0 783 548
+wv_cv_hold_move 0 -1 783 548
+wv_cv_hold_move -1 -1 783 548
+wv_cv_hold_move -1 0 783 548
+wv_cv_hold_move 0 -2 783 548
+wv_cv_zoom_out 877 459
+wv_cv_zoom_out 877 459
+wv_cv_zoom_out 877 456
+wv_cv_zoom_out 854 433
+wv_cv_zoom_out 857 424
+wv_cv_zoom_out 862 421
+wv_cv_zoom_in 690 406
+wv_cv_zoom_in 686 407
+wv_cv_zoom_in 684 410
+wv_cv_zoom_in 672 424
+wv_cv_zoom_in 499 488
+wv_cv_zoom_in 492 499
+wv_cv_zoom_in 485 508
+wv_cv_zoom_in 481 516
+wv_cv_zoom_out 548 480
+wv_cv_zoom_out 550 499
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -1 -2 591 511
+wv_cv_hold_move -8 -11 591 511
+wv_cv_hold_move -2 -6 591 511
+wv_cv_hold_move -23 -33 591 511
+wv_cv_hold_move -12 -19 591 511
+wv_cv_hold_move -14 -21 591 511
+wv_cv_hold_move -7 -7 591 511
+wv_cv_hold_move -1 0 591 511
+wv_cv_hold_move 0 -1 591 511
+wv_cv_zoom_in 966 385
+wv_cv_zoom_in 966 385
+wv_cv_zoom_out 952 400
+wv_cv_zoom_out 952 400
+wv_cv_zoom_out 951 401
+wv_cv_zoom_out 950 402
+wv_cv_zoom_out 950 403
+wv_cv_zoom_out 950 403
+wv_cv_zoom_out 950 403
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -18 -37 1104 598
+wv_cv_hold_move -10 -38 1104 598
+wv_cv_hold_move -11 -44 1104 598
+wv_cv_hold_move -14 -43 1104 598
+wv_cv_hold_move -9 -35 1104 598
+wv_cv_hold_move -6 -34 1104 598
+wv_cv_hold_move -4 -29 1104 598
+wv_cv_hold_move -6 -33 1104 598
+wv_cv_hold_move -7 -35 1104 598
+wv_cv_hold_move -4 -27 1104 598
+wv_cv_hold_move -11 -28 1104 598
+wv_cv_hold_move -6 -20 1104 598
+wv_cv_hold_move -8 -22 1104 598
+wv_cv_hold_move -7 -22 1104 598
+wv_cv_hold_move -5 -23 1104 598
+wv_cv_hold_move -8 -18 1104 598
+wv_cv_hold_move -4 -15 1104 598
+wv_cv_hold_move -5 -14 1104 598
+wv_cv_hold_move -5 -13 1104 598
+wv_cv_hold_move -3 -10 1104 598
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 4 -29 910 568
+wv_cv_hold_move 7 -98 910 568
+wv_cv_hold_move -1 -67 910 568
+wv_cv_hold_move -12 -74 910 568
+wv_cv_hold_move -8 -34 910 568
+wv_cv_hold_move -11 -25 910 568
+wv_cv_hold_move -8 -24 910 568
+wv_cv_hold_move -14 -21 910 568
+wv_cv_hold_move -8 -14 910 568
+wv_cv_hold_move -6 -7 910 568
+wv_cv_hold_move -5 -5 910 568
+wv_cv_hold_move -3 -4 910 568
+wv_cv_hold_move -4 -5 910 568
+wv_cv_hold_move -1 -2 910 568
+wv_cv_hold_move -1 0 910 568
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -16 -36 962 531
+wv_cv_hold_move -13 -50 962 531
+wv_cv_hold_move -19 -66 962 531
+wv_cv_hold_move -13 -39 962 531
+wv_cv_hold_move -41 -102 962 531
+wv_cv_hold_move -32 -63 962 531
+wv_cv_hold_move -20 -37 962 531
+wv_cv_hold_move -13 -34 962 531
+wv_cv_hold_move -4 -15 962 531
+wv_cv_hold_move -4 -9 962 531
+wv_cv_hold_move -5 -8 962 531
+wv_cv_hold_move 0 -1 962 531
+wv_cv_zoom_out 807 325
+wv_cv_zoom_out 811 409
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 811 416
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 809 430
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 801 440
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_in 788 448
+wv_cv_zoom_in 788 448
+wv_cv_zoom_in 785 452
+wv_cv_zoom_in 783 460
+wv_cv_zoom_in 783 469
+wv_cv_zoom_in 786 478
+wv_cv_zoom_in 602 504
+wv_cv_zoom_in 589 500
+wv_cv_zoom_in 587 499
+wv_cv_zoom_in 586 498
+wv_cv_zoom_in 586 498
+wv_cv_zoom_in 583 495
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -2 14 844 284
+wv_cv_hold_move -4 17 844 284
+wv_cv_hold_move -3 32 844 284
+wv_cv_hold_move -6 70 844 284
+wv_cv_hold_move 1 20 844 284
+wv_cv_hold_move 4 51 844 284
+wv_cv_hold_move 2 19 844 284
+wv_cv_hold_move 1 13 844 284
+wv_cv_hold_move 0 10 844 284
+wv_cv_hold_move 1 12 844 284
+wv_cv_hold_move 1 3 844 284
+wv_cv_hold_move -1 5 844 284
+wv_cv_hold_move 0 0 844 284
+wv_cv_hold_move 0 0 844 284
+wv_select_waveview 1 {designview 1}
+wv_cv_select_inst {topcell.X0-decoder} {0}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell.X0-decoder}
+wv_cv_zoom_in 961 334
+wv_cv_zoom_in 962 333
+wv_cv_zoom_in 962 332
+wv_cv_zoom_in 963 332
+wv_cv_zoom_in 963 332
+wv_cv_zoom_in 991 307
+wv_cv_zoom_in 991 307
+wv_cv_zoom_in 991 307
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -2 3 1205 177
+wv_cv_hold_move -1 9 1205 177
+wv_cv_hold_move 0 18 1205 177
+wv_cv_hold_move 0 16 1205 177
+wv_cv_hold_move -1 13 1205 177
+wv_cv_hold_move -4 31 1205 177
+wv_cv_hold_move 0 18 1205 177
+wv_cv_hold_move 0 5 1205 177
+wv_cv_hold_move 1 2 1205 177
+wv_cv_hold_move 0 1 1205 177
+wv_cv_hold_move 0 1 1205 177
+wv_cv_hold_move 0 1 1205 177
+wv_cv_hold_move 0 8 1205 177
+wv_cv_hold_move -9 43 1205 177
+wv_cv_hold_move -12 119 1205 177
+wv_cv_hold_move -13 131 1205 177
+wv_cv_hold_move -10 101 1205 177
+wv_cv_hold_move -7 69 1205 177
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 1 11 1141 270
+wv_cv_hold_move -11 40 1141 270
+wv_cv_hold_move -11 39 1141 270
+wv_cv_hold_move -11 56 1141 270
+wv_cv_hold_move -26 110 1141 270
+wv_cv_hold_move -6 51 1141 270
+wv_cv_hold_move -13 64 1141 270
+wv_cv_hold_move -4 56 1141 270
+wv_cv_hold_move 3 28 1141 270
+wv_cv_hold_move 1 33 1141 270
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 13 -35 1093 578
+wv_cv_hold_move 24 -72 1093 578
+wv_cv_hold_move 20 -110 1093 578
+wv_cv_hold_move -2 -130 1093 578
+wv_cv_hold_move -44 -175 1093 578
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -2 -69 1165 465
+wv_cv_hold_move -7 -109 1165 465
+wv_cv_hold_move -29 -91 1165 465
+wv_cv_hold_move -21 -57 1165 465
+wv_cv_hold_move -21 -49 1165 465
+wv_cv_hold_move -23 -48 1165 465
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -8 -137 1217 602
+wv_cv_hold_move -12 -100 1217 602
+wv_cv_hold_move -40 -105 1217 602
+wv_cv_hold_move -68 -136 1217 602
+wv_cv_hold_move -28 -64 1217 602
+wv_cv_hold_move -14 -40 1217 602
+wv_cv_hold_move -2 -19 1217 602
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 13 -52 1157 575
+wv_cv_hold_move 11 -141 1157 575
+wv_cv_hold_move -5 -119 1157 575
+wv_cv_hold_move -8 -63 1157 575
+wv_cv_hold_move -24 -79 1157 575
+wv_cv_hold_move -20 -53 1157 575
+wv_cv_hold_move -20 -45 1157 575
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -2 -26 1177 544
+wv_cv_hold_move -8 -52 1177 544
+wv_cv_hold_move -5 -66 1177 544
+wv_cv_hold_move -48 -181 1177 544
+wv_cv_hold_move -11 -39 1177 544
+wv_cv_hold_move -29 -75 1177 544
+wv_cv_hold_move -9 -26 1177 544
+wv_cv_hold_move -5 -16 1177 544
+wv_cv_hold_move 0 -1 1177 544
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -16 1117 645
+wv_cv_hold_move -10 -134 1117 645
+wv_cv_hold_move -5 -61 1117 645
+wv_cv_hold_move -24 -103 1117 645
+wv_cv_hold_move -16 -75 1117 645
+wv_cv_hold_move -3 -31 1117 645
+wv_cv_hold_move 1 -24 1117 645
+wv_cv_hold_move 1 -16 1117 645
+wv_cv_hold_move 0 -4 1117 645
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -4 10 1237 181
+wv_cv_hold_move -1 4 1237 181
+wv_cv_hold_move -3 32 1237 181
+wv_cv_hold_move 0 11 1237 181
+wv_cv_hold_move -1 13 1237 181
+wv_cv_hold_move 0 9 1237 181
+wv_cv_hold_move 0 5 1237 181
+wv_cv_hold_move -3 13 1237 181
+wv_cv_hold_move -2 7 1237 181
+wv_cv_hold_move -1 8 1237 181
+wv_cv_hold_move -3 4 1237 181
+wv_cv_hold_move 0 1 1237 181
+wv_cv_hold_move -1 7 1237 181
+wv_cv_hold_move -1 1 1237 181
+wv_cv_hold_move 0 1 1237 181
+wv_cv_hold_move 0 -7 1237 181
+wv_cv_hold_move 4 -17 1237 181
+wv_cv_hold_move 2 -20 1237 181
+wv_cv_hold_move 1 -22 1237 181
+wv_cv_hold_move -1 -22 1237 181
+wv_cv_hold_move -1 -16 1237 181
+wv_cv_hold_move -1 -15 1237 181
+wv_cv_hold_move 0 -15 1237 181
+wv_cv_hold_move 1 -10 1237 181
+wv_cv_hold_move 0 -3 1237 181
+wv_cv_hold_move 0 -1 1237 181
+wv_cv_hold_move 0 -1 1237 181
+wv_cv_hold_move -1 3 1237 181
+wv_cv_hold_move -4 18 1237 181
+wv_cv_hold_move -8 28 1237 181
+wv_cv_hold_move -12 49 1237 181
+wv_cv_hold_move -4 43 1237 181
+wv_cv_hold_move -4 29 1237 181
+wv_cv_hold_move -1 17 1237 181
+wv_cv_hold_move -3 30 1237 181
+wv_cv_hold_move -1 9 1237 181
+wv_cv_hold_move 0 9 1237 181
+wv_cv_hold_move 0 3 1237 181
+wv_cv_hold_move -1 4 1237 181
+wv_cv_hold_move 0 3 1237 181
+wv_cv_hold_move -1 3 1237 181
+wv_cv_hold_move -1 2 1237 181
+wv_cv_hold_move 0 2 1237 181
+wv_cv_hold_move -2 2 1237 181
+wv_cv_hold_move -3 5 1237 181
+wv_cv_hold_move -2 2 1237 181
+wv_cv_hold_move 0 1 1237 181
+wv_cv_hold_move -1 2 1237 181
+wv_cv_hold_move -2 3 1237 181
+wv_cv_hold_move -3 5 1237 181
+wv_cv_hold_move -1 0 1237 181
+wv_cv_hold_move 0 1 1237 181
+wv_cv_hold_move -1 -1 1237 181
+wv_cv_hold_move 0 -13 1237 181
+wv_cv_hold_move 0 -22 1237 181
+wv_cv_hold_move 2 -20 1237 181
+wv_cv_hold_move -2 -25 1237 181
+wv_cv_hold_move 5 -26 1237 181
+wv_cv_hold_move 1 -22 1237 181
+wv_cv_hold_move -1 -10 1237 181
+wv_cv_hold_move 0 -10 1237 181
+wv_cv_hold_move 0 -8 1237 181
+wv_cv_hold_move 0 -1 1237 181
+wv_cv_hold_move 0 -2 1237 181
+wv_cv_hold_move 0 -2 1237 181
+wv_cv_hold_move 0 -3 1237 181
+wv_cv_hold_move 0 -5 1237 181
+wv_cv_hold_move 2 -2 1237 181
+wv_cv_hold_move 0 -1 1237 181
+wv_cv_hold_move -2 11 1237 181
+wv_cv_hold_move -6 28 1237 181
+wv_cv_hold_move -14 29 1237 181
+wv_cv_hold_move -11 37 1237 181
+wv_cv_hold_move -9 36 1237 181
+wv_cv_hold_move -7 32 1237 181
+wv_cv_hold_move -2 21 1237 181
+wv_cv_hold_move -1 16 1237 181
+wv_cv_hold_move -2 13 1237 181
+wv_cv_hold_move -2 8 1237 181
+wv_cv_hold_move -2 6 1237 181
+wv_cv_hold_move 0 5 1237 181
+wv_cv_hold_move -2 1 1237 181
+wv_cv_hold_move 0 4 1237 181
+wv_cv_hold_move -2 0 1237 181
+wv_cv_hold_move 0 1 1237 181
+wv_cv_hold_move 0 2 1237 181
+wv_cv_hold_move 0 1 1237 181
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 1 1140 147
+wv_cv_hold_move -2 3 1140 147
+wv_cv_hold_move -7 17 1140 147
+wv_cv_hold_move -11 51 1140 147
+wv_cv_hold_move -5 24 1140 147
+wv_cv_hold_move -8 38 1140 147
+wv_cv_hold_move -6 66 1140 147
+wv_cv_hold_move -4 24 1140 147
+wv_cv_hold_move -2 38 1140 147
+wv_cv_hold_move -1 22 1140 147
+wv_cv_hold_move 0 10 1140 147
+wv_cv_hold_move 0 5 1140 147
+wv_cv_hold_move -1 4 1140 147
+wv_cv_hold_move -1 9 1140 147
+wv_cv_hold_move -2 6 1140 147
+wv_cv_hold_move 0 4 1140 147
+wv_cv_hold_move -1 4 1140 147
+wv_cv_hold_move 0 3 1140 147
+wv_cv_hold_move 0 9 1140 147
+wv_cv_hold_move 0 8 1140 147
+wv_cv_hold_move -2 9 1140 147
+wv_cv_hold_move -2 6 1140 147
+wv_cv_hold_move 0 1 1140 147
+wv_cv_hold_move 0 2 1140 147
+wv_cv_hold_move 0 -3 1140 147
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 14 1102 271
+wv_cv_hold_move -1 14 1102 271
+wv_cv_hold_move -1 10 1102 271
+wv_cv_hold_move -4 23 1102 271
+wv_cv_hold_move -1 20 1102 271
+wv_cv_hold_move -3 11 1102 271
+wv_cv_hold_move -1 7 1102 271
+wv_cv_hold_move -1 3 1102 271
+wv_cv_hold_move -3 7 1102 271
+wv_cv_hold_move -3 7 1102 271
+wv_cv_hold_move -4 12 1102 271
+wv_cv_hold_move -4 15 1102 271
+wv_cv_hold_move -10 47 1102 271
+wv_cv_hold_move -2 11 1102 271
+wv_cv_hold_move -2 30 1102 271
+wv_cv_hold_move -7 27 1102 271
+wv_cv_hold_move -3 29 1102 271
+wv_cv_hold_move -4 46 1102 271
+wv_cv_hold_move -2 12 1102 271
+wv_cv_hold_move 0 22 1102 271
+wv_cv_hold_move -1 16 1102 271
+wv_cv_hold_move -1 13 1102 271
+wv_cv_hold_move -1 6 1102 271
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell}
+wv_cv_select_inst {topcell.X0-decoder} {0}
+wv_cv_zoom_in 781 625
+wv_cv_zoom_in 776 658
+wv_cv_zoom_in 775 670
+wv_cv_zoom_in 775 682
+wv_cv_zoom_out 780 668
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 788 649
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 800 613
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 802 569
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 798 546
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_in 773 490
+wv_cv_zoom_in 773 490
+wv_cv_zoom_in 773 490
+wv_cv_zoom_in 772 492
+wv_cv_zoom_in 769 493
+wv_cv_zoom_in 767 496
+wv_cv_zoom_in 825 707
+wv_cv_zoom_in 822 724
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -3 -29 630 661
+wv_cv_hold_move 2 -38 630 661
+wv_cv_hold_move 0 -48 630 661
+wv_cv_hold_move 2 -83 630 661
+wv_cv_hold_move 5 -68 630 661
+wv_cv_hold_move 6 -89 630 661
+wv_cv_hold_move 1 -40 630 661
+wv_cv_hold_move 4 -64 630 661
+wv_cv_hold_move 3 -54 630 661
+wv_cv_hold_move 1 -34 630 661
+wv_cv_hold_move 1 -29 630 661
+wv_cv_hold_move 1 -9 630 661
+wv_cv_hold_move 1 -24 630 661
+wv_cv_hold_move -1 -18 630 661
+wv_cv_hold_move -2 -15 630 661
+wv_cv_hold_move -2 -11 630 661
+wv_cv_zoom_in 617 275
+wv_cv_zoom_in 601 196
+wv_cv_zoom_in 696 188
+wv_cv_zoom_in 701 189
+wv_cv_zoom_in 704 190
+wv_cv_zoom_in 737 188
+wv_cv_zoom_in 845 248
+wv_cv_zoom_in 845 250
+wv_cv_zoom_in 849 254
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 12 700 240
+wv_cv_hold_move -1 20 700 240
+wv_cv_hold_move 3 27 700 240
+wv_cv_hold_move 0 25 700 240
+wv_cv_hold_move 1 11 700 240
+wv_cv_hold_move -1 23 700 240
+wv_cv_hold_move 0 10 700 240
+wv_cv_hold_move 2 16 700 240
+wv_cv_hold_move 2 19 700 240
+wv_cv_hold_move 0 9 700 240
+wv_cv_hold_move 0 3 700 240
+wv_cv_hold_move 0 4 700 240
+wv_cv_hold_move 0 4 700 240
+wv_cv_hold_move 0 7 700 240
+wv_cv_hold_move 0 5 700 240
+wv_cv_hold_move 0 2 700 240
+wv_cv_hold_move 0 2 700 240
+wv_cv_hold_move 1 2 700 240
+wv_cv_hold_move 0 1 700 240
+wv_cv_hold_move 0 3 700 240
+wv_cv_hold_move 0 3 700 240
+wv_cv_hold_move 0 3 700 240
+wv_cv_hold_move 0 2 700 240
+wv_cv_hold_move 0 1 700 240
+wv_cv_hold_move 0 1 700 240
+wv_cv_hold_move 0 3 700 240
+wv_cv_hold_move 0 1 700 240
+wv_cv_hold_move 0 2 700 240
+wv_cv_hold_move 0 6 700 240
+wv_cv_hold_move -2 8 700 240
+wv_cv_hold_move 0 7 700 240
+wv_cv_hold_move -1 3 700 240
+wv_cv_hold_move 0 1 700 240
+wv_cv_hold_move 0 4 700 240
+wv_cv_hold_move -3 2 700 240
+wv_cv_hold_move 0 1 700 240
+wv_cv_hold_move -1 0 700 240
+wv_cv_zoom_out 706 209
+wv_cv_zoom_out 721 515
+wv_cv_zoom_out 719 515
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move -2 0 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move -1 -2 719 512
+wv_cv_hold_move -1 -1 719 512
+wv_cv_hold_move 0 -2 719 512
+wv_cv_hold_move -2 -4 719 512
+wv_cv_hold_move -1 -2 719 512
+wv_cv_hold_move -1 -4 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -2 719 512
+wv_cv_hold_move 0 -4 719 512
+wv_cv_hold_move -3 -5 719 512
+wv_cv_hold_move -1 -7 719 512
+wv_cv_hold_move -1 -5 719 512
+wv_cv_hold_move 0 -3 719 512
+wv_cv_hold_move -1 -6 719 512
+wv_cv_hold_move -2 -8 719 512
+wv_cv_hold_move -3 -13 719 512
+wv_cv_hold_move -3 -4 719 512
+wv_cv_hold_move -3 -4 719 512
+wv_cv_hold_move -2 -5 719 512
+wv_cv_hold_move -1 -7 719 512
+wv_cv_hold_move -1 -1 719 512
+wv_cv_hold_move 0 -3 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move 0 -3 719 512
+wv_cv_hold_move -1 -6 719 512
+wv_cv_hold_move -2 -6 719 512
+wv_cv_hold_move 0 -4 719 512
+wv_cv_hold_move -3 -5 719 512
+wv_cv_hold_move -7 -18 719 512
+wv_cv_hold_move -3 -22 719 512
+wv_cv_hold_move -1 -16 719 512
+wv_cv_hold_move -1 -13 719 512
+wv_cv_hold_move -4 -20 719 512
+wv_cv_hold_move -5 -33 719 512
+wv_cv_hold_move -6 -30 719 512
+wv_cv_hold_move -7 -22 719 512
+wv_cv_hold_move -1 -14 719 512
+wv_cv_hold_move -4 -11 719 512
+wv_cv_hold_move -7 -22 719 512
+wv_cv_hold_move -2 -9 719 512
+wv_cv_hold_move -2 -3 719 512
+wv_cv_hold_move 0 -1 719 512
+wv_cv_hold_move -3 -3 719 512
+wv_cv_hold_move -1 -3 719 512
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -3 -2 608 540
+wv_cv_hold_move 0 -2 608 540
+wv_cv_hold_move 0 -1 608 540
+wv_cv_hold_move -1 -1 608 540
+wv_cv_hold_move 0 -3 608 540
+wv_cv_hold_move 0 -1 608 540
+wv_cv_hold_move 0 -2 608 540
+wv_cv_hold_move 0 -1 608 540
+wv_cv_hold_move 0 -1 608 540
+wv_cv_hold_move -1 0 608 540
+wv_cv_hold_move -1 -1 608 540
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -1 -9 623 546
+wv_cv_hold_move 3 -55 623 546
+wv_cv_hold_move 1 -53 623 546
+wv_cv_hold_move 6 -64 623 546
+wv_cv_hold_move 4 -103 623 546
+wv_cv_hold_move 0 -38 623 546
+wv_cv_hold_move -1 -11 623 546
+wv_cv_hold_move 0 -7 623 546
+wv_cv_hold_move 0 -1 623 546
+wv_cv_zoom_out 666 448
+wv_cv_zoom_out 670 459
+wv_cv_zoom_out 679 486
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 5 36 618 260
+wv_cv_hold_move 10 47 618 260
+wv_cv_hold_move 4 15 618 260
+wv_cv_hold_move 6 33 618 260
+wv_cv_hold_move 5 18 618 260
+wv_cv_hold_move 4 22 618 260
+wv_cv_hold_move 1 24 618 260
+wv_cv_hold_move -1 10 618 260
+wv_cv_hold_move 1 11 618 260
+wv_cv_hold_move 0 5 618 260
+wv_cv_hold_move -1 4 618 260
+wv_cv_hold_move -1 12 618 260
+wv_cv_hold_move 0 2 618 260
+wv_cv_hold_move 0 3 618 260
+wv_cv_hold_move -1 4 618 260
+wv_cv_hold_move 0 3 618 260
+wv_cv_hold_move 0 2 618 260
+wv_cv_zoom_in 589 223
+wv_cv_zoom_in 589 223
+wv_cv_zoom_in 589 223
+wv_cv_zoom_in 589 223
+wv_cv_zoom_in 694 343
+wv_cv_zoom_out 771 511
+wv_cv_zoom_out 771 511
+wv_cv_zoom_out 771 511
+wv_cv_zoom_out 763 509
+wv_cv_zoom_out 754 506
+wv_cv_zoom_in 754 502
+wv_cv_zoom_in 754 502
+wv_cv_zoom_in 754 502
+wv_cv_zoom_out 756 495
+wv_cv_zoom_out 756 495
+wv_cv_zoom_out 757 495
+wv_cv_zoom_out 766 495
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -5 774 634
+wv_cv_hold_move 0 -14 774 634
+wv_cv_hold_move 0 -23 774 634
+wv_cv_hold_move 0 -59 774 634
+wv_cv_hold_move 3 -10 774 634
+wv_cv_hold_move 1 -33 774 634
+wv_cv_hold_move 0 -66 774 634
+wv_cv_hold_move 0 -52 774 634
+wv_cv_hold_move -4 -24 774 634
+wv_cv_hold_move -1 -14 774 634
+wv_cv_hold_move -1 -24 774 634
+wv_cv_hold_move -2 -38 774 634
+wv_cv_hold_move -1 -9 774 634
+wv_cv_hold_move 0 -3 774 634
+wv_cv_hold_move 0 -1 774 634
+wv_cv_hold_move 0 -1 774 634
+wv_cv_hold_move 0 -1 774 634
+wv_cv_zoom_in 936 479
+wv_cv_zoom_in 938 479
+wv_cv_zoom_in 937 479
+wv_cv_zoom_in 928 497
+wv_cv_zoom_in 926 501
+wv_cv_zoom_in 924 506
+wv_cv_zoom_in 923 508
+wv_cv_zoom_out 872 509
+wv_cv_zoom_out 868 510
+wv_cv_zoom_out 867 511
+wv_cv_zoom_out 867 511
+wv_cv_zoom_out 867 511
+wv_cv_zoom_out 867 511
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -15 -44 847 593
+wv_cv_hold_move -4 -33 847 593
+wv_cv_hold_move -4 -17 847 593
+wv_cv_hold_move -8 -38 847 593
+wv_cv_hold_move -2 -18 847 593
+wv_cv_hold_move -1 -25 847 593
+wv_cv_hold_move -3 -15 847 593
+wv_cv_hold_move -1 -12 847 593
+wv_cv_hold_move 2 -8 847 593
+wv_cv_hold_move 2 -11 847 593
+wv_cv_hold_move 0 -13 847 593
+wv_cv_hold_move -1 -8 847 593
+wv_cv_hold_move -1 -7 847 593
+wv_cv_hold_move -2 -11 847 593
+wv_cv_hold_move -1 -7 847 593
+wv_cv_hold_move -1 -7 847 593
+wv_cv_hold_move -1 -7 847 593
+wv_cv_hold_move 0 -3 847 593
+wv_cv_hold_move 0 -1 847 593
+wv_cv_zoom_in 758 297
+wv_cv_zoom_in 758 297
+wv_cv_zoom_in 758 297
+wv_cv_zoom_in 758 297
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -1 13 764 246
+wv_cv_hold_move 2 30 764 246
+wv_cv_hold_move 3 73 764 246
+wv_cv_hold_move 8 73 764 246
+wv_cv_hold_move 6 55 764 246
+wv_cv_hold_move 4 48 764 246
+wv_cv_hold_move 5 24 764 246
+wv_cv_hold_move 2 32 764 246
+wv_cv_hold_move 3 26 764 246
+wv_cv_hold_move 0 10 764 246
+wv_cv_hold_move 1 6 764 246
+wv_cv_hold_move 0 1 764 246
+wv_cv_zoom_out 698 511
+wv_cv_zoom_out 691 495
+wv_cv_zoom_out 691 488
+wv_cv_zoom_out 690 471
+wv_cv_zoom_out 687 459
+wv_cv_zoom_out 684 447
+wv_cv_zoom_out 679 438
+wv_cv_zoom_out 666 405
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 666 405
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 666 405
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 666 405
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 666 402
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 17 747 174
+wv_cv_hold_move -3 68 747 174
+wv_cv_hold_move -1 30 747 174
+wv_cv_hold_move 12 87 747 174
+wv_cv_hold_move 14 95 747 174
+wv_cv_hold_move 5 48 747 174
+wv_cv_hold_move 1 26 747 174
+wv_cv_hold_move 4 23 747 174
+wv_cv_hold_move 3 35 747 174
+wv_cv_hold_move 0 11 747 174
+wv_cv_hold_move -3 20 747 174
+wv_cv_hold_move 0 7 747 174
+wv_cv_hold_move 0 3 747 174
+wv_cv_hold_move 0 2 747 174
+wv_cv_hold_move 0 2 747 174
+wv_cv_zoom_in 739 269
+wv_cv_zoom_in 739 268
+wv_cv_zoom_in 739 268
+wv_cv_zoom_in 739 268
+wv_cv_zoom_in 739 267
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -5 18 699 144
+wv_cv_hold_move -4 65 699 144
+wv_cv_hold_move 1 64 699 144
+wv_cv_hold_move 11 102 699 144
+wv_cv_hold_move 24 115 699 144
+wv_cv_hold_move 13 66 699 144
+wv_cv_hold_move 1 44 699 144
+wv_cv_hold_move 11 39 699 144
+wv_cv_hold_move 14 52 699 144
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -2 31 620 275
+wv_cv_hold_move 5 41 620 275
+wv_cv_hold_move 5 20 620 275
+wv_cv_hold_move 8 23 620 275
+wv_cv_hold_move 16 24 620 275
+wv_cv_hold_move 4 6 620 275
+wv_cv_hold_move 6 5 620 275
+wv_cv_hold_move 3 2 620 275
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 2 0 524 388
+wv_cv_hold_move 31 -3 524 388
+wv_cv_hold_move 100 5 524 388
+wv_cv_hold_move 88 3 524 388
+wv_cv_hold_move 40 4 524 388
+wv_cv_hold_move 21 2 524 388
+wv_cv_hold_move 44 2 524 388
+wv_cv_hold_move 34 -2 524 388
+wv_cv_hold_move 18 -3 524 388
+wv_cv_hold_move 39 1 524 388
+wv_cv_hold_move 16 2 524 388
+wv_cv_hold_move 15 4 524 388
+wv_cv_hold_move 4 3 524 388
+wv_cv_hold_move 2 0 524 388
+wv_cv_zoom_in 38 96
+wv_cv_zoom_in 39 96
+wv_cv_zoom_in 39 96
+wv_cv_zoom_in 41 96
+wv_cv_zoom_in 41 96
+wv_cv_zoom_in 68 176
+wv_cv_zoom_in 71 189
+wv_cv_zoom_in 75 197
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 4 0 88 205
+wv_cv_hold_move 9 6 88 205
+wv_cv_hold_move 71 17 88 205
+wv_cv_hold_move 83 16 88 205
+wv_cv_hold_move 41 7 88 205
+wv_cv_hold_move 58 8 88 205
+wv_cv_hold_move 71 10 88 205
+wv_cv_hold_move 73 13 88 205
+wv_cv_hold_move 33 3 88 205
+wv_cv_hold_move 8 -1 88 205
+wv_cv_hold_move 8 0 88 205
+wv_cv_hold_move 15 4 88 205
+wv_cv_hold_move 10 1 88 205
+wv_cv_hold_move 1 0 88 205
+wv_cv_hold_move 2 0 88 205
+wv_cv_hold_move 1 0 88 205
+wv_cv_hold_move 5 4 88 205
+wv_cv_hold_move 2 3 88 205
+wv_cv_hold_move 2 4 88 205
+wv_cv_hold_move 5 3 88 205
+wv_cv_hold_move 0 2 88 205
+wv_cv_hold_move 0 1 88 205
+wv_cv_hold_move 1 1 88 205
+wv_cv_zoom_out 371 340
+wv_cv_zoom_out 370 340
+wv_cv_zoom_out 370 340
+wv_cv_zoom_out 300 215
+wv_cv_zoom_out 291 225
+wv_cv_zoom_out 276 238
+wv_cv_zoom_out 258 258
+wv_cv_zoom_out 257 260
+wv_cv_zoom_out 164 460
+wv_cv_zoom_out 164 459
+wv_cv_zoom_out 164 459
+wv_cv_zoom_out 163 449
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -1 187 479
+wv_cv_hold_move 4 -18 187 479
+wv_cv_hold_move 8 -44 187 479
+wv_cv_hold_move 4 -12 187 479
+wv_cv_hold_move 5 -29 187 479
+wv_cv_hold_move 12 -73 187 479
+wv_cv_hold_move 1 -50 187 479
+wv_cv_hold_move 1 -18 187 479
+wv_cv_hold_move 3 -10 187 479
+wv_cv_hold_move 6 -19 187 479
+wv_cv_hold_move 6 -26 187 479
+wv_cv_hold_move 0 -9 187 479
+wv_cv_hold_move 4 -13 187 479
+wv_cv_hold_move 2 -5 187 479
+wv_cv_hold_move 0 -3 187 479
+wv_cv_hold_move 0 -1 187 479
+wv_cv_hold_move 1 0 187 479
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -4 165 457
+wv_cv_hold_move 3 -12 165 457
+wv_cv_hold_move 2 -21 165 457
+wv_cv_hold_move 13 -55 165 457
+wv_cv_hold_move 15 -102 165 457
+wv_cv_hold_move -1 -72 165 457
+wv_cv_hold_move -4 -33 165 457
+wv_cv_hold_move -6 -39 165 457
+wv_cv_hold_move -5 -21 165 457
+wv_cv_hold_move -1 -18 165 457
+wv_cv_hold_move 0 -19 165 457
+wv_cv_hold_move 1 -1 165 457
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -1 -20 196 447
+wv_cv_hold_move 0 -128 196 447
+wv_cv_hold_move 0 -4 196 447
+wv_cv_hold_move 0 -1 196 447
+wv_cv_zoom_in 230 482
+wv_cv_zoom_in 229 483
+wv_cv_zoom_in 228 486
+wv_cv_zoom_in 202 472
+wv_cv_zoom_in 181 473
+wv_cv_zoom_in 165 477
+wv_cv_zoom_in 143 478
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -1 105 386
+wv_cv_hold_move 27 -5 105 386
+wv_cv_hold_move 71 -4 105 386
+wv_cv_hold_move 50 5 105 386
+wv_cv_hold_move 147 18 105 386
+wv_cv_hold_move 77 18 105 386
+wv_cv_hold_move 176 42 105 386
+wv_cv_hold_move 69 9 105 386
+wv_cv_hold_move 21 3 105 386
+wv_cv_hold_move 32 3 105 386
+wv_cv_hold_move 18 2 105 386
+wv_cv_hold_move 11 3 105 386
+wv_cv_hold_move 17 4 105 386
+wv_cv_hold_move 4 1 105 386
+wv_cv_hold_move -1 2 105 386
+wv_cv_zoom_in 368 325
+wv_cv_zoom_in 359 329
+wv_cv_zoom_in 345 337
+wv_cv_zoom_in 341 342
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 15 8 261 303
+wv_cv_hold_move 17 9 261 303
+wv_cv_hold_move 109 44 261 303
+wv_cv_hold_move 45 23 261 303
+wv_cv_hold_move 172 59 261 303
+wv_cv_hold_move 5 3 261 303
+wv_cv_hold_move 32 14 261 303
+wv_cv_hold_move 67 30 261 303
+wv_cv_hold_move 19 8 261 303
+wv_cv_hold_move 26 11 261 303
+wv_cv_hold_move 5 3 261 303
+wv_cv_hold_move 3 0 261 303
+wv_cv_hold_move 1 3 261 303
+wv_cv_zoom_out 420 464
+wv_cv_zoom_out 420 465
+wv_cv_zoom_out 417 467
+wv_cv_zoom_out 417 469
+wv_cv_zoom_out 417 469
+wv_cv_zoom_out 417 469
+wv_cv_zoom_out 415 466
+wv_cv_zoom_out 415 445
+wv_cv_zoom_out 415 445
+wv_cv_zoom_out 415 445
+wv_cv_zoom_out 415 445
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 420 445
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 718 489
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 758 503
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 773 508
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_in 874 610
+wv_cv_zoom_in 877 614
+wv_cv_zoom_in 881 619
+wv_cv_zoom_in 882 620
+wv_cv_zoom_in 975 584
+wv_cv_zoom_in 993 583
+wv_cv_zoom_in 1061 577
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -1 -1 1411 591
+wv_cv_hold_move -1 -13 1411 591
+wv_cv_hold_move -15 -63 1411 591
+wv_cv_hold_move -13 -33 1411 591
+wv_cv_hold_move -7 -37 1411 591
+wv_cv_hold_move -9 -52 1411 591
+wv_cv_hold_move -4 -26 1411 591
+wv_cv_hold_move -1 -41 1411 591
+wv_cv_hold_move -1 -47 1411 591
+wv_cv_hold_move -3 -25 1411 591
+wv_cv_hold_move -4 -25 1411 591
+wv_cv_hold_move -5 -16 1411 591
+wv_cv_hold_move -6 -24 1411 591
+wv_cv_hold_move -14 -32 1411 591
+wv_cv_hold_move -7 -20 1411 591
+wv_cv_hold_move -7 -19 1411 591
+wv_cv_hold_move -3 -8 1411 591
+wv_cv_hold_move -2 -10 1411 591
+wv_cv_hold_move -2 -7 1411 591
+wv_cv_hold_move -3 -1 1411 591
+wv_cv_hold_move 0 -1 1411 591
+wv_cv_hold_move 0 -3 1411 591
+wv_cv_zoom_in 1242 577
+wv_cv_zoom_in 1238 586
+wv_cv_zoom_in 1224 604
+wv_cv_zoom_in 1220 610
+wv_cv_zoom_in 1222 609
+wv_cv_zoom_in 1222 609
+wv_cv_zoom_in 1221 605
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 1 419 323
+wv_cv_hold_move 13 19 419 323
+wv_cv_hold_move 31 25 419 323
+wv_cv_hold_move 86 62 419 323
+wv_cv_hold_move 30 21 419 323
+wv_cv_hold_move 48 29 419 323
+wv_cv_hold_move 30 21 419 323
+wv_cv_hold_move 26 17 419 323
+wv_cv_hold_move 80 50 419 323
+wv_cv_hold_move 2 1 419 323
+wv_cv_zoom_out 690 515
+wv_cv_zoom_out 684 511
+wv_cv_zoom_out 679 509
+wv_cv_zoom_out 676 507
+wv_cv_zoom_out 672 505
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 20 -8 654 572
+wv_cv_hold_move 32 -16 654 572
+wv_cv_hold_move 36 -21 654 572
+wv_cv_hold_move 83 -62 654 572
+wv_cv_hold_move 56 -39 654 572
+wv_cv_hold_move 22 -18 654 572
+wv_cv_hold_move 13 -7 654 572
+wv_cv_hold_move 7 -4 654 572
+wv_cv_hold_move 1 -1 654 572
+wv_cv_zoom_in 661 547
+wv_cv_zoom_in 662 551
+wv_cv_zoom_in 662 555
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 16 -6 669 555
+wv_cv_hold_move 15 -3 669 555
+wv_cv_hold_move 13 -3 669 555
+wv_cv_hold_move 19 -4 669 555
+wv_cv_hold_move 7 -4 669 555
+wv_cv_hold_move 6 0 669 555
+wv_cv_hold_move 5 -2 669 555
+wv_cv_hold_move 4 -1 669 555
+wv_cv_hold_move 2 -2 669 555
+wv_cv_zoom_in 756 530
+wv_cv_zoom_in 756 530
+wv_cv_zoom_out 768 472
+wv_cv_zoom_out 736 474
+wv_cv_zoom_in 735 467
+wv_cv_zoom_in 736 466
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 6 2 715 453
+wv_cv_hold_move 15 6 715 453
+wv_cv_hold_move 11 2 715 453
+wv_cv_hold_move 21 8 715 453
+wv_cv_hold_move 16 5 715 453
+wv_cv_hold_move 9 2 715 453
+wv_cv_hold_move 8 5 715 453
+wv_cv_hold_move 1 2 715 453
+wv_cv_hold_move 6 2 715 453
+wv_cv_hold_move 3 4 715 453
+wv_cv_hold_move 4 2 715 453
+wv_cv_hold_move 5 6 715 453
+wv_cv_hold_move 3 2 715 453
+wv_cv_hold_move 3 6 715 453
+wv_cv_hold_move 3 4 715 453
+wv_cv_hold_move 4 5 715 453
+wv_cv_hold_move 3 8 715 453
+wv_cv_hold_move 2 5 715 453
+wv_cv_hold_move 0 3 715 453
+wv_cv_hold_move 2 2 715 453
+wv_cv_hold_move 0 1 715 453
+wv_cv_hold_move 0 2 715 453
+wv_cv_hold_move 1 0 715 453
+wv_cv_hold_move 0 1 715 453
+wv_cv_hold_move 1 2 715 453
+wv_cv_hold_move 0 1 715 453
+wv_cv_hold_move 0 1 715 453
+wv_cv_hold_move 0 1 715 453
+wv_cv_hold_move -3 0 715 453
+wv_cv_hold_move -1 -2 715 453
+wv_cv_hold_move -1 -2 715 453
+wv_cv_hold_move -2 -5 715 453
+wv_cv_hold_move -4 -4 715 453
+wv_cv_hold_move -3 -6 715 453
+wv_cv_hold_move -4 -6 715 453
+wv_cv_hold_move -4 -3 715 453
+wv_cv_hold_move -5 -3 715 453
+wv_cv_hold_move -2 -2 715 453
+wv_cv_hold_move -7 -4 715 453
+wv_cv_zoom_out 806 506
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 25 -19 768 546
+wv_cv_hold_move 34 -27 768 546
+wv_cv_hold_move 19 -18 768 546
+wv_cv_hold_move 56 -52 768 546
+wv_cv_hold_move 34 -37 768 546
+wv_cv_hold_move 31 -34 768 546
+wv_cv_hold_move 6 -9 768 546
+wv_cv_hold_move 5 -5 768 546
+wv_cv_hold_move 5 -5 768 546
+wv_cv_hold_move 1 -2 768 546
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 13 -7 563 596
+wv_cv_hold_move 26 -11 563 596
+wv_cv_hold_move 26 -9 563 596
+wv_cv_hold_move 18 -4 563 596
+wv_cv_hold_move 13 -5 563 596
+wv_cv_hold_move 18 -9 563 596
+wv_cv_hold_move 6 -2 563 596
+wv_cv_hold_move 6 -4 563 596
+wv_cv_hold_move 3 -2 563 596
+wv_cv_hold_move 3 -3 563 596
+wv_cv_hold_move 6 -3 563 596
+wv_cv_hold_move 2 -1 563 596
+wv_cv_hold_move 3 -1 563 596
+wv_cv_hold_move 6 -2 563 596
+wv_cv_hold_move 6 -1 563 596
+wv_cv_hold_move 2 -2 563 596
+wv_cv_zoom_out 724 529
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 724 529
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 726 528
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 731 525
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 2 1078 503
+wv_cv_hold_move -5 3 1078 503
+wv_cv_hold_move -6 5 1078 503
+wv_cv_hold_move -21 9 1078 503
+wv_cv_hold_move -70 12 1078 503
+wv_cv_hold_move -19 2 1078 503
+wv_cv_hold_move -57 7 1078 503
+wv_cv_hold_move -108 3 1078 503
+wv_cv_hold_move -124 -4 1078 503
+wv_cv_hold_move -56 2 1078 503
+wv_cv_hold_move -58 -2 1078 503
+wv_cv_hold_move -73 7 1078 503
+wv_cv_hold_move -19 -2 1078 503
+wv_cv_hold_move -46 1 1078 503
+wv_cv_hold_move -25 1 1078 503
+wv_cv_hold_move -16 2 1078 503
+wv_cv_hold_move -19 3 1078 503
+wv_cv_hold_move -9 1 1078 503
+wv_cv_hold_move -10 1 1078 503
+wv_cv_hold_move -2 2 1078 503
+wv_cv_zoom_out 1007 455
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 1013 463
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -1 5 1247 470
+wv_cv_hold_move -22 12 1247 470
+wv_cv_hold_move -41 11 1247 470
+wv_cv_hold_move -60 8 1247 470
+wv_cv_hold_move -45 3 1247 470
+wv_cv_hold_move -68 8 1247 470
+wv_cv_hold_move -105 12 1247 470
+wv_cv_hold_move -8 0 1247 470
+wv_cv_hold_move -39 4 1247 470
+wv_cv_hold_move -10 1 1247 470
+wv_cv_hold_move -10 0 1247 470
+wv_cv_hold_move -6 1 1247 470
+wv_cv_hold_move -12 1 1247 470
+wv_cv_hold_move -7 2 1247 470
+wv_cv_hold_move -16 5 1247 470
+wv_cv_hold_move -5 0 1247 470
+wv_cv_hold_move -3 1 1247 470
+wv_cv_hold_move -5 2 1247 470
+wv_cv_hold_move -11 4 1247 470
+wv_cv_hold_move -8 2 1247 470
+wv_cv_hold_move -9 2 1247 470
+wv_cv_hold_move -8 2 1247 470
+wv_cv_hold_move -3 0 1247 470
+wv_cv_hold_move -3 3 1247 470
+wv_cv_hold_move -2 1 1247 470
+wv_cv_hold_move 0 1 1247 470
+wv_cv_zoom_out 759 554
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 812 540
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 853 538
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 1090 521
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_in 1148 518
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 21 1506 272
+wv_cv_hold_move 0 14 1506 272
+wv_cv_hold_move 7 27 1506 272
+wv_cv_hold_move 4 9 1506 272
+wv_cv_hold_move 3 21 1506 272
+wv_cv_hold_move 1 6 1506 272
+wv_cv_hold_move 0 11 1506 272
+wv_cv_hold_move 0 3 1506 272
+wv_cv_hold_move 0 7 1506 272
+wv_cv_hold_move 0 1 1506 272
+wv_cv_hold_move 0 4 1506 272
+wv_cv_hold_move -1 3 1506 272
+wv_cv_hold_move -1 1 1506 272
+wv_cv_hold_move 0 3 1506 272
+wv_cv_hold_move 0 1 1506 272
+wv_cv_hold_move 0 -5 1506 272
+wv_cv_hold_move 1 -6 1506 272
+wv_cv_hold_move 0 -10 1506 272
+wv_cv_hold_move 1 -10 1506 272
+wv_cv_hold_move 0 -13 1506 272
+wv_cv_hold_move -1 -21 1506 272
+wv_cv_hold_move -1 -14 1506 272
+wv_cv_hold_move 0 -14 1506 272
+wv_cv_hold_move 0 -14 1506 272
+wv_cv_hold_move -1 -11 1506 272
+wv_cv_hold_move -3 -4 1506 272
+wv_cv_hold_move 0 -3 1506 272
+wv_cv_hold_move 2 -7 1506 272
+wv_cv_hold_move 0 -5 1506 272
+wv_cv_hold_move -2 -2 1506 272
+wv_cv_hold_move 0 -13 1506 272
+wv_cv_hold_move -1 -9 1506 272
+wv_cv_hold_move 0 -9 1506 272
+wv_cv_hold_move 0 -6 1506 272
+wv_cv_hold_move 1 -7 1506 272
+wv_cv_hold_move 2 -15 1506 272
+wv_cv_hold_move 3 -12 1506 272
+wv_cv_hold_move 1 -5 1506 272
+wv_cv_hold_move 2 -3 1506 272
+wv_cv_hold_move 0 -5 1506 272
+wv_cv_hold_move 0 -2 1506 272
+wv_cv_hold_move 0 -2 1506 272
+wv_cv_hold_move 0 -1 1506 272
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -7 1238 651
+wv_cv_hold_move 0 -16 1238 651
+wv_cv_hold_move -2 -21 1238 651
+wv_cv_hold_move -4 -15 1238 651
+wv_cv_hold_move 2 -43 1238 651
+wv_cv_hold_move -2 -27 1238 651
+wv_cv_hold_move 3 -35 1238 651
+wv_cv_hold_move 0 -21 1238 651
+wv_cv_hold_move 1 -21 1238 651
+wv_cv_hold_move 2 -16 1238 651
+wv_cv_hold_move 2 -15 1238 651
+wv_cv_hold_move 1 -12 1238 651
+wv_cv_hold_move 0 -8 1238 651
+wv_cv_hold_move 0 -2 1238 651
+wv_cv_hold_move 0 -5 1238 651
+wv_cv_hold_move 2 -1 1238 651
+wv_cv_zoom_in 1029 685
+wv_cv_zoom_in 1021 691
+wv_cv_zoom_in 1021 691
+wv_cv_zoom_in 1019 691
+wv_cv_zoom_in 1023 662
+wv_cv_zoom_in 1023 662
+wv_cv_zoom_in 1023 662
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 8 -4 768 646
+wv_cv_hold_move 22 -13 768 646
+wv_cv_hold_move 15 -6 768 646
+wv_cv_hold_move 13 -9 768 646
+wv_cv_hold_move 17 -10 768 646
+wv_cv_hold_move 13 -4 768 646
+wv_cv_hold_move 20 -11 768 646
+wv_cv_hold_move 8 -4 768 646
+wv_cv_hold_move 7 -5 768 646
+wv_cv_hold_move 7 -5 768 646
+wv_cv_hold_move 5 -3 768 646
+wv_cv_hold_move 16 -10 768 646
+wv_cv_hold_move 21 -15 768 646
+wv_cv_hold_move 19 -14 768 646
+wv_cv_hold_move 24 -11 768 646
+wv_cv_hold_move 19 -10 768 646
+wv_cv_hold_move 29 -15 768 646
+wv_cv_hold_move 26 -13 768 646
+wv_cv_hold_move 16 -7 768 646
+wv_cv_hold_move 15 -4 768 646
+wv_cv_hold_move 9 0 768 646
+wv_cv_hold_move 7 -4 768 646
+wv_cv_hold_move 16 -6 768 646
+wv_cv_hold_move 8 -3 768 646
+wv_cv_hold_move 14 -5 768 646
+wv_cv_hold_move 10 -4 768 646
+wv_cv_hold_move 16 -6 768 646
+wv_cv_hold_move 16 -10 768 646
+wv_cv_hold_move 47 -21 768 646
+wv_cv_hold_move 12 -7 768 646
+wv_cv_hold_move 9 -5 768 646
+wv_cv_hold_move 4 -3 768 646
+wv_cv_hold_move 3 -3 768 646
+wv_cv_hold_move 1 0 768 646
+wv_cv_hold_move 3 -1 768 646
+wv_cv_hold_move 13 -9 768 646
+wv_cv_hold_move 5 -3 768 646
+wv_cv_hold_move 7 -5 768 646
+wv_cv_hold_move 9 -4 768 646
+wv_cv_hold_move 12 -7 768 646
+wv_cv_hold_move 8 -6 768 646
+wv_cv_hold_move 13 -9 768 646
+wv_cv_hold_move 8 -7 768 646
+wv_cv_hold_move 8 -7 768 646
+wv_cv_hold_move 8 -7 768 646
+wv_cv_hold_move 6 -6 768 646
+wv_cv_hold_move 4 -4 768 646
+wv_cv_hold_move 1 -2 768 646
+wv_cv_zoom_in 591 585
+wv_cv_zoom_in 579 597
+wv_cv_zoom_in 399 558
+wv_cv_zoom_in 399 558
+wv_cv_zoom_out 403 562
+wv_cv_zoom_out 403 563
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 404 563
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 404 563
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 404 563
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 404 563
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 409 556
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 677 549
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_select_inst {topcell.X0-sense-amplifier-adder} {0}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell.X0-sense-amplifier-adder}
+wv_cv_zoom_in 300 583
+wv_cv_zoom_in 312 583
+wv_cv_zoom_in 316 583
+wv_cv_zoom_in 318 583
+wv_cv_zoom_in 319 583
+wv_select_waveview 1 {designview 1}
+wv_cv_select_inst {topcell.X0-sense-amplifier-adder.X2-fa} {0}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell.X0-sense-amplifier-adder.X2-fa}
+wv_select_waveview 1 {designview 1}
+wv_cv_select_inst {topcell.X0-sense-amplifier-adder.X2-fa.X0-xor2} {0}
+wv_cv_switch_scope {topcell.X0-sense-amplifier-adder.X2-fa.X0-xor2}
+wv_select_waveview 1 {designview 1}
+wv_cv_select_inst {topcell.X0-sense-amplifier-adder.X2-fa.X0-xor2.X1-inv} {0}
+wv_cv_switch_scope {topcell.X0-sense-amplifier-adder.X2-fa.X0-xor2.X1-inv}
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell.X0-sense-amplifier-adder.X2-fa.X0-xor2}
+wv_cv_select_inst {topcell.X0-sense-amplifier-adder.X2-fa.X0-xor2.X1-inv} {0}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell.X0-sense-amplifier-adder.X2-fa}
+wv_cv_select_inst {topcell.X0-sense-amplifier-adder.X2-fa.X0-xor2} {0}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell.X0-sense-amplifier-adder}
+wv_cv_select_inst {topcell.X0-sense-amplifier-adder.X2-fa} {0}
+wv_cv_zoom_in 173 581
+wv_cv_zoom_in 163 585
+wv_cv_zoom_in 163 585
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 2 -2 167 577
+wv_cv_hold_move 16 -3 167 577
+wv_cv_hold_move 108 -1 167 577
+wv_cv_hold_move 102 2 167 577
+wv_cv_hold_move 80 8 167 577
+wv_cv_hold_move 56 7 167 577
+wv_cv_hold_move 47 6 167 577
+wv_cv_hold_move 38 1 167 577
+wv_cv_hold_move 81 4 167 577
+wv_cv_hold_move 22 -2 167 577
+wv_cv_hold_move 15 -1 167 577
+wv_cv_hold_move 14 -3 167 577
+wv_cv_hold_move 16 -1 167 577
+wv_cv_hold_move 11 -1 167 577
+wv_cv_hold_move 19 -4 167 577
+wv_cv_hold_move 7 -4 167 577
+wv_cv_hold_move 3 0 167 577
+wv_cv_hold_move 2 0 167 577
+wv_cv_hold_move 1 -1 167 577
+wv_cv_hold_move 1 0 167 577
+wv_cv_hold_move 1 0 167 577
+wv_cv_hold_move 5 -5 167 577
+wv_cv_hold_move 2 -1 167 577
+wv_cv_hold_move 3 -3 167 577
+wv_cv_hold_move 3 -2 167 577
+wv_cv_hold_move 1 -3 167 577
+wv_cv_hold_move 5 -10 167 577
+wv_cv_hold_move 4 -4 167 577
+wv_cv_hold_move 2 -6 167 577
+wv_cv_hold_move 6 -6 167 577
+wv_cv_hold_move 2 -6 167 577
+wv_cv_hold_move 3 -4 167 577
+wv_cv_hold_move 4 -6 167 577
+wv_cv_hold_move 4 -6 167 577
+wv_cv_hold_move 2 0 167 577
+wv_cv_hold_move 1 -3 167 577
+wv_cv_hold_move 1 -3 167 577
+wv_cv_hold_move 2 -4 167 577
+wv_cv_hold_move 1 -1 167 577
+wv_cv_hold_move 0 -1 167 577
+wv_cv_hold_move 1 -2 167 577
+wv_cv_hold_move 0 -2 167 577
+wv_cv_hold_move 0 -1 167 577
+wv_cv_hold_move 3 -2 167 577
+wv_cv_zoom_out 400 515
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 400 515
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 400 515
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_in 149 510
+wv_cv_zoom_in 135 518
+wv_cv_zoom_in 132 522
+wv_cv_zoom_in 132 524
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 3 -1 208 516
+wv_cv_hold_move 4 2 208 516
+wv_cv_hold_move 8 3 208 516
+wv_cv_hold_move 28 9 208 516
+wv_cv_hold_move 26 6 208 516
+wv_cv_hold_move 39 12 208 516
+wv_cv_hold_move 39 8 208 516
+wv_cv_hold_move 21 6 208 516
+wv_cv_hold_move 37 12 208 516
+wv_cv_hold_move 23 3 208 516
+wv_cv_hold_move 25 5 208 516
+wv_cv_hold_move 14 4 208 516
+wv_cv_hold_move 8 2 208 516
+wv_cv_hold_move 8 1 208 516
+wv_cv_hold_move 3 0 208 516
+wv_cv_hold_move 2 0 208 516
+wv_cv_zoom_in 284 540
+wv_cv_zoom_in 290 545
+wv_cv_zoom_out 296 556
+wv_cv_zoom_out 301 561
+wv_cv_zoom_out 312 567
+wv_cv_zoom_out 340 570
+wv_cv_zoom_out 388 572
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 746 591
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell}
+wv_cv_select_inst {topcell.X0-sense-amplifier-adder} {0}
+wv_cv_zoom_in 836 607
+wv_cv_zoom_in 836 626
+wv_cv_zoom_out 836 631
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 837 631
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 838 631
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_in 853 604
+wv_cv_zoom_in 853 604
+wv_cv_zoom_in 853 604
+wv_cv_zoom_in 853 604
+wv_cv_zoom_in 853 604
+wv_cv_zoom_in 854 604
+wv_cv_zoom_in 854 605
+wv_cv_zoom_in 852 619
+wv_cv_zoom_in 829 686
+wv_cv_zoom_in 829 686
+wv_cv_zoom_in 829 686
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 2 -7 723 597
+wv_cv_hold_move 2 -23 723 597
+wv_cv_hold_move 7 -57 723 597
+wv_cv_hold_move 1 -57 723 597
+wv_cv_hold_move -1 -54 723 597
+wv_cv_hold_move -7 -84 723 597
+wv_cv_hold_move -6 -76 723 597
+wv_cv_hold_move -1 -42 723 597
+wv_cv_hold_move 3 -47 723 597
+wv_cv_hold_move 2 -24 723 597
+wv_cv_hold_move 2 -31 723 597
+wv_cv_hold_move 0 -18 723 597
+wv_cv_hold_move 5 -32 723 597
+wv_cv_hold_move 1 -28 723 597
+wv_cv_hold_move 1 -16 723 597
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 -23 664 491
+wv_cv_hold_move 2 -28 664 491
+wv_cv_hold_move 2 -63 664 491
+wv_cv_hold_move -12 -60 664 491
+wv_cv_hold_move -60 -105 664 491
+wv_cv_hold_move -15 -26 664 491
+wv_cv_hold_move -28 -37 664 491
+wv_cv_hold_move -12 -20 664 491
+wv_cv_hold_move -9 -11 664 491
+wv_select_waveview 1 {designview 1}
+wv_cv_select_inst {topcell.X0-mult} {0}
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell.X0-mult}
+wv_cv_zoom_in 861 602
+wv_cv_zoom_in 894 658
+wv_cv_zoom_in 900 673
+wv_cv_zoom_in 904 683
+wv_cv_zoom_in 906 688
+wv_cv_zoom_in 1276 642
+wv_cv_zoom_in 1290 640
+wv_cv_zoom_in 1290 640
+wv_cv_zoom_in 1290 640
+wv_cv_zoom_out 804 507
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 803 507
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 794 508
+wv_cv_zoom_out 778 502
+wv_cv_zoom_out 764 488
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 744 474
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 738 308
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_out 738 308
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -7 17 999 107
+wv_cv_hold_move -2 17 999 107
+wv_cv_hold_move -1 27 999 107
+wv_cv_hold_move 3 29 999 107
+wv_cv_hold_move 4 19 999 107
+wv_cv_hold_move 10 32 999 107
+wv_cv_hold_move 7 28 999 107
+wv_cv_hold_move 11 25 999 107
+wv_cv_hold_move 10 24 999 107
+wv_cv_hold_move 2 8 999 107
+wv_cv_hold_move 7 15 999 107
+wv_cv_hold_move 2 7 999 107
+wv_cv_hold_move 2 4 999 107
+wv_cv_hold_move 0 3 999 107
+wv_cv_hold_move 3 5 999 107
+wv_cv_hold_move 1 2 999 107
+wv_cv_hold_move 2 3 999 107
+wv_cv_hold_move 2 2 999 107
+wv_cv_hold_move 1 2 999 107
+wv_cv_hold_move 1 1 999 107
+wv_cv_hold_move 0 1 999 107
+wv_cv_hold_move 1 0 999 107
+wv_cv_hold_move 3 -7 999 107
+wv_cv_hold_move 4 -21 999 107
+wv_cv_hold_move 4 -37 999 107
+wv_cv_hold_move 2 -19 999 107
+wv_cv_hold_move 0 -24 999 107
+wv_cv_hold_move 0 -19 999 107
+wv_cv_hold_move 1 -9 999 107
+wv_cv_hold_move 0 -14 999 107
+wv_cv_hold_move 1 -9 999 107
+wv_cv_hold_move 0 -12 999 107
+wv_cv_hold_move -2 -10 999 107
+wv_cv_hold_move -3 -10 999 107
+wv_cv_hold_move -2 -12 999 107
+wv_cv_hold_move -6 -21 999 107
+wv_cv_hold_move 1 -11 999 107
+wv_cv_hold_move -2 -43 999 107
+wv_cv_hold_move -2 -1 999 107
+wv_cv_hold_move 0 -3 999 107
+wv_cv_hold_move 1 -1 999 107
+wv_cv_hold_move 0 -1 999 107
+wv_cv_hold_move 0 2 999 107
+wv_cv_hold_move 0 5 999 107
+wv_cv_hold_move 0 5 999 107
+wv_cv_hold_move -1 9 999 107
+wv_cv_hold_move 0 10 999 107
+wv_cv_hold_move 3 16 999 107
+wv_cv_hold_move 2 12 999 107
+wv_cv_hold_move -1 26 999 107
+wv_cv_hold_move 4 24 999 107
+wv_cv_hold_move 6 36 999 107
+wv_cv_hold_move 5 14 999 107
+wv_cv_hold_move 1 21 999 107
+wv_cv_hold_move 3 34 999 107
+wv_cv_hold_move 2 35 999 107
+wv_cv_hold_move 4 37 999 107
+wv_cv_hold_move 0 29 999 107
+wv_cv_hold_move -3 12 999 107
+wv_cv_hold_move -1 13 999 107
+wv_cv_hold_move 0 14 999 107
+wv_cv_hold_move -1 19 999 107
+wv_cv_hold_move 0 10 999 107
+wv_cv_hold_move 0 13 999 107
+wv_cv_hold_move -2 4 999 107
+wv_cv_hold_move 0 5 999 107
+wv_cv_hold_move 0 3 999 107
+wv_cv_hold_move 0 6 999 107
+wv_cv_hold_move 0 1 999 107
+wv_cv_hold_move 0 1 999 107
+wv_cv_zoom_out 1193 511
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_in 1072 587
+wv_cv_zoom_in 1072 604
+wv_cv_zoom_in 1072 611
+wv_cv_zoom_in 1072 617
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 2 -3 1241 651
+wv_cv_hold_move 6 -13 1241 651
+wv_cv_hold_move 12 -44 1241 651
+wv_cv_hold_move 8 -70 1241 651
+wv_cv_hold_move 5 -44 1241 651
+wv_cv_hold_move 15 -178 1241 651
+wv_cv_hold_move 6 -17 1241 651
+wv_cv_hold_move 4 -15 1241 651
+wv_cv_hold_move 8 -20 1241 651
+wv_cv_hold_move 7 -23 1241 651
+wv_cv_hold_move 2 -23 1241 651
+wv_cv_hold_move 2 -13 1241 651
+wv_cv_hold_move 1 -8 1241 651
+wv_cv_hold_move 2 -9 1241 651
+wv_cv_hold_move 5 -4 1241 651
+wv_cv_hold_move 1 -5 1241 651
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 3 1337 582
+wv_cv_hold_move -1 -15 1337 582
+wv_cv_hold_move 5 -31 1337 582
+wv_cv_hold_move 3 -31 1337 582
+wv_cv_hold_move 8 -48 1337 582
+wv_cv_hold_move 4 -29 1337 582
+wv_cv_hold_move 5 -26 1337 582
+wv_cv_hold_move 8 -29 1337 582
+wv_cv_hold_move 5 -12 1337 582
+wv_cv_hold_move 3 -13 1337 582
+wv_cv_hold_move 2 -7 1337 582
+wv_cv_hold_move 1 -5 1337 582
+wv_cv_hold_move 1 -3 1337 582
+wv_cv_hold_move 0 -1 1337 582
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 6 1326 239
+wv_cv_hold_move 3 50 1326 239
+wv_cv_hold_move 1 56 1326 239
+wv_cv_hold_move 0 106 1326 239
+wv_cv_hold_move -5 63 1326 239
+wv_cv_hold_move -2 94 1326 239
+wv_cv_hold_move 5 79 1326 239
+wv_cv_hold_move 1 35 1326 239
+wv_cv_hold_move -3 31 1326 239
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -2 34 1289 260
+wv_cv_hold_move -7 41 1289 260
+wv_cv_hold_move -11 109 1289 260
+wv_cv_hold_move -3 102 1289 260
+wv_cv_hold_move 2 35 1289 260
+wv_cv_hold_move 7 25 1289 260
+wv_cv_hold_move 1 14 1289 260
+wv_cv_hold_move 0 20 1289 260
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 1 14 1253 331
+wv_cv_hold_move -2 38 1253 331
+wv_cv_hold_move -2 65 1253 331
+wv_cv_hold_move 0 70 1253 331
+wv_cv_hold_move 0 52 1253 331
+wv_cv_hold_move 1 46 1253 331
+wv_cv_hold_move 5 48 1253 331
+wv_cv_hold_move 2 8 1253 331
+wv_cv_hold_move 0 2 1253 331
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 64 1083 284
+wv_cv_hold_move 2 19 1083 284
+wv_cv_hold_move 7 24 1083 284
+wv_cv_hold_move 9 25 1083 284
+wv_cv_hold_move 11 24 1083 284
+wv_cv_hold_move 2 6 1083 284
+wv_cv_hold_move 2 4 1083 284
+wv_cv_hold_move 0 1 1083 284
+wv_cv_hold_move 1 0 1083 284
+wv_cv_hold_move 0 1 1083 284
+wv_cv_zoom_out 623 315
+wv_cv_zoom_out 635 337
+wv_cv_zoom_out 652 352
+wv_cv_zoom_out 659 357
+wv_select_waveview 1 {designview 1}
+wv_cv_zoom_in 992 454
+wv_cv_zoom_in 989 475
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 1 4 1147 126
+wv_cv_hold_move 2 10 1147 126
+wv_cv_hold_move 4 14 1147 126
+wv_cv_hold_move 8 24 1147 126
+wv_cv_hold_move -1 9 1147 126
+wv_cv_hold_move 7 24 1147 126
+wv_cv_hold_move 12 37 1147 126
+wv_cv_hold_move 8 34 1147 126
+wv_cv_hold_move 13 45 1147 126
+wv_cv_hold_move 9 37 1147 126
+wv_cv_hold_move 7 24 1147 126
+wv_cv_hold_move 5 38 1147 126
+wv_cv_hold_move 0 30 1147 126
+wv_cv_hold_move -1 22 1147 126
+wv_cv_hold_move 4 20 1147 126
+wv_cv_hold_move 1 8 1147 126
+wv_cv_hold_move 1 7 1147 126
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -1 0 435 552
+wv_cv_hold_move 0 -6 435 552
+wv_cv_hold_move 1 -47 435 552
+wv_cv_hold_move -2 -78 435 552
+wv_cv_hold_move -10 -62 435 552
+wv_cv_hold_move -12 -58 435 552
+wv_cv_hold_move -7 -61 435 552
+wv_cv_hold_move -5 -63 435 552
+wv_cv_hold_move -3 -34 435 552
+wv_cv_hold_move -1 -11 435 552
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move -8 -30 441 503
+wv_cv_hold_move -17 -48 441 503
+wv_cv_hold_move -21 -50 441 503
+wv_cv_hold_move -13 -35 441 503
+wv_cv_hold_move -6 -16 441 503
+wv_cv_hold_move -1 -7 441 503
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 22 60 413 364
+wv_cv_hold_move 3 31 413 364
+wv_cv_hold_move 2 17 413 364
+wv_cv_hold_move 3 27 413 364
+wv_cv_hold_move 2 12 413 364
+wv_cv_hold_move -1 24 413 364
+wv_cv_hold_move -2 20 413 364
+wv_cv_hold_move 0 8 413 364
+wv_cv_hold_move -1 9 413 364
+wv_cv_hold_move 0 15 413 364
+wv_select_waveview 1 {designview 1}
+wv_cv_hold_move 0 1 381 272
+wv_cv_hold_move 2 28 381 272
+wv_cv_hold_move -1 41 381 272
+wv_cv_hold_move 2 81 381 272
+wv_cv_hold_move 2 43 381 272
+wv_cv_hold_move 4 38 381 272
+wv_cv_hold_move 1 31 381 272
+wv_cv_hold_move 1 26 381 272
+wv_cv_hold_move -1 14 381 272
+wv_cv_hold_move -1 4 381 272
+wv_cv_hold_move -1 8 381 272
+wv_cv_hold_move 0 4 381 272
+wv_cv_hold_move 0 2 381 272
+wv_cv_hold_move 0 1 381 272
+wv_cv_hold_move 0 1 381 272
+wv_cv_hold_move 0 2 381 272
+wv_cv_hold_move -2 0 381 272
+wv_select_waveview 1 {designview 1}
+wv_cv_switch_scope {topcell}
+wv_cv_select_inst {topcell.X0-mult} {0}
+wv_cv_zoom_out 767 357
+wv_select_waveview 1 {designview 1}
+wv_select_waveview 1 {designview 1}
 wv_select_window {Custom WaveView} 
+wv_close_window {Custom WaveView} 
 wv_move_window {Confirmation} {} 869 461
 wv_select_dialog {Confirmation} 
-wv_press_button {Confirmation} {} {Ok} 
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL7:1.LEGEND
-wv_select_panel WV1.PANEL7:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL10:1.LEGEND
-wv_select_panel WV1.PANEL10:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL10:1.LEGEND
-wv_drag_item_to WV1 47 700
-wv_drag_enter WV1
-wv_drag_to WV1 51 701
-wv_drag_to WV1 65 664
-wv_drag_to WV1 71 637
-wv_drop_on WV1
-wv_drag_item_to WV1 51 701
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL8:1.LEGEND
-wv_select_panel WV1.PANEL8:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL8:1.LEGEND
-wv_drag_item_to WV1 54 608
-wv_drag_enter WV1
-wv_drag_to WV1 57 620
-wv_drag_to WV1 58 637
-wv_drag_to WV1 55 668
-wv_drop_on WV1
-wv_drag_item_to WV1 57 620
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL7:1.LEGEND
-wv_select_panel WV1.PANEL7:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL7:1.LEGEND
-wv_drag_item_to WV1 55 597
-wv_drag_enter WV1
-wv_drag_to WV1 54 608
-wv_drag_to WV1 47 628
-wv_drag_to WV1 45 661
-wv_drag_to WV1 45 660
-wv_drag_to WV1 47 663
-wv_drop_on WV1
-wv_drag_item_to WV1 54 608
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL6:1.LEGEND
-wv_select_panel WV1.PANEL6:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL6:1.LEGEND
-wv_drag_item_to WV1 61 563
-wv_drag_enter WV1
-wv_drag_to WV1 59 575
-wv_drag_to WV1 52 612
-wv_drag_to WV1 50 655
-wv_drop_on WV1
-wv_drag_item_to WV1 59 575
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL6:1.LINE5
-wv_select_line WV1.PANEL6:1.LINE5
-wv_press_key Delete 1148 845
-wv_move_window {Confirmation} {} 863 461
-wv_select_dialog {Confirmation} 
-wv_press_button {Confirmation} {} {Ok} 
-wv_select_list_item {Custom WaveView} {} {sigview} {v(ractp)} 160
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(ractp)} 160
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(ractp)} 160
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL7:1.LEGEND
-wv_select_panel WV1.PANEL7:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL7:1.LEGEND
-wv_drag_item_to WV1 40 680
-wv_drag_enter WV1
-wv_drag_to WV1 41 661
-wv_drag_to WV1 41 648
-wv_drag_to WV1 47 609
-wv_drop_on WV1
-wv_drag_item_to WV1 41 661
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL6:1.LEGEND
-wv_select_panel WV1.PANEL6:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL6:1.LINE4
-wv_drag_item_to WV1 53 665
-wv_select_line WV1.PANEL6:1.LINE4
-wv_drag_enter WV1
-wv_drag_to WV1 53 665
-wv_drop_on WV1
-wv_drag_item_to WV1 53 665
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL6:1.LINE4
-wv_select_line WV1.PANEL6:1.LINE4
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL6:1.LINE4
-wv_select_line WV1.PANEL6:1.LINE4
-wv_press_key Delete 1146 831
-wv_move_window {Confirmation} {} 863 461
-wv_select_dialog {Confirmation} 
-wv_press_button {Confirmation} {} {Ok} 
-wv_select_list_item {Custom WaveView} {} {sigview} {v(rcclkp)} 162
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(rcclkp)} 162
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL7:1.LEGEND
-wv_select_panel WV1.PANEL7:1.LEGEND
-wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL7:1.LEGEND
-wv_drag_item_to WV1 60 692
-wv_drag_enter WV1
-wv_drag_to WV1 64 683
-wv_drag_to WV1 76 649
-wv_drag_to WV1 85 606
-wv_drop_on WV1
-wv_drag_item_to WV1 64 683
-wv_press_tool_button {Custom WaveView} {} {NewWaveView0} 
-wv_select_list_item {Custom WaveView} {} {sigview} {v(sa0out)} 171
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(sa0out)} 171
-wv_select_list_item {Custom WaveView} {} {sigview} {v(wl0)} 208
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl0)} 208
-wv_select_list_item {Custom WaveView} {} {sigview} {v(wl1)} 209
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(wl1)} 209
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(wl1)} 209
-wv_select_waveview 2 {waveview 2}
-wv_select_wv_item WV2.PANEL1:1.LEGEND
-wv_select_panel WV2.PANEL1:1.LEGEND
-wv_select_waveview 2 {waveview 2}
-wv_select_wv_item WV2.PANEL1:1.LEGEND
-wv_drag_item_to WV2 37 156
-wv_drag_enter WV2
-wv_drag_to WV2 37 163
-wv_drag_to WV2 48 226
-wv_drag_to WV2 73 333
-wv_drag_to WV2 67 468
-wv_drag_to WV2 46 563
-wv_drag_to WV2 36 691
-wv_drop_on WV2
-wv_drag_item_to WV2 37 163
-wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 56
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 56
-wv_select_waveview 2 {waveview 2}
-wv_select_wv_item WV2.PANEL4:1.LEGEND
-wv_select_panel WV2.PANEL4:1.LEGEND
-wv_select_waveview 2 {waveview 2}
-wv_select_wv_item WV2.PANEL4:1.LEGEND
-wv_drag_item_to WV2 56 639
-wv_drag_enter WV2
-wv_drag_to WV2 56 639
-wv_drag_to WV2 82 586
-wv_drag_to WV2 95 511
-wv_drag_to WV2 87 413
-wv_drop_on WV2
-wv_drag_item_to WV2 56 639
-wv_select_list_item {Custom WaveView} {} {sigview} {v(csa0-0)} 60
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(csa0-0)} 60
-wv_select_list_item {Custom WaveView} {} {sigview} {v(csa0-1)} 62
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(csa0-1)} 62
-wv_press_tool_button {Custom WaveView} {} {NewWaveView0} 
-wv_select_list_item {Custom WaveView} {} {sigview} {v(f0)} 137
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(f0)} 137
-wv_select_list_item {Custom WaveView} {} {sigview} {v(f1)} 138
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(f1)} 138
-wv_select_list_item {Custom WaveView} {} {sigview} {v(f2)} 139
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(f2)} 139
-wv_select_list_item {Custom WaveView} {} {sigview} {v(f3)} 140
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(f3)} 140
-wv_select_list_item {Custom WaveView} {} {sigview} {v(f4)} 141
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(f4)} 141
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(f4)} 141
-wv_select_list_item {Custom WaveView} {} {sigview} {v(f5)} 142
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(f5)} 142
-wv_select_list_item {Custom WaveView} {} {sigview} {v(f6)} 143
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(f6)} 143
-wv_select_window {Custom WaveView} 
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 1:1}
-wv_select_window {Custom WaveView} 
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 2:2}
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 3:3}
-wv_press_tool_button {Custom WaveView} {} {NewWaveView0} 
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 3:3}
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 4:4}
-wv_select_window {Custom WaveView} 
-wv_select_list_item {Custom WaveView} {} {sigview} {v(cclk0)} 50
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(cclk0)} 50
-wv_select_list_item {Custom WaveView} {} {sigview} {v(cclk1)} 52
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(cclk1)} 52
-wv_select_list_item {Custom WaveView} {} {sigview} {v(cclk2)} 54
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(cclk2)} 54
-wv_select_list_item {Custom WaveView} {} {sigview} {v(csa0-0)} 60
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(csa0-0)} 60
-wv_select_list_item {Custom WaveView} {} {sigview} {v(csa0-1)} 62
-wv_dclick_list_item {Custom WaveView} {} {sigview} {v(csa0-1)} 62
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 3:3}
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 2:2}
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 1:1}
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 2:2}
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 3:3}
-wv_select_window {Custom WaveView} 
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 829 327
-wv_resize_browser {Custom WaveView} {} {waveview 3:3} 121 301
-wv_resize_window {Custom WaveView} 960 470
-wv_resize_browser {Custom WaveView} {} {WV.Browser} 829 822
-wv_resize_browser {Custom WaveView} {} {waveview 3:3} 1081 796
-wv_resize_window {Custom WaveView} 1920 965
-wv_move_window {Custom WaveView} {} 23 106
-wv_move_window {Custom WaveView} {} 23 118
-wv_move_window {Custom WaveView} {} 26 110
-wv_move_window {Custom WaveView} {} 28 104
-wv_move_window {Custom WaveView} {} 28 97
-wv_move_window {Custom WaveView} {} 28 82
-wv_move_window {Custom WaveView} {} 28 69
-wv_move_window {Custom WaveView} {} 50 35
-wv_move_window {Custom WaveView} {} 62 -1
-wv_move_window {Custom WaveView} {} 70 -10
-wv_move_window {Custom WaveView} {} 80 -10
-wv_move_window {Custom WaveView} {} 94 -10
-wv_move_window {Custom WaveView} {} 96 -10
-wv_move_window {Custom WaveView} {} 100 -10
-wv_move_window {Custom WaveView} {} 102 -10
-wv_move_window {Custom WaveView} {} 106 -10
-wv_move_window {Custom WaveView} {} 108 -10
-wv_move_window {Custom WaveView} {} 107 -10
-wv_move_window {Custom WaveView} {} 108 -10
-wv_move_window {Custom WaveView} {} 96 -10
-wv_move_window {Custom WaveView} {} 114 -10
-wv_move_window {Custom WaveView} {} 168 -10
-wv_move_window {Custom WaveView} {} 377 -10
-wv_move_window {Custom WaveView} {} 497 -10
-wv_move_window {Custom WaveView} {} 730 -10
-wv_move_window {Custom WaveView} {} 873 -10
-wv_move_window {Custom WaveView} {} 996 -10
-wv_move_window {Custom WaveView} {} 1072 -10
-wv_move_window {Custom WaveView} {} 1058 -10
-wv_move_window {Custom WaveView} {} 1053 -10
-wv_move_window {Custom WaveView} {} 978 -10
-wv_move_window {Custom WaveView} {} 907 -10
-wv_move_window {Custom WaveView} {} 852 -10
-wv_move_window {Custom WaveView} {} 766 -10
-wv_move_window {Custom WaveView} {} 632 -10
-wv_move_window {Custom WaveView} {} 564 -10
-wv_move_window {Custom WaveView} {} 477 -10
-wv_move_window {Custom WaveView} {} 438 -10
-wv_move_window {Custom WaveView} {} 424 -10
-wv_move_window {Custom WaveView} {} 406 -10
-wv_move_window {Custom WaveView} {} 405 -10
-wv_move_window {Custom WaveView} {} 404 -10
-wv_move_window {Custom WaveView} {} 403 -10
-wv_move_window {Custom WaveView} {} 402 -10
-wv_move_window {Custom WaveView} {} 401 -10
-wv_move_window {Custom WaveView} {} 398 -10
-wv_move_window {Custom WaveView} {} 394 -10
-wv_move_window {Custom WaveView} {} 384 -10
-wv_move_window {Custom WaveView} {} 373 -10
-wv_move_window {Custom WaveView} {} 361 -10
-wv_move_window {Custom WaveView} {} 354 -10
-wv_move_window {Custom WaveView} {} 349 -10
-wv_move_window {Custom WaveView} {} 345 -10
-wv_move_window {Custom WaveView} {} 344 -10
-wv_move_window {Custom WaveView} {} 339 -10
-wv_move_window {Custom WaveView} {} 335 -10
-wv_move_window {Custom WaveView} {} 321 -10
-wv_move_window {Custom WaveView} {} 289 -10
-wv_move_window {Custom WaveView} {} 240 -10
-wv_move_window {Custom WaveView} {} 205 -10
-wv_move_window {Custom WaveView} {} 124 -10
-wv_move_window {Custom WaveView} {} 72 -10
-wv_move_window {Custom WaveView} {} 67 -10
-wv_move_window {Custom WaveView} {} 64 -10
-wv_move_window {Custom WaveView} {} 54 -10
-wv_move_window {Custom WaveView} {} 12 -10
-wv_move_window {Custom WaveView} {} -9 -10
-wv_move_window {Custom WaveView} {} -10 -10
-wv_move_window {Custom WaveView} {} -49 -10
-wv_move_window {Custom WaveView} {} -10 -11
-wv_select_window {Custom WaveView} 
-wv_tree_context_menu {Custom WaveView} {} {hierview} 114 23 {D0:FeFET_MM.tr0(0)@toplevel(0)} {+sep=@}
-wv_select_menu_item {Custom WaveView} {} {FileViewPopMenu.Update WDF} 
-wv_move_window {Confirmation} {} 638 453
-wv_select_dialog {Confirmation} 
-wv_press_button {Confirmation} {} {Ok} 
-wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1081 796
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 1:1}
-wv_resize_browser {Custom WaveView} {} {waveview 2:2} 1081 796
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 2:2}
-wv_select_tab {Custom WaveView} {} {WVTab} {waveview 3:3}
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/home/mayersjd/.cx_hostport/.cx_hostport_eecs-810rds-10_3376'.
