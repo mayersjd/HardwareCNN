@@ -43,14 +43,38 @@ Vsl15 sl15 0 1
 *First input
 Vin0-0 in0-0 0 1
 Vin0-1 in0-1 0 1
+Vin0-2 in0-2 0 1
+Vin0-3 in0-3 0 1
+Vin0-4 in0-4 0 1
+Vin0-5 in0-5 0 1
+Vin0-6 in0-6 0 1
+Vin0-7 in0-7 0 1
+Vin0-8 in0-8 0 1
+Vin0-9 in0-9 0 1
+Vin0-10 in0-10 0 1
+Vin0-11 in0-11 0 1
+Vin0-12 in0-12 0 1
+Vin0-13 in0-13 0 1
+Vin0-14 in0-14 0 1
+Vin0-15 in0-15 0 1
 
 *Second input
 Vin1-0 in1-0 0 1
 Vin1-1 in1-1 0 1
-
-*Third input
-Vin2-0 in2-0 0 1
-Vin2-1 in2-1 0 1
+Vin1-2 in1-2 0 1
+Vin1-3 in1-3 0 1
+Vin1-4 in1-4 0 1
+Vin1-5 in1-5 0 1
+Vin1-6 in1-6 0 1
+Vin1-7 in1-7 0 1
+Vin1-8 in1-8 0 1
+Vin1-9 in1-9 0 1
+Vin1-10 in1-10 0 1
+Vin1-11 in1-11 0 1
+Vin1-12 in1-12 0 1
+Vin1-13 in1-13 0 1
+Vin1-14 in1-14 0 1
+Vin1-15 in1-15 0 1
 
 **Circuit Definitions**
 *Low threshold voltage FeFET (logic 1)
@@ -283,8 +307,15 @@ X0-tff clk r in c0 cp0 TFF
 X1-tff clk r node2 c1 cp1 TFF
 .ends
 
-*Second counter type, binary ripple-counter, 4bit output
-.subckt COUNTER-BRC r in c0 c1 c2 c3 cp0 cp1 cp2 cp3
+*Second counter type, binary ripple-counter, 3bit output
+.subckt COUNTER-BRC0 r in c0 c1 c2 cp0 cp1 cp2
+X0-tff in r VDD c0 cp0 TFF
+X1-tff cp0 r VDD c1 cp1 TFF
+X2-tff cp1 r VDD c2 cp2 TFF
+.ends
+
+*Third counter type, binary ripple-counter, 4 bit output
+.subckt COUNTER-BRC1 r in c0 c1 c2 c3 cp0 cp1 cp2 cp3
 X0-tff in r VDD c0 cp0 TFF
 X1-tff cp0 r VDD c1 cp1 TFF
 X2-tff cp1 r VDD c2 cp2 TFF
@@ -522,42 +553,27 @@ X15-inv o15p o15 INV
 .ends
 
 *Controller for reset and capture signals
-.subckt CONTROLLER cse0 cse1 cse2 cse3 cse0p cse1p cse2p cse3p rman clk clkp sep cap rsac rclk
+.subckt CONTROLLER cse0 cse1 cse2 cse0p cse1p cse2p b15 rman clk clkp sep cap rsac rclk
 *Logic to determine when to capture values from the sense amplifier counters
-X0-nand4 cse3p cse2 cse1p cse0p nc0 NAND4
-X1-nand4 cse3 cse2p cse1p cse0 nc1 NAND4
-X0-nand2 nc0 nc1 n0p NAND2
-X0-inv n0p n0 INV
-X0-nor2 n0 clkp cap NOR2
+X0-nand3 cse2p cse1 cse0 nc0p NAND3
+X0-nor2 nc0p clkp cap NOR2
 
 *Logic to determine when to reset the counters
 X1-inv rman rmanp INV
 
-*Resetting the sense-amplifier counters
-X0-nand5 cse3p cse2 cse1p cse0 clk nsa0 NAND5
-X1-nand5 cse3 cse2p cse1 cse0p clk nsa1 NAND5
-X1-nand2 nsa0 nsa1 ract NAND2
-X1-nor2 ract rmanp rsac NOR2
+*Resetting the sense-amplifier/sense enable counters
+X0-nand4 cse2 cse1p cse0p clk nsa0p NAND4
+X2-inv nsa0p nsa0 INV
+X1-nor2 nsa0 rmanp rsac NOR2
 
-*Resetting the clock/se counters
-X0-nand6 cse3 cse2p cse1 cse0p clk sep rcclkp NAND6
+*Resetting the clock/bit counters
+X0-nand6 b15 cse2 cse1p cse0p clk sep rcclkp NAND6
 X3-inv rcclkp rcclk INV
 X2-nor2 rmanp rcclk rclk NOR2
 .ends
 
-.subckt BITPLACE c0 c1 c2 c3 c0p c1p c2p c3p b0 b1
-X0-nand2 c3p c2p n0 NAND2
-X0-nand3 c3p c1p c0p n1 NAND3
-X1-nand2 n0 n1 b0 NAND2
-
-X1-nand3 c3 c2p c1p n2 NAND3
-X2-nand3 c3p c2 c0 n3 NAND3
-X3-nand3 c3p c2 c1 n4 NAND3
-X4-nand3 n2 n3 n4 b1 NAND3
-.ends
-
 *Crossbar array of FeFETS (weights of kernel operation)
-.subckt CROSSBAR0 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 wl2 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
+.subckt CROSSBAR0 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
 X0-fefet-w0 bl0 wl0 sl0 n-fefet-LVT
 X1-fefet-w0 bl1 wl0 sl1 n-fefet-LVT
 X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
@@ -591,50 +607,55 @@ X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
 X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
 X14-fefet-w1 bl14 wl1 sl14 n-fefet-LVT
 X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
-
-X0-fefet-w2 bl0 wl2 sl0 n-fefet-LVT
-X1-fefet-w2 bl1 wl2 sl1 n-fefet-LVT
-X2-fefet-w2 bl2 wl2 sl2 n-fefet-LVT
-X3-fefet-w2 bl3 wl2 sl3 n-fefet-LVT
-X4-fefet-w2 bl4 wl2 sl4 n-fefet-LVT
-X5-fefet-w2 bl5 wl2 sl5 n-fefet-LVT
-X6-fefet-w2 bl6 wl2 sl6 n-fefet-LVT
-X7-fefet-w2 bl7 wl2 sl7 n-fefet-LVT
-X8-fefet-w2 bl8 wl2 sl8 n-fefet-LVT
-X9-fefet-w2 bl9 wl2 sl9 n-fefet-LVT
-X10-fefet-w2 bl10 wl2 sl10 n-fefet-LVT
-X11-fefet-w2 bl11 wl2 sl11 n-fefet-LVT
-X12-fefet-w2 bl12 wl2 sl12 n-fefet-LVT
-X13-fefet-w2 bl13 wl2 sl13 n-fefet-LVT
-X14-fefet-w2 bl14 wl2 sl14 n-fefet-LVT
-X15-fefet-w2 bl15 wl2 sl15 n-fefet-LVT
 .ends
 
 *Eventual peripheral circuitry to enable easy implementation of multiple kernel ops
-.subckt PERIPHERAL rman se clk in0-0 in0-1 in1-0 in1-1 in2-0 in2-1 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 wl2 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 f13 f14 f15 f16 f17 f18 f19 f20
+.subckt PERIPHERAL rman se clk in0-0 in0-1 in1-0 in1-1 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 f13 f14 f15 f16 f17 f18 f19 f20
 .ends
 
 
 **Circuit Definitions** 
 *Crossbar array of fefets
-X0-crossbar bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 wl2 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 CROSSBAR0
+X0-crossbar bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 CROSSBAR0
 
 *Decoder for enabling word-line loading
-X0-decoder cse0 cse1 cse2 cse3 cse0p cse1p cse2p cse3p en0 en1 en2 en3 en4 en5 en6 en7 en8 en9 en10 en11 en12 en13 en14 en15 DECODER4
-
 *NAND gates for word-line loading
-X0-nand3 node7 en1 in0-0 node1 NAND3
-X1-nand3 node7 en6 in0-1 node2 NAND3
+X0-w0-nand5 node7 b0 cse0 cse1p in0-0 nw0-0 NAND5
+X1-w0-nand5 node7 b1 cse0 cse1p in0-1 nw0-1 NAND5
+X2-w0-nand5 node7 b2 cse0 cse1p in0-2 nw0-2 NAND5
+X3-w0-nand5 node7 b3 cse0 cse1p in0-3 nw0-3 NAND5
+X4-w0-nand5 node7 b4 cse0 cse1p in0-4 nw0-4 NAND5
+X5-w0-nand5 node7 b5 cse0 cse1p in0-5 nw0-5 NAND5
+X6-w0-nand5 node7 b6 cse0 cse1p in0-6 nw0-6 NAND5
+X7-w0-nand5 node7 b7 cse0 cse1p in0-7 nw0-7 NAND5
+X8-w0-nand5 node7 b8 cse0 cse1p in0-8 nw0-8 NAND5
+X9-w0-nand5 node7 b9 cse0 cse1p in0-9 nw0-9 NAND5
+X10-w0-nand5 node7 b10 cse0 cse1p in0-10 nw0-10 NAND5
+X11-w0-nand5 node7 b11 cse0 cse1p in0-11 nw0-11 NAND5
+X12-w0-nand5 node7 b12 cse0 cse1p in0-12 nw0-12 NAND5
+X13-w0-nand5 node7 b13 cse0 cse1p in0-13 nw0-13 NAND5
+X14-w0-nand5 node7 b14 cse0 cse1p in0-14 nw0-14 NAND5
+X15-w0-nand5 node7 b15 cse0 cse1p in0-15 nw0-15 NAND5
 
-X2-nand3 node7 en2 in1-0 node3 NAND3
-X3-nand3 node7 en7 in1-1 node4 NAND3
+X0-w1-nand5 node7 b0 cse0p cse1 in1-0 nw1-0 NAND5
+X1-w1-nand5 node7 b1 cse0p cse1 in1-1 nw1-1 NAND5
+X2-w1-nand5 node7 b2 cse0p cse1 in1-2 nw1-2 NAND5
+X3-w1-nand5 node7 b3 cse0p cse1 in1-3 nw1-3 NAND5
+X4-w1-nand5 node7 b4 cse0p cse1 in1-4 nw1-4 NAND5
+X5-w1-nand5 node7 b5 cse0p cse1 in1-5 nw1-5 NAND5
+X6-w1-nand5 node7 b6 cse0p cse1 in1-6 nw1-6 NAND5
+X7-w1-nand5 node7 b7 cse0p cse1 in1-7 nw1-7 NAND5
+X8-w1-nand5 node7 b8 cse0p cse1 in1-8 nw1-8 NAND5
+X9-w1-nand5 node7 b9 cse0p cse1 in1-9 nw1-9 NAND5
+X10-w1-nand5 node7 b10 cse0p cse1 in1-10 nw1-10 NAND5
+X11-w1-nand5 node7 b11 cse0p cse1 in1-11 nw1-11 NAND5
+X12-w1-nand5 node7 b12 cse0p cse1 in1-12 nw1-12 NAND5
+X13-w1-nand5 node7 b13 cse0p cse1 in1-13 nw1-13 NAND5
+X14-w1-nand5 node7 b14 cse0p cse1 in1-14 nw1-14 NAND5
+X15-w1-nand5 node7 b15 cse0p cse1 in1-15 nw1-15 NAND5
 
-X4-nand3 node7 en3 in2-0 node5 NAND3
-X5-nand3 node7 en8 in2-1 node6 NAND3
-
-X0-nand2 node1 node2 wl0 NAND2
-X1-nand2 node3 node4 wl1 NAND2
-X2-nand2 node5 node6 wl2 NAND2
+X0-wl0-nand2 nw0-0 nw0-1 wl0 NAND2
+X1-wl1-nand2 nw1-0 nw1-1 wl1 NAND2
 
 X1-inv se sep INV
 X2-inv sep node7 INV
@@ -678,20 +699,23 @@ X15-counter clk rsac sa15out csa15-0 csa15-1 csa15-0p csa15-1p COUNTER-BSC
 
 *Counter to track the number of clock cycles that have passed (this should be sized as the number of inputs + size of input)
 *These outputs will be used to determine the appropriate number to multiply by for each bit-place of the final output. 
-*X0-counter2 rclk clk cclk0 cclk1 cclk2 cclk3 cclk0p cclk1p cclk2p cclk3p COUNTER-BRC
-X0-counter2 rclk se cse0 cse1 cse2 cse3 cse0p cse1p cse2p cse3p COUNTER-BRC
+X0-counter2 rsac se cse0 cse1 cse2 cse0p cse1p cse2p COUNTER-BRC0
+
+*Counter for the bitplace that is currently being loaded
+X0-tgate cse2 bit T
+X0-counter3 rclk bit cb0 cb1 cb2 cb3 cb0p cb1p cb2p cb3p COUNTER-BRC1
 
 *Adding the MSBs of the least-significant sense amplifier counter outputs to the more significant sense amplifier counter outputs
 X0-sense-amplifier-adder csa0-0 csa0-1 csa1-0 csa1-1 csa2-0 csa2-1 csa3-0 csa3-1 csa4-0 csa4-1 csa5-0 csa5-1 csa6-0 csa6-1 csa7-0 csa7-1 csa8-0 csa8-1 csa9-0 csa9-1 csa10-0 csa10-1 csa11-0 csa11-1 csa12-0 csa12-1 csa13-0 csa13-1 csa14-0 csa14-1 csa15-0 csa15-1 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 SAADDER
 
 *Logic to determine the bit place multiplication values (determined by the width of the inputs)
-X0-bitplace cse0 cse1 cse2 cse3 cse0p cse1p cse2p cse3p b0 b1 BITPLACE
+X0-bitplace cb0 cb1 cb2 cb3 cb0p cb1p cb2p cb3p b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 DECODER4
 
 *Multiply the outputs of the sense amplifier counters by the appropriate bit-place position
 X0-mult csa0-0 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 b0 b1 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 MULT
 
 *Logic to reset counters
-X0-controller cse0 cse1 cse2 cse3 cse0p cse1p cse2p cse3p rman clk clkp sep cap rsac rclk CONTROLLER
+X0-controller cse0 cse1 cse2 cse0p cse1p cse2p b15 rman clk clkp sep cap rsac rclk CONTROLLER
 
 *Buffers between multiplier and X-DFFs
 X0-p0buf0 p0 p0b0 BUF
@@ -814,7 +838,7 @@ Vrman rman GND PWL (0n 1 1n 1 1.001n 0 2n 0 2.001n 1)
 Vse se GND PULSE (0 1 5n 1p 1p 2.5n 5n)
 Vclk clk GND PULSE (0 1 6.7n 1p 1p 2.5n 5n)
 
-.TRAN 0.001n 60n
+.TRAN 0.001n 350n
 
 .OPTION POST
 
