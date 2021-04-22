@@ -204,6 +204,58 @@ C5 node5 GND 5fF
 Cout out GND 5fF
 .ends
 
+*16-input NAND gate
+.subckt NAND16 a b c d e f g h i j k l m n o p out
+MN0 out a node1 GND nfet2 L=45n W=250n
+MN1 node1 b node2 GND nfet2 L=45n W=250n
+MN2 node2 c node3 GND nfet2 L=45n W=250n
+MN3 node3 d node4 GND nfet2 L=45n W=250n
+MN4 node4 e node5 GND nfet2 L=45n W=250n
+MN5 node5 f node6 GND nfet2 L=45n W=250n
+MN6 node6 g node7 GND nfet2 L=45n W=250n
+MN7 node7 h node8 GND nfet2 L=45n W=250n
+MN8 node8 i node9 GND nfet2 L=45n W=250n
+MN9 node9 j node10 GND nfet2 L=45n W=250n
+MN10 node10 k node11 GND nfet2 L=45n W=250n
+MN11 node11 l node12 GND nfet2 L=45n W=250n
+MN12 node12 m node13 GND nfet2 L=45n W=250n
+MN13 node13 n node14 GND nfet2 L=45n W=250n
+MN14 node14 o node15 GND nfet2 L=45n W=250n
+MN15 node15 p GND GND nfet2 L=45n W=250n
+MP0 out a VDD VDD pfet2 L=45n W=500n
+MP1 out b VDD VDD pfet2 L=45n W=500n
+MP2 out c VDD VDD pfet2 L=45n W=500n
+MP3 out d VDD VDD pfet2 L=45n W=500n
+MP4 out e VDD VDD pfet2 L=45n W=500n
+MP5 out f VDD VDD pfet2 L=45n W=500n
+MP6 out g VDD VDD pfet2 L=45n W=500n
+MP7 out h VDD VDD pfet2 L=45n W=500n
+MP8 out i VDD VDD pfet2 L=45n W=500n
+MP9 out j VDD VDD pfet2 L=45n W=500n
+MP10 out k VDD VDD pfet2 L=45n W=500n
+MP11 out l VDD VDD pfet2 L=45n W=500n
+MP12 out m VDD VDD pfet2 L=45n W=500n
+MP13 out n VDD VDD pfet2 L=45n W=500n
+MP14 out o VDD VDD pfet2 L=45n W=500n
+MP15 out p VDD VDD pfet2 L=45n W=500n
+C1 node1 GND 1fF
+C2 node2 GND 1fF
+C3 node3 GND 1fF
+C4 node4 GND 1fF
+C5 node5 GND 1fF
+C6 node6 GND 1fF
+C7 node7 GND 1fF
+C8 node8 GND 1fF
+C9 node9 GND 1fF
+C10 node10 GND 1fF
+C11 node11 GND 1fF
+C12 node12 GND 1fF
+C13 node13 GND 1fF
+C14 node14 GND 1fF
+C15 node15 GND 1fF
+Cout out GND 5fF
+.ends
+
 *2-input XOR gate
 .subckt XOR2 a b out
 X0-inv a ap INV
@@ -236,7 +288,17 @@ X7-inv inp3 in4 INV
 X8-inv in4 inp4 INV
 X9-inv inp4 in5 INV
 X10-inv in5 inp5 INV
-X11-inv inp5 out INV
+X11-inv inp5 in6 INV
+X12-inv in6 inp6 INV
+X13-inv inp6 in7 INV
+X14-inv in7 inp7 INV
+X15-inv inp7 in8 INV
+X16-inv in8 inp8 INV
+X17-inv inp8 in9 INV
+X18-inv in9 inp9 INV
+X19-inv inp9 in10 INV
+X20-inv in10 inp10 INV
+X21-inv inp10 out INV
 .ends
 
 *Sense-amplifier
@@ -402,117 +464,116 @@ X14-ha t13-0 csa15-0 s14 cout14 HA1B
 X14-fa t13-1 csa15-1 cout14 s15 s16 FA1B
 .ends
 
-*Multiplier, 18bit x 2bit
-.subckt MULT a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 b0 b1 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19
-X0-nand2 a0 b0 nnode0 NAND2
-X1-nand2 a0 b1 nnode1 NAND2
+*19bit + 18bit adder for the multiplier
+.subckt ADDER18 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 b16 b17 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19
+X0-ha a0 Vground s0 c0 HA1B
+X1-fa a1 b0 c0 s1 c1 FA1B
+X2-fa a2 b1 c1 s2 c2 FA1B
+X3-fa a3 b2 c2 s3 c3 FA1B
+X4-fa a4 b3 c3 s4 c4 FA1B
+X5-fa a5 b4 c4 s5 c5 FA1B
+X6-fa a6 b5 c5 s6 c6 FA1B
+X7-fa a7 b6 c6 s7 c7 FA1B
+X8-fa a8 b7 c7 s8 c8 FA1B
+X9-fa a9 b8 c8 s9 c9 FA1B
+X10-fa a10 b9 c9 s10 c10 FA1B
+X11-fa a11 b10 c10 s11 c11 FA1B
+X12-fa a12 b11 c11 s12 c12 FA1B
+X13-fa a13 b12 c12 s13 c13 FA1B
+X14-fa a14 b13 c13 s14 c14 FA1B
+X15-fa a15 b14 c14 s15 c15 FA1B
+X16-fa a16 b15 c15 s16 c16 FA1B
+X17-fa a17 b16 c16 s17 c17 FA1B
+X18-fa a18 b17 c17 s18 s19 FA1B
+.ends
 
-X2-nand2 a1 b0 nnode2 NAND2
-X3-nand2 a1 b1 nnode3 NAND2
+*15bit AND gates to make the multiplier easier to implement
+.subckt AND15 a b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia0 ia1 ia2 ia3 ia4 ia5 ia6 ia7 ia8 ia9 ia10 ia11 ia12 ia13 ia14 ia15
+X0-nand2 a b0 na0 NAND2
+X1-nand2 a b1 na1 NAND2
+X2-nand2 a b2 na2 NAND2
+X3-nand2 a b3 na3 NAND2
+X4-nand2 a b4 na4 NAND2
+X5-nand2 a b5 na5 NAND2
+X6-nand2 a b6 na6 NAND2
+X7-nand2 a b7 na7 NAND2
+X8-nand2 a b8 na8 NAND2
+X9-nand2 a b9 na9 NAND2
+X10-nand2 a b10 na10 NAND2
+X11-nand2 a b11 na11 NAND2
+X12-nand2 a b12 na12 NAND2
+X13-nand2 a b13 na13 NAND2
+X14-nand2 a b14 na14 NAND2
+X15-nand2 a b15 na15 NAND2
 
-X4-nand2 a2 b0 nnode4 NAND2
-X5-nand2 a2 b1 nnode5 NAND2
+X0-inv na0 ia0 INV
+X1-inv na1 ia1 INV
+X2-inv na2 ia2 INV
+X3-inv na3 ia3 INV
+X4-inv na4 ia4 INV
+X5-inv na5 ia5 INV
+X6-inv na6 ia6 INV
+X7-inv na7 ia7 INV
+X8-inv na8 ia8 INV
+X9-inv na9 ia9 INV
+X10-inv na10 ia10 INV
+X11-inv na11 ia11 INV
+X12-inv na12 ia12 INV
+X13-inv na13 ia13 INV
+X14-inv na14 ia14 INV
+X15-inv na15 ia15 INV
+.ends
 
-X6-nand2 a3 b0 nnode6 NAND2
-X7-nand2 a3 b1 nnode7 NAND2
+*Multiplier, 18bit x 16bit
+.subckt MULT a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33
+X0-and15 a0 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia0-0 ia0-1 ia0-2 ia0-3 ia0-4 ia0-5 ia0-6 ia0-7 ia0-8 ia0-9 ia0-10 ia0-11 ia0-12 ia0-13 ia0-14 ia0-15 AND15
+X1-and15 a1 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia1-0 ia1-1 ia1-2 ia1-3 ia1-4 ia1-5 ia1-6 ia1-7 ia1-8 ia1-9 ia1-10 ia1-11 ia1-12 ia1-13 ia1-14 ia1-15 AND15
+X2-and15 a2 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia2-0 ia2-1 ia2-2 ia2-3 ia2-4 ia2-5 ia2-6 ia2-7 ia2-8 ia2-9 ia2-10 ia2-11 ia2-12 ia2-13 ia2-14 ia2-15 AND15
+X3-and15 a3 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia3-0 ia3-1 ia3-2 ia3-3 ia3-4 ia3-5 ia3-6 ia3-7 ia3-8 ia3-9 ia3-10 ia3-11 ia3-12 ia3-13 ia3-14 ia3-15 AND15
+X4-and15 a4 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia4-0 ia4-1 ia4-2 ia4-3 ia4-4 ia4-5 ia4-6 ia4-7 ia4-8 ia4-9 ia4-10 ia4-11 ia4-12 ia4-13 ia4-14 ia4-15 AND15
+X5-and15 a5 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia5-0 ia5-1 ia5-2 ia5-3 ia5-4 ia5-5 ia5-6 ia5-7 ia5-8 ia5-9 ia5-10 ia5-11 ia5-12 ia5-13 ia5-14 ia5-15 AND15
+X6-and15 a6 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia6-0 ia6-1 ia6-2 ia6-3 ia6-4 ia6-5 ia6-6 ia6-7 ia6-8 ia6-9 ia6-10 ia6-11 ia6-12 ia6-13 ia6-14 ia6-15 AND15
+X7-and15 a7 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia7-0 ia7-1 ia7-2 ia7-3 ia7-4 ia7-5 ia7-6 ia7-7 ia7-8 ia7-9 ia7-10 ia7-11 ia7-12 ia7-13 ia7-14 ia7-15 AND15
+X8-and15 a8 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia8-0 ia8-1 ia8-2 ia8-3 ia8-4 ia8-5 ia8-6 ia8-7 ia8-8 ia8-9 ia8-10 ia8-11 ia8-12 ia8-13 ia8-14 ia8-15 AND15
+X9-and15 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia9-0 ia9-1 ia9-2 ia9-3 ia9-4 ia9-5 ia9-6 ia9-7 ia9-8 ia9-9 ia9-10 ia9-11 ia9-12 ia9-13 ia9-14 ia9-15 AND15
+X10-and15 a10 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia10-0 ia10-1 ia10-2 ia10-3 ia10-4 ia10-5 ia10-6 ia10-7 ia10-8 ia10-9 ia10-10 ia10-11 ia10-12 ia10-13 ia10-14 ia10-15 AND15
+X11-and15 a11 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia11-0 ia11-1 ia11-2 ia11-3 ia11-4 ia11-5 ia11-6 ia11-7 ia11-8 ia11-9 ia11-10 ia11-11 ia11-12 ia11-13 ia11-14 ia11-15 AND15
+X12-and15 a12 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia12-0 ia12-1 ia12-2 ia12-3 ia12-4 ia12-5 ia12-6 ia12-7 ia12-8 ia12-9 ia12-10 ia12-11 ia12-12 ia12-13 ia12-14 ia12-15 AND15
+X13-and15 a13 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia13-0 ia13-1 ia13-2 ia13-3 ia13-4 ia13-5 ia13-6 ia13-7 ia13-8 ia13-9 ia13-10 ia13-11 ia13-12 ia13-13 ia13-14 ia13-15 AND15
+X14-and15 a14 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia14-0 ia14-1 ia14-2 ia14-3 ia14-4 ia14-5 ia14-6 ia14-7 ia14-8 ia14-9 ia14-10 ia14-11 ia14-12 ia14-13 ia14-14 ia14-15 AND15
+X15-and15 a15 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia15-0 ia15-1 ia15-2 ia15-3 ia15-4 ia15-5 ia15-6 ia15-7 ia15-8 ia15-9 ia15-10 ia15-11 ia15-12 ia15-13 ia15-14 ia15-15 AND15
+X16-and15 a16 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia16-0 ia16-1 ia16-2 ia16-3 ia16-4 ia16-5 ia16-6 ia16-7 ia16-8 ia16-9 ia16-10 ia16-11 ia16-12 ia16-13 ia16-14 ia16-15 AND15
+X17-and15 a17 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ia17-0 ia17-1 ia17-2 ia17-3 ia17-4 ia17-5 ia17-6 ia17-7 ia17-8 ia17-9 ia17-10 ia17-11 ia17-12 ia17-13 ia17-14 ia17-15 AND15
 
-X8-nand2 a4 b0 nnode8 NAND2
-X9-nand2 a4 b1 nnode9 NAND2
+X0-adder18 ia0-0 ia1-0 ia2-0 ia3-0 ia4-0 ia5-0 ia6-0 ia7-0 ia8-0 ia9-0 ia10-0 ia11-0 ia12-0 ia13-0 ia14-0 ia15-0 ia16-0 ia17-0 Vground ia0-1 ia1-1 ia2-1 ia3-1 ia4-1 ia5-1 ia6-1 ia7-1 ia8-1 ia9-1 ia10-1 ia11-1 ia12-1 ia13-1 ia14-1 ia15-1 ia16-1 ia17-1 p0 t0-0 t1-0 t2-0 t3-0 t4-0 t5-0 t6-0 t7-0 t8-0 t9-0 t10-0 t11-0 t12-0 t13-0 t14-0 t15-0 t16-0 t17-0 t18-0 ADDER18
 
-X10-nand2 a5 b0 nnode10 NAND2
-X11-nand2 a5 b1 nnode11 NAND2
+X1-adder18 t0-0 t1-0 t2-0 t3-0 t4-0 t5-0 t6-0 t7-0 t8-0 t9-0 t10-0 t11-0 t12-0 t13-0 t14-0 t15-0 t16-0 t17-0 t18-0 ia0-2 ia1-2 ia2-2 ia3-2 ia4-2 ia5-2 ia6-2 ia7-2 ia8-2 ia9-2 ia10-2 ia11-2 ia12-2 ia13-2 ia14-2 ia15-2 ia16-2 ia17-2 p1 t0-1 t1-1 t2-1 t3-1 t4-1 t5-1 t6-1 t7-1 t8-1 t9-1 t10-1 t11-1 t12-1 t13-1 t14-1 t15-1 t16-1 t17-1 t18-1 ADDER18
 
-X12-nand2 a6 b0 nnode12 NAND2
-X13-nand2 a6 b1 nnode13 NAND2
+X2-adder18 t0-1 t1-1 t2-1 t3-1 t4-1 t5-1 t6-1 t7-1 t8-1 t9-1 t10-1 t11-1 t12-1 t13-1 t14-1 t15-1 t16-1 t17-1 t18-1 ia0-3 ia1-3 ia2-3 ia3-3 ia4-3 ia5-3 ia6-3 ia7-3 ia8-3 ia9-3 ia10-3 ia11-3 ia12-3 ia13-3 ia14-3 ia15-3 ia16-3 ia17-3 p2 t0-2 t1-2 t2-2 t3-2 t4-2 t5-2 t6-2 t7-2 t8-2 t9-2 t10-2 t11-2 t12-2 t13-2 t14-2 t15-2 t16-2 t17-2 t18-2 ADDER18
 
-X14-nand2 a7 b0 nnode14 NAND2
-X15-nand2 a7 b1 nnode15 NAND2
+X3-adder18 t0-2 t1-2 t2-2 t3-2 t4-2 t5-2 t6-2 t7-2 t8-2 t9-2 t10-2 t11-2 t12-2 t13-2 t14-2 t15-2 t16-2 t17-2 t18-2 ia0-4 ia1-4 ia2-4 ia3-4 ia4-4 ia5-4 ia6-4 ia7-4 ia8-4 ia9-4 ia10-4 ia11-4 ia12-4 ia13-4 ia14-4 ia15-4 ia16-4 ia17-4 p3 t0-3 t1-3 t2-3 t3-3 t4-3 t5-3 t6-3 t7-3 t8-3 t9-3 t10-3 t11-3 t12-3 t13-3 t14-3 t15-3 t16-3 t17-3 t18-3 ADDER18
 
-X16-nand2 a8 b0 nnode16 NAND2
-X17-nand2 a8 b1 nnode17 NAND2
+X4-adder18 t0-3 t1-3 t2-3 t3-3 t4-3 t5-3 t6-3 t7-3 t8-3 t9-3 t10-3 t11-3 t12-3 t13-3 t14-3 t15-3 t16-3 t17-3 t18-3 ia0-5 ia1-5 ia2-5 ia3-5 ia4-5 ia5-5 ia6-5 ia7-5 ia8-5 ia9-5 ia10-5 ia11-5 ia12-5 ia13-5 ia14-5 ia15-5 ia16-5 ia17-5 p4 t0-4 t1-4 t2-4 t3-4 t4-4 t5-4 t6-4 t7-4 t8-4 t9-4 t10-4 t11-4 t12-4 t13-4 t14-4 t15-4 t16-4 t17-4 t18-4 ADDER18
 
-X18-nand2 a9 b0 nnode18 NAND2
-X19-nand2 a9 b1 nnode19 NAND2
+X5-adder18 t0-4 t1-4 t2-4 t3-4 t4-4 t5-4 t6-4 t7-4 t8-4 t9-4 t10-4 t11-4 t12-4 t13-4 t14-4 t15-4 t16-4 t17-4 t18-4 ia0-6 ia1-6 ia2-6 ia3-6 ia4-6 ia5-6 ia6-6 ia7-6 ia8-6 ia9-6 ia10-6 ia11-6 ia12-6 ia13-6 ia14-6 ia15-6 ia16-6 ia17-6 p5 t0-5 t1-5 t2-5 t3-5 t4-5 t5-5 t6-5 t7-5 t8-5 t9-5 t10-5 t11-5 t12-5 t13-5 t14-5 t15-5 t16-5 t17-5 t18-5 ADDER18
 
-X20-nand2 a10 b0 nnode20 NAND2
-X21-nand2 a10 b1 nnode21 NAND2
+X6-adder18 t0-5 t1-5 t2-5 t3-5 t4-5 t5-5 t6-5 t7-5 t8-5 t9-5 t10-5 t11-5 t12-5 t13-5 t14-5 t15-5 t16-5 t17-5 t18-5 ia0-7 ia1-7 ia2-7 ia3-7 ia4-7 ia5-7 ia6-7 ia7-7 ia8-7 ia9-7 ia10-7 ia11-7 ia12-7 ia13-7 ia14-7 ia15-7 ia16-7 ia17-7 p6 t0-6 t1-6 t2-6 t3-6 t4-6 t5-6 t6-6 t7-6 t8-6 t9-6 t10-6 t11-6 t12-6 t13-6 t14-6 t15-6 t16-6 t17-6 t18-6 ADDER18
 
-X22-nand2 a11 b0 nnode22 NAND2
-X23-nand2 a11 b1 nnode23 NAND2
+X7-adder18 t0-6 t1-6 t2-6 t3-6 t4-6 t5-6 t6-6 t7-6 t8-6 t9-6 t10-6 t11-6 t12-6 t13-6 t14-6 t15-6 t16-6 t17-6 t18-6 ia0-8 ia1-8 ia2-8 ia3-8 ia4-8 ia5-8 ia6-8 ia7-8 ia8-8 ia9-8 ia10-8 ia11-8 ia12-8 ia13-8 ia14-8 ia15-8 ia16-8 ia17-8 p7 t0-7 t1-7 t2-7 t3-7 t4-7 t5-7 t6-7 t7-7 t8-7 t9-7 t10-7 t11-7 t12-7 t13-7 t14-7 t15-7 t16-7 t17-7 t18-7 ADDER18
 
-X24-nand2 a12 b0 nnode24 NAND2
-X25-nand2 a12 b1 nnode25 NAND2
+X8-adder18 t0-7 t1-7 t2-7 t3-7 t4-7 t5-7 t6-7 t7-7 t8-7 t9-7 t10-7 t11-7 t12-7 t13-7 t14-7 t15-7 t16-7 t17-7 t18-7 ia0-9 ia1-9 ia2-9 ia3-9 ia4-9 ia5-9 ia6-9 ia7-9 ia8-9 ia9-9 ia10-9 ia11-9 ia12-9 ia13-9 ia14-9 ia15-9 ia16-9 ia17-9 p8 t0-8 t1-8 t2-8 t3-8 t4-8 t5-8 t6-8 t7-8 t8-8 t9-8 t10-8 t11-8 t12-8 t13-8 t14-8 t15-8 t16-8 t17-8 t18-8 ADDER18
 
-X26-nand2 a13 b0 nnode26 NAND2
-X27-nand2 a13 b1 nnode27 NAND2
+X9-adder18 t0-8 t1-8 t2-8 t3-8 t4-8 t5-8 t6-8 t7-8 t8-8 t9-8 t10-8 t11-8 t12-8 t13-8 t14-8 t15-8 t16-8 t17-8 t18-8 ia0-10 ia1-10 ia2-10 ia3-10 ia4-10 ia5-10 ia6-10 ia7-10 ia8-10 ia9-10 ia10-10 ia11-10 ia12-10 ia13-10 ia14-10 ia15-10 ia16-10 ia17-10 p9 t0-9 t1-9 t2-9 t3-9 t4-9 t5-9 t6-9 t7-9 t8-9 t9-9 t10-9 t11-9 t12-9 t13-9 t14-9 t15-9 t16-9 t17-9 t18-9 ADDER18
 
-X28-nand2 a14 b0 nnode28 NAND2
-X29-nand2 a14 b1 nnode29 NAND2
+X10-adder18 t0-9 t1-9 t2-9 t3-9 t4-9 t5-9 t6-9 t7-9 t8-9 t9-9 t10-9 t11-9 t12-9 t13-9 t14-9 t15-9 t16-9 t17-9 t18-9 ia0-11 ia1-11 ia2-11 ia3-11 ia4-11 ia5-11 ia6-11 ia7-11 ia8-11 ia9-11 ia10-11 ia11-11 ia12-11 ia13-11 ia14-11 ia15-11 ia16-11 ia17-11 p10 t0-10 t1-10 t2-10 t3-10 t4-10 t5-10 t6-10 t7-10 t8-10 t9-10 t10-10 t11-10 t12-10 t13-10 t14-10 t15-10 t16-10 t17-10 t18-10 ADDER18
 
-X30-nand2 a15 b0 nnode30 NAND2
-X31-nand2 a15 b1 nnode31 NAND2
+X11-adder18 t0-10 t1-10 t2-10 t3-10 t4-10 t5-10 t6-10 t7-10 t8-10 t9-10 t10-10 t11-10 t12-10 t13-10 t14-10 t15-10 t16-10 t17-10 t18-10 ia0-12 ia1-12 ia2-12 ia3-12 ia4-12 ia5-12 ia6-12 ia7-12 ia8-12 ia9-12 ia10-12 ia11-12 ia12-12 ia13-12 ia14-12 ia15-12 ia16-12 ia17-12 p11 t0-11 t1-11 t2-11 t3-11 t4-11 t5-11 t6-11 t7-11 t8-11 t9-11 t10-11 t11-11 t12-11 t13-11 t14-11 t15-11 t16-11 t17-11 t18-11 ADDER18
 
-X32-nand2 a16 b0 nnode32 NAND2
-X33-nand2 a16 b1 nnode33 NAND2
+X12-adder18 t0-11 t1-11 t2-11 t3-11 t4-11 t5-11 t6-11 t7-11 t8-11 t9-11 t10-11 t11-11 t12-11 t13-11 t14-11 t15-11 t16-11 t17-11 t18-11 ia0-13 ia1-13 ia2-13 ia3-13 ia4-13 ia5-13 ia6-13 ia7-13 ia8-13 ia9-13 ia10-13 ia11-13 ia12-13 ia13-13 ia14-13 ia15-13 ia16-13 ia17-13 p12 t0-12 t1-12 t2-12 t3-12 t4-12 t5-12 t6-12 t7-12 t8-12 t9-12 t10-12 t11-12 t12-12 t13-12 t14-12 t15-12 t16-12 t17-12 t18-12 ADDER18
 
-X34-nand2 a17 b0 nnode34 NAND2
-X35-nand2 a17 b1 nnode35 NAND2
+X13-adder18 t0-12 t1-12 t2-12 t3-12 t4-12 t5-12 t6-12 t7-12 t8-12 t9-12 t10-12 t11-12 t12-12 t13-12 t14-12 t15-12 t16-12 t17-12 t18-12 ia0-14 ia1-14 ia2-14 ia3-14 ia4-14 ia5-14 ia6-14 ia7-14 ia8-14 ia9-14 ia10-14 ia11-14 ia12-14 ia13-14 ia14-14 ia15-14 ia16-14 ia17-14 p13 t0-13 t1-13 t2-13 t3-13 t4-13 t5-13 t6-13 t7-13 t8-13 t9-13 t10-13 t11-13 t12-13 t13-13 t14-13 t15-13 t16-13 t17-13 t18-13 ADDER18
 
-X0-inv nnode0 p0 INV
-X1-inv nnode1 inode1 INV
-X2-inv nnode2 inode2 INV
-X3-inv nnode3 inode3 INV
-X4-inv nnode4 inode4 INV
-X5-inv nnode5 inode5 INV
-X6-inv nnode6 inode6 INV
-X7-inv nnode7 inode7 INV
-X8-inv nnode8 inode8 INV
-X9-inv nnode9 inode9 INV
-X10-inv nnode10 inode10 INV
-X11-inv nnode11 inode11 INV
-X12-inv nnode12 inode12 INV
-X13-inv nnode13 inode13 INV
-X14-inv nnode14 inode14 INV
-X15-inv nnode15 inode15 INV
-X16-inv nnode16 inode16 INV
-X17-inv nnode17 inode17 INV
-X18-inv nnode18 inode18 INV
-X19-inv nnode19 inode19 INV
-X20-inv nnode20 inode20 INV
-X21-inv nnode21 inode21 INV
-X22-inv nnode22 inode22 INV
-X23-inv nnode23 inode23 INV
-X24-inv nnode24 inode24 INV
-X25-inv nnode25 inode25 INV
-X26-inv nnode26 inode26 INV
-X27-inv nnode27 inode27 INV
-X28-inv nnode28 inode28 INV
-X29-inv nnode29 inode29 INV
-X30-inv nnode30 inode30 INV
-X31-inv nnode31 inode31 INV
-X32-inv nnode32 inode32 INV
-X33-inv nnode33 inode33 INV
-X34-inv nnode34 inode34 INV
-X35-inv nnode35 inode35 INV
-
-X1-ha inode1 inode2 p1 c1 HA1B
-X2-fa inode3 inode4 c1 p2 c2 FA1B
-X3-fa inode5 inode6 c2 p3 c3 FA1B
-X4-fa inode7 inode8 c3 p4 c4 FA1B
-X5-fa inode9 inode10 c4 p5 c5 FA1B
-X6-fa inode11 inode12 c5 p6 c6 FA1B
-X7-fa inode13 inode14 c6 p7 c7 FA1B
-X8-fa inode15 inode16 c7 p8 c8 FA1B
-X9-fa inode17 inode18 c8 p9 c9 FA1B
-X10-fa inode19 inode20 c9 p10 c10 FA1B
-X11-fa inode21 inode22 c10 p11 c11 FA1B
-X12-fa inode23 inode24 c11 p12 c12 FA1B
-X13-fa inode25 inode26 c12 p13 c13 FA1B
-X14-fa inode27 inode28 c13 p14 c14 FA1B
-X15-fa inode29 inode30 c14 p15 c15 FA1B
-X16-fa inode31 inode32 c15 p16 c16 FA1B
-X17-fa inode33 inode34 c16 p17 c17 FA1B
-X18-ha inode35 c17 p18 p19 HA1B
+X14-adder18 t0-13 t1-13 t2-13 t3-13 t4-13 t5-13 t6-13 t7-13 t8-13 t9-13 t10-13 t11-13 t12-13 t13-13 t14-13 t15-13 t16-13 t17-13 t18-13 ia0-15 ia1-15 ia2-15 ia3-15 ia4-15 ia5-15 ia6-15 ia7-15 ia8-15 ia9-15 ia10-15 ia11-15 ia12-15 ia13-15 ia14-15 ia15-15 ia16-15 ia17-15 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33 ADDER18
 .ends
 
 *Decoder for enable signals of word line loading
@@ -654,8 +715,8 @@ X13-w1-nand5 node7 b13 cse0p cse1 in1-13 nw1-13 NAND5
 X14-w1-nand5 node7 b14 cse0p cse1 in1-14 nw1-14 NAND5
 X15-w1-nand5 node7 b15 cse0p cse1 in1-15 nw1-15 NAND5
 
-X0-wl0-nand2 nw0-0 nw0-1 wl0 NAND2
-X1-wl1-nand2 nw1-0 nw1-1 wl1 NAND2
+X0-wl0-nand16 nw0-0 nw0-1 nw0-2 nw0-3 nw0-4 nw0-5 nw0-6 nw0-7 nw0-8 nw0-9 nw0-10 nw0-11 nw0-12 nw0-13 nw0-14 nw0-15 wl0 NAND16
+X1-wl1-nand16 nw1-0 nw1-1 nw1-2 nw1-3 nw1-4 nw1-5 nw1-6 nw1-7 nw1-8 nw1-9 nw1-10 nw1-11 nw1-12 nw1-13 nw1-14 nw1-15 wl1 NAND16
 
 X1-inv se sep INV
 X2-inv sep node7 INV
@@ -712,7 +773,7 @@ X0-sense-amplifier-adder csa0-0 csa0-1 csa1-0 csa1-1 csa2-0 csa2-1 csa3-0 csa3-1
 X0-bitplace cb0 cb1 cb2 cb3 cb0p cb1p cb2p cb3p b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 DECODER4
 
 *Multiply the outputs of the sense amplifier counters by the appropriate bit-place position
-X0-mult csa0-0 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 b0 b1 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 MULT
+X0-mult csa0-0 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33 MULT
 
 *Logic to reset counters
 X0-controller cse0 cse1 cse2 cse0p cse1p cse2p b15 rman clk clkp sep cap rsac rclk CONTROLLER
@@ -737,7 +798,21 @@ X0-p15buf0 p15 p15b0 BUF
 X0-p16buf0 p16 p16b0 BUF
 X0-p17buf0 p17 p17b0 BUF
 X0-p18buf0 p18 p18b0 BUF
-X0-p19buf0 p19 p1b90 BUF
+X0-p19buf0 p19 p19b0 BUF
+X0-p20buf0 p20 p20b0 BUF
+X0-p21buf0 p21 p21b0 BUF
+X0-p22buf0 p22 p22b0 BUF
+X0-p23buf0 p23 p23b0 BUF
+X0-p24buf0 p24 p24b0 BUF
+X0-p25buf0 p25 p25b0 BUF
+X0-p26buf0 p26 p26b0 BUF
+X0-p27buf0 p27 p27b0 BUF
+X0-p28buf0 p28 p28b0 BUF
+X0-p29buf0 p29 p29b0 BUF
+X0-p30buf0 p30 p30b0 BUF
+X0-p31buf0 p31 p31b0 BUF
+X0-p32buf0 p32 p32b0 BUF
+X0-p33buf0 p33 p33b0 BUF
 
 *Flip flops to capture values from the multiplier
 *One set of flip flops feeds into the second set, and the outputs of the two sets are added together to get the final result
@@ -761,76 +836,206 @@ X16-x-dff cap rman p16b0 x16 x16p DFF1
 X17-x-dff cap rman p17b0 x17 x17p DFF1
 X18-x-dff cap rman p18b0 x18 x18p DFF1
 X19-x-dff cap rman p19b0 x19 x19p DFF1
+X20-x-dff cap rman p20b0 x20 x20p DFF1
+X21-x-dff cap rman p21b0 x21 x21p DFF1
+X22-x-dff cap rman p22b0 x22 x22p DFF1
+X23-x-dff cap rman p23b0 x23 x23p DFF1
+X24-x-dff cap rman p24b0 x24 x24p DFF1
+X25-x-dff cap rman p25b0 x25 x25p DFF1
+X26-x-dff cap rman p26b0 x26 x26p DFF1
+X27-x-dff cap rman p27b0 x27 x27p DFF1
+X28-x-dff cap rman p28b0 x28 x28p DFF1
+X29-x-dff cap rman p29b0 x29 x29p DFF1
+X30-x-dff cap rman p30b0 x30 x30p DFF1
+X31-x-dff cap rman p31b0 x31 x31p DFF1
+X32-x-dff cap rman p32b0 x32 x32p DFF1
+X33-x-dff cap rman p33b0 x33 x33p DFF1
 
 *Buffers between X-DFF and Y-DFF
 X0-x0buf0 x0 x0b0 BUF
-X1-x1buf0 x1 x1b0 BUF
-X2-x2buf0 x2 x2b0 BUF
-X3-x3buf0 x3 x3b0 BUF
-X4-x4buf0 x4 x4b0 BUF
-X5-x5buf0 x5 x5b0 BUF
-X6-x6buf0 x6 x6b0 BUF
-X7-x7buf0 x7 x7b0 BUF
-X8-x8buf0 x8 x8b0 BUF
-X9-x9buf0 x9 x9b0 BUF
-X1-x10buf0 x10 x10b0 BUF
-X1-x11buf0 x11 x11b0 BUF
-X2-x12buf0 x12 x12b0 BUF
-X3-x13buf0 x13 x13b0 BUF
-X4-x14buf0 x14 x14b0 BUF
-X5-x15buf0 x15 x15b0 BUF
-X6-x16buf0 x16 x16b0 BUF
-X7-x17buf0 x17 x17b0 BUF
-X8-x18buf0 x18 x18b0 BUF
-X9-x19buf0 x19 x19b0 BUF
+X0-x1buf0 x1 x1b0 BUF
+X0-x2buf0 x2 x2b0 BUF
+X0-x3buf0 x3 x3b0 BUF
+X0-x4buf0 x4 x4b0 BUF
+X0-x5buf0 x5 x5b0 BUF
+X0-x6buf0 x6 x6b0 BUF
+X0-x7buf0 x7 x7b0 BUF
+X0-x8buf0 x8 x8b0 BUF
+X0-x9buf0 x9 x9b0 BUF
+X0-x10buf0 x10 x10b0 BUF
+X0-x11buf0 x11 x11b0 BUF
+X0-x12buf0 x12 x12b0 BUF
+X0-x13buf0 x13 x13b0 BUF
+X0-x14buf0 x14 x14b0 BUF
+X0-x15buf0 x15 x15b0 BUF
+X0-x16buf0 x16 x16b0 BUF
+X0-x17buf0 x17 x17b0 BUF
+X0-x18buf0 x18 x18b0 BUF
+X0-x19buf0 x19 x19b0 BUF
+X0-x20buf0 x20 x20b0 BUF
+X0-x21buf0 x21 x21b0 BUF
+X0-x22buf0 x22 x22b0 BUF
+X0-x23buf0 x23 x23b0 BUF
+X0-x24buf0 x24 x24b0 BUF
+X0-x25buf0 x25 x25b0 BUF
+X0-x26buf0 x26 x26b0 BUF
+X0-x27buf0 x27 x27b0 BUF
+X0-x28buf0 x28 x28b0 BUF
+X0-x29buf0 x29 x29b0 BUF
+X0-x30buf0 x30 x30b0 BUF
+X0-x31buf0 x31 x31b0 BUF
+X0-x32buf0 x32 x32b0 BUF
+X0-x33buf0 x33 x33b0 BUF
 
-X0-y-dff cap rman x0b0 y0 y0p DFF1
-X1-y-dff cap rman x1b0 y1 y1p DFF1
-X2-y-dff cap rman x2b0 y2 y2p DFF1
-X3-y-dff cap rman x3b0 y3 y3p DFF1
-X4-y-dff cap rman x4b0 y4 y4p DFF1
-X5-y-dff cap rman x5b0 y5 y5p DFF1
-X6-y-dff cap rman x6b0 y6 y6p DFF1
-X7-y-dff cap rman x7b0 y7 y7p DFF1
-X8-y-dff cap rman x8b0 y8 y8p DFF1
-X9-y-dff cap rman x9b0 y9 y9p DFF1
-X10-y-dff cap rman x10b0 y10 y10p DFF1
-X11-y-dff cap rman x11b0 y11 y11p DFF1
-X12-y-dff cap rman x12b0 y12 y12p DFF1
-X13-y-dff cap rman x13b0 y13 y13p DFF1
-X14-y-dff cap rman x14b0 y14 y14p DFF1
-X15-y-dff cap rman x15b0 y15 y15p DFF1
-X16-y-dff cap rman x16b0 y16 y16p DFF1
-X17-y-dff cap rman x17b0 y17 y17p DFF1
-X18-y-dff cap rman x18b0 y18 y18p DFF1
-X19-y-dff cap rman x19b0 y19 y19p DFF1
+X0-y-dff cap rman f0b0 y0 y0p DFF1
+X1-y-dff cap rman f1b0 y1 y1p DFF1
+X2-y-dff cap rman f2b0 y2 y2p DFF1
+X3-y-dff cap rman f3b0 y3 y3p DFF1
+X4-y-dff cap rman f4b0 y4 y4p DFF1
+X5-y-dff cap rman f5b0 y5 y5p DFF1
+X6-y-dff cap rman f6b0 y6 y6p DFF1
+X7-y-dff cap rman f7b0 y7 y7p DFF1
+X8-y-dff cap rman f8b0 y8 y8p DFF1
+X9-y-dff cap rman f9b0 y9 y9p DFF1
+X10-y-dff cap rman f10b0 y10 y10p DFF1
+X11-y-dff cap rman f11b0 y11 y11p DFF1
+X12-y-dff cap rman f12b0 y12 y12p DFF1
+X13-y-dff cap rman f13b0 y13 y13p DFF1
+X14-y-dff cap rman f14b0 y14 y14p DFF1
+X15-y-dff cap rman f15b0 y15 y15p DFF1
+X16-y-dff cap rman f16b0 y16 y16p DFF1
+X17-y-dff cap rman f17b0 y17 y17p DFF1
+X18-y-dff cap rman f18b0 y18 y18p DFF1
+X19-y-dff cap rman f19b0 y19 y19p DFF1
+X20-y-dff cap rman f20b0 y20 y20p DFF1
+X21-y-dff cap rman f21b0 y21 y21p DFF1
+X22-y-dff cap rman f22b0 y22 y22p DFF1
+X23-y-dff cap rman f23b0 y23 y23p DFF1
+X24-y-dff cap rman f24b0 y24 y24p DFF1
+X25-y-dff cap rman f25b0 y25 y25p DFF1
+X26-y-dff cap rman f26b0 y26 y26p DFF1
+X27-y-dff cap rman f27b0 y27 y27p DFF1
+X28-y-dff cap rman f28b0 y28 y28p DFF1
+X29-y-dff cap rman f29b0 y29 y29p DFF1
+X30-y-dff cap rman f30b0 y30 y30p DFF1
+X31-y-dff cap rman f31b0 y31 y31p DFF1
+X32-y-dff cap rman f32b0 y32 y32p DFF1
+X33-y-dff cap rman f33b0 y33 y33p DFF1
+X34-y-dff cap rman f34b0 y34 y34p DFF1
+
+X0-y0buf0 y0 y0b0 BUF
+X0-y1buf0 y1 y1b0 BUF
+X0-y2buf0 y2 y2b0 BUF
+X0-y3buf0 y3 y3b0 BUF
+X0-y4buf0 y4 y4b0 BUF
+X0-y5buf0 y5 y5b0 BUF
+X0-y6buf0 y6 y6b0 BUF
+X0-y7buf0 y7 y7b0 BUF
+X0-y8buf0 y8 y8b0 BUF
+X0-y9buf0 y9 y9b0 BUF
+X0-y10buf0 y10 y10b0 BUF
+X0-y11buf0 y11 y11b0 BUF
+X0-y12buf0 y12 y12b0 BUF
+X0-y13buf0 y13 y13b0 BUF
+X0-y14buf0 y14 y14b0 BUF
+X0-y15buf0 y15 y15b0 BUF
+X0-y16buf0 y16 y16b0 BUF
+X0-y17buf0 y17 y17b0 BUF
+X0-y18buf0 y18 y18b0 BUF
+X0-y19buf0 y19 y19b0 BUF
+X0-y20buf0 y20 y20b0 BUF
+X0-y21buf0 y21 y21b0 BUF
+X0-y22buf0 y22 y22b0 BUF
+X0-y23buf0 y23 y23b0 BUF
+X0-y24buf0 y24 y24b0 BUF
+X0-y25buf0 y25 y25b0 BUF
+X0-y26buf0 y26 y26b0 BUF
+X0-y27buf0 y27 y27b0 BUF
+X0-y28buf0 y28 y28b0 BUF
+X0-y29buf0 y29 y29b0 BUF
+X0-y30buf0 y30 y30b0 BUF
+X0-y31buf0 y31 y31b0 BUF
+X0-y32buf0 y32 y32b0 BUF
+X0-y33buf0 y33 y33b0 BUF
+X0-y34buf0 y34 y34b0 BUF
 
 **Adders for the final result
-X0-f-ha x0 y0 f0 c0 HA1B
-X1-f-fa x1 y1 c0 f1 c1 FA1B
-X2-f-fa x2 y2 c1 f2 c2 FA1B
-X3-f-fa x3 y3 c2 f3 c3 FA1B
-X4-f-fa x4 y4 c3 f4 c4 FA1B
-X5-f-fa x5 y5 c4 f5 c5 FA1B
-X6-f-fa x6 y6 c5 f6 c6 FA1B
-X7-f-fa x7 y7 c6 f7 c7 FA1B
-X8-f-fa x8 y8 c7 f8 c8 FA1B
-X9-f-fa x9 y9 c8 f9 c9 FA1B
-X10-f-fa x10 y10 c9 f10 c10 FA1B
-X11-f-fa x11 y11 c10 f11 c11 FA1B
-X12-f-fa x12 y12 c11 f12 c12 FA1B
-X13-f-fa x13 y13 c12 f13 c13 FA1B
-X14-f-fa x14 y14 c13 f14 c14 FA1B
-X15-f-fa x15 y15 c14 f15 c15 FA1B
-X16-f-fa x16 y16 c15 f16 c16 FA1B
-X17-f-fa x17 y17 c16 f17 c17 FA1B
-X18-f-fa x18 y18 c17 f18 c18 FA1B
-X19-f-fa x19 y19 c18 f19 f20 FA1B
+X0-f-ha x0b0 y0b0 f0 c0 HA1B
+X1-f-fa x1b0 y1b0 c0 f1 c1 FA1B
+X2-f-fa x2b0 y2b0 c1 f2 c2 FA1B
+X3-f-fa x3b0 y3b0 c2 f3 c3 FA1B
+X4-f-fa x4b0 y4b0 c3 f4 c4 FA1B
+X5-f-fa x5b0 y5b0 c4 f5 c5 FA1B
+X6-f-fa x6b0 y6b0 c5 f6 c6 FA1B
+X7-f-fa x7b0 y7b0 c6 f7 c7 FA1B
+X8-f-fa x8b0 y8b0 c7 f8 c8 FA1B
+X9-f-fa x9b0 y9b0 c8 f9 c9 FA1B
+X10-f-fa x10b0 y10b0 c9 f10 c10 FA1B
+X11-f-fa x11b0 y11b0 c10 f11 c11 FA1B
+X12-f-fa x12b0 y12b0 c11 f12 c12 FA1B
+X13-f-fa x13b0 y13b0 c12 f13 c13 FA1B
+X14-f-fa x14b0 y14b0 c13 f14 c14 FA1B
+X15-f-fa x15b0 y15b0 c14 f15 c15 FA1B
+X16-f-fa x16b0 y16b0 c15 f16 c16 FA1B
+X17-f-fa x17b0 y17b0 c16 f17 c17 FA1B
+X18-f-fa x18b0 y18b0 c17 f18 c18 FA1B
+X19-f-fa x19b0 y19b0 c18 f19 c19 FA1B
+X20-f-fa x20b0 y20b0 c19 f20 c20 FA1B
+X21-f-fa x21b0 y21b0 c20 f21 c21 FA1B
+X22-f-fa x22b0 y22b0 c21 f22 c22 FA1B
+X23-f-fa x23b0 y23b0 c22 f23 c23 FA1B
+X24-f-fa x24b0 y24b0 c23 f24 c24 FA1B
+X25-f-fa x25b0 y25b0 c24 f25 c25 FA1B
+X26-f-fa x26b0 y26b0 c25 f26 c26 FA1B
+X27-f-fa x27b0 y27b0 c26 f27 c27 FA1B
+X28-f-fa x28b0 y28b0 c27 f28 c28 FA1B
+X29-f-fa x29b0 y29b0 c28 f29 c29 FA1B
+X30-f-fa x30b0 y30b0 c29 f30 c30 FA1B
+X31-f-fa x31b0 y31b0 c30 f31 c31 FA1B
+X32-f-fa x32b0 y32b0 c31 f32 c32 FA1B
+X33-f-fa x33b0 y33b0 c32 f33 c33 FA1B
+X34-f-ha y34b0 c33 f34 f35 HA1B
 
+X0-f0buf0 f0 f0b0 BUF
+X0-f1buf0 f1 f1b0 BUF
+X0-f2buf0 f2 f2b0 BUF
+X0-f3buf0 f3 f3b0 BUF
+X0-f4buf0 f4 f4b0 BUF
+X0-f5buf0 f5 f5b0 BUF
+X0-f6buf0 f6 f6b0 BUF
+X0-f7buf0 f7 f7b0 BUF
+X0-f8buf0 f8 f8b0 BUF
+X0-f9buf0 f9 f9b0 BUF
+X0-f10buf0 f10 f10b0 BUF
+X0-f11buf0 f11 f11b0 BUF
+X0-f12buf0 f12 f12b0 BUF
+X0-f13buf0 f13 f13b0 BUF
+X0-f14buf0 f14 f14b0 BUF
+X0-f15buf0 f15 f15b0 BUF
+X0-f16buf0 f16 f16b0 BUF
+X0-f17buf0 f17 f17b0 BUF
+X0-f18buf0 f18 f18b0 BUF
+X0-f19buf0 f19 f19b0 BUF
+X0-f20buf0 f20 f20b0 BUF
+X0-f21buf0 f21 f21b0 BUF
+X0-f22buf0 f22 f22b0 BUF
+X0-f23buf0 f23 f23b0 BUF
+X0-f24buf0 f24 f24b0 BUF
+X0-f25buf0 f25 f25b0 BUF
+X0-f26buf0 f26 f26b0 BUF
+X0-f27buf0 f27 f27b0 BUF
+X0-f28buf0 f28 f28b0 BUF
+X0-f29buf0 f29 f29b0 BUF
+X0-f30buf0 f30 f30b0 BUF
+X0-f31buf0 f31 f31b0 BUF
+X0-f32buf0 f32 f32b0 BUF
+X0-f33buf0 f33 f33b0 BUF
+X0-f34buf0 f34 f34b0 BUF
 
 **Capacitor Definitions**
 Cclk clk GND 5fF
 Cse se GND 5fF
+C7 node7 GND 20fF
 
 
 **Simulation Control**
