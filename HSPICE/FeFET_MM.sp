@@ -23,58 +23,181 @@
 .GLOBAL VDD GND
 Vsupply VDD 0 1
 Vground GND 0 0
-Vsl0 sl0 0 1
-Vsl1 sl1 0 1
-Vsl2 sl2 0 1
-Vsl3 sl3 0 1
-Vsl4 sl4 0 1
-Vsl5 sl5 0 1
-Vsl6 sl6 0 1
-Vsl7 sl7 0 1
-Vsl8 sl8 0 1
-Vsl9 sl9 0 1
-Vsl10 sl10 0 1
-Vsl11 sl11 0 1
-Vsl12 sl12 0 1
-Vsl13 sl13 0 1
-Vsl14 sl14 0 1
-Vsl15 sl15 0 1
+Vsl0-0 sl0-0 0 1
+Vsl0-1 sl0-1 0 1
+Vsl0-2 sl0-2 0 1
+Vsl0-3 sl0-3 0 1
+Vsl0-4 sl0-4 0 1
+Vsl0-5 sl0-5 0 1
+Vsl0-6 sl0-6 0 1
+Vsl0-7 sl0-7 0 1
+Vsl0-8 sl0-8 0 1
+Vsl0-9 sl0-9 0 1
+Vsl0-10 sl0-10 0 1
+Vsl0-11 sl0-11 0 1
+Vsl0-12 sl0-12 0 1
+Vsl0-13 sl0-13 0 1
+Vsl0-14 sl0-14 0 1
+Vsl0-15 sl0-15 0 1
+
+Vsl1-0 sl1-0 0 1
+Vsl1-1 sl1-1 0 1
+Vsl1-2 sl1-2 0 1
+Vsl1-3 sl1-3 0 1
+Vsl1-4 sl1-4 0 1
+Vsl1-5 sl1-5 0 1
+Vsl1-6 sl1-6 0 1
+Vsl1-7 sl1-7 0 1
+Vsl1-8 sl1-8 0 1
+Vsl1-9 sl1-9 0 1
+Vsl1-10 sl1-10 0 1
+Vsl1-11 sl1-11 0 1
+Vsl1-12 sl1-12 0 1
+Vsl1-13 sl1-13 0 1
+Vsl1-14 sl1-14 0 1
+Vsl1-15 sl1-15 0 1
+
+Vsl2-0 sl2-0 0 1
+Vsl2-1 sl2-1 0 1
+Vsl2-2 sl2-2 0 1
+Vsl2-3 sl2-3 0 1
+Vsl2-4 sl2-4 0 1
+Vsl2-5 sl2-5 0 1
+Vsl2-6 sl2-6 0 1
+Vsl2-7 sl2-7 0 1
+Vsl2-8 sl2-8 0 1
+Vsl2-9 sl2-9 0 1
+Vsl2-10 sl2-10 0 1
+Vsl2-11 sl2-11 0 1
+Vsl2-12 sl2-12 0 1
+Vsl2-13 sl2-13 0 1
+Vsl2-14 sl2-14 0 1
+Vsl2-15 sl2-15 0 1
+
+Vsl3-0 sl3-0 0 1
+Vsl3-1 sl3-1 0 1
+Vsl3-2 sl3-2 0 1
+Vsl3-3 sl3-3 0 1
+Vsl3-4 sl3-4 0 1
+Vsl3-5 sl3-5 0 1
+Vsl3-6 sl3-6 0 1
+Vsl3-7 sl3-7 0 1
+Vsl3-8 sl3-8 0 1
+Vsl3-9 sl3-9 0 1
+Vsl3-10 sl3-10 0 1
+Vsl3-11 sl3-11 0 1
+Vsl3-12 sl3-12 0 1
+Vsl3-13 sl3-13 0 1
+Vsl3-14 sl3-14 0 1
+Vsl3-15 sl3-15 0 1
 
 *First input
 Vin0-0 in0-0 0 1
-Vin0-1 in0-1 0 1
-Vin0-2 in0-2 0 1
-Vin0-3 in0-3 0 1
+Vin0-1 in0-1 0 0
+Vin0-2 in0-2 0 0
+Vin0-3 in0-3 0 0
 Vin0-4 in0-4 0 1
-Vin0-5 in0-5 0 1
-Vin0-6 in0-6 0 1
-Vin0-7 in0-7 0 1
-Vin0-8 in0-8 0 1
-Vin0-9 in0-9 0 1
+Vin0-5 in0-5 0 0
+Vin0-6 in0-6 0 0
+Vin0-7 in0-7 0 0
+Vin0-8 in0-8 0 0
+Vin0-9 in0-9 0 0
 Vin0-10 in0-10 0 1
-Vin0-11 in0-11 0 1
+Vin0-11 in0-11 0 0
 Vin0-12 in0-12 0 1
 Vin0-13 in0-13 0 1
-Vin0-14 in0-14 0 1
-Vin0-15 in0-15 0 1
+Vin0-14 in0-14 0 0
+Vin0-15 in0-15 0 0
 
 *Second input
-Vin1-0 in1-0 0 1
-Vin1-1 in1-1 0 1
-Vin1-2 in1-2 0 1
-Vin1-3 in1-3 0 1
-Vin1-4 in1-4 0 1
-Vin1-5 in1-5 0 1
-Vin1-6 in1-6 0 1
-Vin1-7 in1-7 0 1
-Vin1-8 in1-8 0 1
-Vin1-9 in1-9 0 1
-Vin1-10 in1-10 0 1
-Vin1-11 in1-11 0 1
-Vin1-12 in1-12 0 1
-Vin1-13 in1-13 0 1
-Vin1-14 in1-14 0 1
-Vin1-15 in1-15 0 1
+Vin1-0 in1-0 0 0
+Vin1-1 in1-1 0 0
+Vin1-2 in1-2 0 0
+Vin1-3 in1-3 0 0
+Vin1-4 in1-4 0 0
+Vin1-5 in1-5 0 0
+Vin1-6 in1-6 0 0
+Vin1-7 in1-7 0 0
+Vin1-8 in1-8 0 0
+Vin1-9 in1-9 0 
+Vin1-10 in1-10 0 0
+Vin1-11 in1-11 0 0
+Vin1-12 in1-12 0 0
+Vin1-13 in1-13 0 0
+Vin1-14 in1-14 0 0
+Vin1-15 in1-15 0 0
+
+*First bias
+Vbi0-0 bi0-0 0 0
+Vbi0-1 bi0-1 0 1
+Vbi0-2 bi0-2 0 1
+Vbi0-3 bi0-3 0 0
+Vbi0-4 bi0-4 0 1
+Vbi0-5 bi0-5 0 1
+Vbi0-6 bi0-6 0 1
+Vbi0-7 bi0-7 0 0
+Vbi0-8 bi0-8 0 1
+Vbi0-9 bi0-9 0 1
+Vbi0-10 bi0-10 0 0
+Vbi0-11 bi0-11 0 1
+Vbi0-12 bi0-12 0 1
+Vbi0-13 bi0-13 0 0
+Vbi0-14 bi0-14 0 0
+Vbi0-15 bi0-15 0 0
+
+*Second bias
+Vbi1-0 bi1-0 0 0
+Vbi1-1 bi1-1 0 0
+Vbi1-2 bi1-2 0 1
+Vbi1-3 bi1-3 0 0
+Vbi1-4 bi1-4 0 0
+Vbi1-5 bi1-5 0 1
+Vbi1-6 bi1-6 0 0
+Vbi1-7 bi1-7 0 0
+Vbi1-8 bi1-8 0 0
+Vbi1-9 bi1-9 0 0
+Vbi1-10 bi1-10 0 1
+Vbi1-11 bi1-11 0 0
+Vbi1-12 bi1-12 0 0
+Vbi1-13 bi1-13 0 1
+Vbi1-14 bi1-14 0 0
+Vbi1-15 bi1-15 0 0
+
+*Third bias
+Vbi2-0 bi2-0 0 1
+Vbi2-1 bi2-1 0 1
+Vbi2-2 bi2-2 0 1
+Vbi2-3 bi2-3 0 0
+Vbi2-4 bi2-4 0 0
+Vbi2-5 bi2-5 0 0
+Vbi2-6 bi2-6 0 1
+Vbi2-7 bi2-7 0 0
+Vbi2-8 bi2-8 0 1
+Vbi2-9 bi2-9 0 1
+Vbi2-10 bi2-10 0 0
+Vbi2-11 bi2-11 0 0
+Vbi2-12 bi2-12 0 0
+Vbi2-13 bi2-13 0 1
+Vbi2-14 bi2-14 0 0
+Vbi2-15 bi2-15 0 0
+
+*Fourth bias
+Vbi3-0 bi3-0 0 1
+Vbi3-1 bi3-1 0 1
+Vbi3-2 bi3-2 0 0
+Vbi3-3 bi3-3 0 0
+Vbi3-4 bi3-4 0 0
+Vbi3-5 bi3-5 0 1
+Vbi3-6 bi3-6 0 0
+Vbi3-7 bi3-7 0 0
+Vbi3-8 bi3-8 0 1
+Vbi3-9 bi3-9 0 1
+Vbi3-10 bi3-10 0 1
+Vbi3-11 bi3-11 0 1
+Vbi3-12 bi3-12 0 1
+Vbi3-13 bi3-13 0 0
+Vbi3-14 bi3-14 0 0
+Vbi3-15 bi3-15 0 0
 
 **Circuit Definitions**
 *Low threshold voltage FeFET (logic 1)
@@ -464,6 +587,45 @@ X14-ha t13-0 csa15-0 s14 cout14 HA1B
 X14-fa t13-1 csa15-1 cout14 s15 s16 FA1B
 .ends
 
+*Adder for the final biasing
+.subckt ADDER35 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 a31 a32 a33 a34 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 s28 s29 s30 s31 s32 s33 s34 s35
+X0-ha a0 b0 s0 c0 HA1B
+X1-fa a1 b1 c0 s1 c1 FA1B
+X2-fa a2 b2 c1 s2 c2 FA1B
+X3-fa a3 b3 c2 s3 c3 FA1B
+X4-fa a4 b4 c3 s4 c4 FA1B
+X5-fa a5 b5 c4 s5 c5 FA1B
+X6-fa a6 b6 c5 s6 c6 FA1B
+X7-fa a7 b7 c6 s7 c7 FA1B
+X8-fa a8 b8 c7 s8 c8 FA1B
+X9-fa a9 b9 c8 s9 c9 FA1B
+X10-fa a10 b10 c9 s10 c10 FA1B
+X11-fa a11 b11 c10 s11 c11 FA1B
+X12-fa a12 b12 c11 s12 c12 FA1B
+X13-fa a13 b13 c12 s13 c13 FA1B
+X14-fa a14 b14 c13 s14 c14 FA1B
+X15-fa a15 b15 c14 s15 c15 FA1B
+X16-ha a16 c15 s16 c16 HA1B
+X17-ha a17 c16 s17 c17 HA1B
+X18-ha a18 c17 s18 c18 HA1B
+X19-ha a19 c18 s19 c19 HA1B
+X20-ha a20 c19 s20 c20 HA1B
+X21-ha a21 c20 s21 c21 HA1B
+X22-ha a22 c21 s22 c22 HA1B
+X23-ha a23 c22 s23 c23 HA1B
+X24-ha a24 c23 s24 c24 HA1B
+X25-ha a25 c24 s25 c25 HA1B
+X26-ha a26 c25 s26 c26 HA1B
+X27-ha a27 c26 s27 c27 HA1B
+X28-ha a28 c27 s28 c28 HA1B
+X29-ha a29 c28 s29 c29 HA1B
+X30-ha a30 c29 s30 c30 HA1B
+X31-ha a31 c30 s31 c31 HA1B
+X32-ha a32 c31 s32 c32 HA1B
+X33-ha a33 c32 s33 c33 HA1B
+X34-ha a34 c33 s34 s35 HA1B
+.ends
+
 *19bit + 18bit adder for the multiplier
 .subckt ADDER18 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 b16 b17 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19
 X0-ha a0 Vground s0 c0 HA1B
@@ -642,43 +804,144 @@ X3-fefet-w0 bl3 wl0 sl3 n-fefet-LVT
 X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
 X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
 X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
-X7-fefet-w0 bl7 wl0 sl7 n-fefet-LVT
+X7-fefet-w0 bl7 wl0 sl7 n-fefet-HVT
 X8-fefet-w0 bl8 wl0 sl8 n-fefet-LVT
 X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
-X10-fefet-w0 bl10 wl0 sl10 n-fefet-LVT
-X11-fefet-w0 bl11 wl0 sl11 n-fefet-LVT
+X10-fefet-w0 bl10 wl0 sl10 n-fefet-HVT
+X11-fefet-w0 bl11 wl0 sl11 n-fefet-HVT
 X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
 X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
-X14-fefet-w0 bl14 wl0 sl14 n-fefet-LVT
-X15-fefet-w0 bl15 wl0 sl15 n-fefet-LVT
+X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
+X15-fefet-w0 bl15 wl0 sl15 n-fefet-HVT
 
-X0-fefet-w1 bl0 wl1 sl0 n-fefet-LVT
-X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
-X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
+X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
+X1-fefet-w1 bl1 wl1 sl1 n-fefet-HVT
+X2-fefet-w1 bl2 wl1 sl2 n-fefet-HVT
 X3-fefet-w1 bl3 wl1 sl3 n-fefet-LVT
 X4-fefet-w1 bl4 wl1 sl4 n-fefet-LVT
-X5-fefet-w1 bl5 wl1 sl5 n-fefet-LVT
+X5-fefet-w1 bl5 wl1 sl5 n-fefet-HVT
 X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
 X7-fefet-w1 bl7 wl1 sl7 n-fefet-LVT
-X8-fefet-w1 bl8 wl1 sl8 n-fefet-LVT
-X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
-X10-fefet-w1 bl10 wl1 sl10 n-fefet-LVT
+X8-fefet-w1 bl8 wl1 sl8 n-fefet-HVT
+X9-fefet-w1 bl9 wl1 sl9 n-fefet-HVT
+X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
 X11-fefet-w1 bl11 wl1 sl11 n-fefet-LVT
 X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
 X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
-X14-fefet-w1 bl14 wl1 sl14 n-fefet-LVT
+X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
+X15-fefet-w1 bl15 wl1 sl15 n-fefet-HVT
+.ends
+
+.subckt CROSSBAR1 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
+X0-fefet-w0 bl0 wl0 sl0 n-fefet-LVT
+X1-fefet-w0 bl1 wl0 sl1 n-fefet-HVT
+X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
+X3-fefet-w0 bl3 wl0 sl3 n-fefet-HVT
+X4-fefet-w0 bl4 wl0 sl4 n-fefet-HVT
+X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
+X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
+X7-fefet-w0 bl7 wl0 sl7 n-fefet-HVT
+X8-fefet-w0 bl8 wl0 sl8 n-fefet-HVT
+X9-fefet-w0 bl9 wl0 sl9 n-fefet-HVT
+X10-fefet-w0 bl10 wl0 sl10 n-fefet-HVT
+X11-fefet-w0 bl11 wl0 sl11 n-fefet-LVT
+X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
+X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
+X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
+X15-fefet-w0 bl15 wl0 sl15 n-fefet-HVT
+
+X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
+X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
+X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
+X3-fefet-w1 bl3 wl1 sl3 n-fefet-LVT
+X4-fefet-w1 bl4 wl1 sl4 n-fefet-HVT
+X5-fefet-w1 bl5 wl1 sl5 n-fefet-LVT
+X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
+X7-fefet-w1 bl7 wl1 sl7 n-fefet-HVT
+X8-fefet-w1 bl8 wl1 sl8 n-fefet-HVT
+X9-fefet-w1 bl9 wl1 sl9 n-fefet-HVT
+X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
+X11-fefet-w1 bl11 wl1 sl11 n-fefet-LVT
+X12-fefet-w1 bl12 wl1 sl12 n-fefet-HVT
+X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
+X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
 X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
 .ends
 
-*Eventual peripheral circuitry to enable easy implementation of multiple kernel ops
-.subckt PERIPHERAL rman se clk in0-0 in0-1 in1-0 in1-1 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 f13 f14 f15 f16 f17 f18 f19 f20
+.subckt CROSSBAR2 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
+X0-fefet-w0 bl0 wl0 sl0 n-fefet-HVT
+X1-fefet-w0 bl1 wl0 sl1 n-fefet-HVT
+X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
+X3-fefet-w0 bl3 wl0 sl3 n-fefet-HVT
+X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
+X5-fefet-w0 bl5 wl0 sl5 n-fefet-HVT
+X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
+X7-fefet-w0 bl7 wl0 sl7 n-fefet-LVT
+X8-fefet-w0 bl8 wl0 sl8 n-fefet-LVT
+X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
+X10-fefet-w0 bl10 wl0 sl10 n-fefet-HVT
+X11-fefet-w0 bl11 wl0 sl11 n-fefet-HVT
+X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
+X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
+X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
+X15-fefet-w0 bl15 wl0 sl15 n-fefet-LVT
+
+X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
+X1-fefet-w1 bl1 wl1 sl1 n-fefet-HVT
+X2-fefet-w1 bl2 wl1 sl2 n-fefet-HVT
+X3-fefet-w1 bl3 wl1 sl3 n-fefet-HVT
+X4-fefet-w1 bl4 wl1 sl4 n-fefet-LVT
+X5-fefet-w1 bl5 wl1 sl5 n-fefet-LVT
+X6-fefet-w1 bl6 wl1 sl6 n-fefet-HVT
+X7-fefet-w1 bl7 wl1 sl7 n-fefet-HVT
+X8-fefet-w1 bl8 wl1 sl8 n-fefet-HVT
+X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
+X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
+X11-fefet-w1 bl11 wl1 sl11 n-fefet-LVT
+X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
+X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
+X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
+X15-fefet-w1 bl15 wl1 sl15 n-fefet-HVT
 .ends
 
+.subckt CROSSBAR3 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
+X0-fefet-w0 bl0 wl0 sl0 n-fefet-HVT
+X1-fefet-w0 bl1 wl0 sl1 n-fefet-LVT
+X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
+X3-fefet-w0 bl3 wl0 sl3 n-fefet-HVT
+X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
+X5-fefet-w0 bl5 wl0 sl5 n-fefet-HVT
+X6-fefet-w0 bl6 wl0 sl6 n-fefet-HVT
+X7-fefet-w0 bl7 wl0 sl7 n-fefet-HVT
+X8-fefet-w0 bl8 wl0 sl8 n-fefet-HVT
+X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
+X10-fefet-w0 bl10 wl0 sl10 n-fefet-LVT
+X11-fefet-w0 bl11 wl0 sl11 n-fefet-HVT
+X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
+X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
+X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
+X15-fefet-w0 bl15 wl0 sl15 n-fefet-LVT
 
-**Circuit Definitions** 
-*Crossbar array of fefets
-X0-crossbar bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 CROSSBAR0
+X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
+X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
+X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
+X3-fefet-w1 bl3 wl1 sl3 n-fefet-HVT
+X4-fefet-w1 bl4 wl1 sl4 n-fefet-HVT
+X5-fefet-w1 bl5 wl1 sl5 n-fefet-HVT
+X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
+X7-fefet-w1 bl7 wl1 sl7 n-fefet-HVT
+X8-fefet-w1 bl8 wl1 sl8 n-fefet-LVT
+X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
+X10-fefet-w1 bl10 wl1 sl10 n-fefet-LVT
+X11-fefet-w1 bl11 wl1 sl11 n-fefet-HVT
+X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
+X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
+X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
+X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
+.ends
 
+*Peripheral circuitry to enable easy implementation of multiple kernel ops
+.subckt PERIPHERAL rman se clk in0-0 in0-1 in0-2 in0-3 in0-4 in0-5 in0-6 in0-7 in0-8 in0-9 in0-10 in0-11 in0-12 in0-13 in0-14 in0-15 in1-0 in1-1 in1-2 in1-3 in1-4 in1-5 in1-6 in1-7 in1-8 in1-9 in1-10 in1-11 in1-12 in1-13 in1-14 in1-15 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 f13 f14 f15 f16 f17 f18 f19 f20 f21 f22 f23 f24 f25 f26 f27 f28 f29 f30 f31 f32 f33 f34
 *Decoder for enabling word-line loading
 *NAND gates for word-line loading
 X0-w0-nand5 node7 b0 cse0 cse1p in0-0 nw0-0 NAND5
@@ -959,7 +1222,7 @@ X0-y32buf0 y32 y32b0 BUF
 X0-y33buf0 y33 y33b0 BUF
 X0-y34buf0 y34 y34b0 BUF
 
-**Adders for the final result
+**Adders for the penultimate result
 X0-f-ha x0b0 y0b0 f0 c0 HA1B
 X1-f-fa x1b0 y1b0 c0 f1 c1 FA1B
 X2-f-fa x2b0 y2b0 c1 f2 c2 FA1B
@@ -994,7 +1257,7 @@ X30-f-fa x30b0 y30b0 c29 f30 c30 FA1B
 X31-f-fa x31b0 y31b0 c30 f31 c31 FA1B
 X32-f-fa x32b0 y32b0 c31 f32 c32 FA1B
 X33-f-fa x33b0 y33b0 c32 f33 c33 FA1B
-X34-f-ha y34b0 c33 f34 f35 HA1B
+X34-f-ha y34b0 c33 f34 c34 HA1B
 
 X0-f0buf0 f0 f0b0 BUF
 X0-f1buf0 f1 f1b0 BUF
@@ -1032,16 +1295,259 @@ X0-f32buf0 f32 f32b0 BUF
 X0-f33buf0 f33 f33b0 BUF
 X0-f34buf0 f34 f34b0 BUF
 
+C7 node7 GND 20fF
+.ends
+
+
+**Circuit Definitions** 
+*First Kernel
+X0-crossbar
++ bl0-0 bl0-1 bl0-2 bl0-3 bl0-4 bl0-5 bl0-6 bl0-7 bl0-8 bl0-9 bl0-10 bl0-11 bl0-12 bl0-13 bl0-14 bl0-15
++ wl0-0 wl0-1
++ sl0-0 sl0-1 sl0-2 sl0-3 sl0-4 sl0-5 sl0-6 sl0-7 sl0-8 sl0-9 sl0-10 sl0-11 sl0-12 sl0-13 sl0-14 sl0-15
++ CROSSBAR0
+
+X0-peripheral
++ rman se clk
++ in0-0 in0-1 in0-2 in0-3 in0-4 in0-5 in0-6 in0-7 in0-8 in0-9 in0-10 in0-11 in0-12 in0-13 in0-14 in0-15
++ in1-0 in1-1 in1-2 in1-3 in1-4 in1-5 in1-6 in1-7 in1-8 in1-9 in1-10 in1-11 in1-12 in1-13 in1-14 in1-15
++ bl0-0 bl0-1 bl0-2 bl0-3 bl0-4 bl0-5 bl0-6 bl0-7 bl0-8 bl0-9 bl0-10 bl0-11 bl0-12 bl0-13 bl0-14 bl0-15
++ wl0-0 wl0-1
++ sl0-0 sl0-1 sl0-2 sl0-3 sl0-4 sl0-5 sl0-6 sl0-7 sl0-8 sl0-9 sl0-10 sl0-11 sl0-12 sl0-13 sl0-14 sl0-15
++ f0-0 f0-1 f0-2 f0-3 f0-4 f0-5 f0-6 f0-7 f0-8 f0-9 f0-10 f0-11 f0-12 f0-13 f0-14 f0-15 f0-16 f0-17 f0-18 f0-19 f0-20 f0-21 f0-22 f0-23 f0-24 f0-25 f0-26 f0-27 f0-28 f0-29 f0-30 f0-31 f0-32 f0-33 f0-34
++ PERIPHERAL
+
+X0-adder
++ f0-0 f0-1 f0-2 f0-3 f0-4 f0-5 f0-6 f0-7 f0-8 f0-9 f0-10 f0-11 f0-12 f0-13 f0-14 f0-15 f0-16 f0-17 f0-18 f0-19 f0-20 f0-21 f0-22 f0-23 f0-24 f0-25 f0-26 f0-27 f0-28 f0-29 f0-30 f0-31 f0-32 f0-33 f0-34
++ bi0-0 bi0-1 bi0-2 bi0-3 bi0-4 bi0-5 bi0-6 bi0-7 bi0-8 bi0-9 bi0-10 bi0-11 bi0-12 bi0-13 bi0-14 bi0-15
++ s0-0 s0-1 s0-2 s0-3 s0-4 s0-5 s0-6 s0-7 s0-8 s0-9 s0-10 s0-11 s0-12 s0-13 s0-14 s0-15 s0-16 s0-17 s0-18 s0-19 s0-20 s0-21 s0-22 s0-23 s0-24 s0-25 s0-26 s0-27 s0-28 s0-29 s0-30 s0-31 s0-32 s0-33 s0-34 s0-35
++ ADDER35
+
+*Second Kernel
+X1-crossbar
++ bl1-0 bl1-1 bl1-2 bl1-3 bl1-4 bl1-5 bl1-6 bl1-7 bl1-8 bl1-9 bl1-10 bl1-11 bl1-12 bl1-13 bl1-14 bl1-15
++ wl1-0 wl1-1
++ sl1-0 sl1-1 sl1-2 sl1-3 sl1-4 sl1-5 sl1-6 sl1-7 sl1-8 sl1-9 sl1-10 sl1-11 sl1-12 sl1-13 sl1-14 sl1-15
++ CROSSBAR1
+
+X1-peripheral
++ rman se clk
++ in0-0 in0-1 in0-2 in0-3 in0-4 in0-5 in0-6 in0-7 in0-8 in0-9 in0-10 in0-11 in0-12 in0-13 in0-14 in0-15
++ in1-0 in1-1 in1-2 in1-3 in1-4 in1-5 in1-6 in1-7 in1-8 in1-9 in1-10 in1-11 in1-12 in1-13 in1-14 in1-15
++ bl1-0 bl1-1 bl1-2 bl1-3 bl1-4 bl1-5 bl1-6 bl1-7 bl1-8 bl1-9 bl1-10 bl1-11 bl1-12 bl1-13 bl1-14 bl1-15
++ wl1-0 wl1-1
++ sl1-0 sl1-1 sl1-2 sl1-3 sl1-4 sl1-5 sl1-6 sl1-7 sl1-8 sl1-9 sl1-10 sl1-11 sl1-12 sl1-13 sl1-14 sl1-15
++ f1-0 f1-1 f1-2 f1-3 f1-4 f1-5 f1-6 f1-7 f1-8 f1-9 f1-10 f1-11 f1-12 f1-13 f1-14 f1-15 f1-16 f1-17 f1-18 f1-19 f1-20 f1-21 f1-22 f1-23 f1-24 f1-25 f1-26 f1-27 f1-28 f1-29 f1-30 f1-31 f1-32 f1-33 f1-34
++ PERIPHERAL
+
+X1-adder
++ f1-0 f1-1 f1-2 f1-3 f1-4 f1-5 f1-6 f1-7 f1-8 f1-9 f1-10 f1-11 f1-12 f1-13 f1-14 f1-15 f1-16 f1-17 f1-18 f1-19 f1-20 f1-21 f1-22 f1-23 f1-24 f1-25 f1-26 f1-27 f1-28 f1-29 f1-30 f1-31 f1-32 f1-33 f1
++ bi1-0 bi1-1 bi1-2 bi1-3 bi1-4 bi1-5 bi1-6 bi1-7 bi1-8 bi1-9 bi1-10 bi1-11 bi1-12 bi1-13 bi1-14 bi1-15
++ s1-0 s1-1 s1-2 s1-3 s1-4 s1-5 s1-6 s1-7 s1-8 s1-9 s1-10 s1-11 s1-12 s1-13 s1-14 s1-15 s1-16 s1-17 s1-18 s1-19 s1-20 s1-21 s1-22 s1-23 s1-24 s1-25 s1-26 s1-27 s1-28 s1-29 s1-30 s1-31 s1-32 s1-33 s1-34 s1-35
++ ADDER35
+
+*Third Kernel
+X2-crossbar
++ bl2-0 bl2-1 bl2-2 bl2-3 bl2-4 bl2-5 bl2-6 bl2-7 bl2-8 bl2-9 bl2-10 bl2-11 bl2-12 bl2-13 bl2-14 bl2-15
++ wl2-0 wl2-1
++ sl2-0 sl2-1 sl2-2 sl2-3 sl2-4 sl2-5 sl2-6 sl2-7 sl2-8 sl2-9 sl2-10 sl2-11 sl2-12 sl2-13 sl2-14 sl2-15
++ CROSSBAR2
+
+X2-peripheral
++ rman se clk
++ in0-0 in0-1 in0-2 in0-3 in0-4 in0-5 in0-6 in0-7 in0-8 in0-9 in0-10 in0-11 in0-12 in0-13 in0-14 in0-15
++ in1-0 in1-1 in1-2 in1-3 in1-4 in1-5 in1-6 in1-7 in1-8 in1-9 in1-10 in1-11 in1-12 in1-13 in1-14 in1-15
++ bl2-0 bl2-1 bl2-2 bl2-3 bl2-4 bl2-5 bl2-6 bl2-7 bl2-8 bl2-9 bl2-10 bl2-11 bl2-12 bl2-13 bl2-14 bl2-15
++ wl2-0 wl2-1
++ sl2-0 sl2-1 sl2-2 sl2-3 sl2-4 sl2-5 sl2-6 sl2-7 sl2-8 sl2-9 sl2-10 sl2-11 sl2-12 sl2-13 sl2-14 sl2-15
++ f2-0 f2-1 f2-2 f2-3 f2-4 f2-5 f2-6 f2-7 f2-8 f2-9 f2-10 f2-11 f2-12 f2-13 f2-14 f2-15 f2-16 f2-17 f2-18 f2-19 f2-20 f2-21 f2-22 f2-23 f2-24 f2-25 f2-26 f2-27 f2-28 f2-29 f2-30 f2-31 f2-32 f2-33 f2-34
++ PERIPHERAL
+
+X2-adder
++ f2-0 f2-1 f2-2 f2-3 f2-4 f2-5 f2-6 f2-7 f2-8 f2-9 f2-10 f2-11 f2-12 f2-13 f2-14 f2-15 f2-16 f2-17 f2-18 f2-19 f2-20 f2-21 f2-22 f2-23 f2-24 f2-25 f2-26 f2-27 f2-28 f2-29 f2-30 f2-31 f2-32 f2-33 f2-34
++ bi2-0 bi2-1 bi2-2 bi2-3 bi2-4 bi2-5 bi2-6 bi2-7 bi2-8 bi2-9 bi2-10 bi2-11 bi2-12 bi2-13 bi2-14 bi2-15
++ s2-0 s2-1 s2-2 s2-3 s2-4 s2-5 s2-6 s2-7 s2-8 s2-9 s2-10 s2-11 s2-12 s2-13 s2-14 s2-15 s2-16 s2-17 s2-18 s2-19 s2-20 s2-21 s2-22 s2-23 s2-24 s2-25 s2-26 s2-27 s2-28 s2-29 s2-30 s2-31 s2-32 s2-33 s2-34 s2-35
++ ADDER35
+
+*Fourth Kernel
+X3-crossbar
++ bl3-0 bl3-1 bl3-2 bl3-3 bl3-4 bl3-5 bl3-6 bl3-7 bl3-8 bl3-9 bl3-10 bl3-11 bl3-12 bl3-13 bl3-14 bl3-15
++ wl3-0 wl3-1
++ sl3-0 sl3-1 sl3-2 sl3-3 sl3-4 sl3-5 sl3-6 sl3-7 sl3-8 sl3-9 sl3-10 sl3-11 sl3-12 sl3-13 sl3-14 sl3-15
++ CROSSBAR3
+
+X3-peripheral
++ rman se clk
++ in0-0 in0-1 in0-2 in0-3 in0-4 in0-5 in0-6 in0-7 in0-8 in0-9 in0-10 in0-11 in0-12 in0-13 in0-14 in0-15
++ in1-0 in1-1 in1-2 in1-3 in1-4 in1-5 in1-6 in1-7 in1-8 in1-9 in1-10 in1-11 in1-12 in1-13 in1-14 in1-15
++ bl3-0 bl3-1 bl3-2 bl3-3 bl3-4 bl3-5 bl3-6 bl3-7 bl3-8 bl3-9 bl3-10 bl3-11 bl3-12 bl3-13 bl3-14 bl3-15
++ wl3-0 wl3-1
++ sl3-0 sl3-1 sl3-2 sl3-3 sl3-4 sl3-5 sl3-6 sl3-7 sl3-8 sl3-9 sl3-10 sl3-11 sl3-12 sl3-13 sl3-14 sl3-15
++ f3-0 f3-1 f3-2 f3-3 f3-4 f3-5 f3-6 f3-7 f3-8 f3-9 f3-10 f3-11 f3-12 f3-13 f3-14 f3-15 f3-16 f3-17 f3-18 f3-19 f3-20 f3-21 f3-22 f3-23 f3-24 f3-25 f3-26 f3-27 f3-28 f3-29 f3-30 f3-31 f3-32 f3-33 f3-34
++ PERIPHERAL
+
+X3-adder
++ f3-0 f3-1 f3-2 f3-3 f3-4 f3-5 f3-6 f3-7 f3-8 f3-9 f3-10 f3-11 f3-12 f3-13 f3-14 f3-15 f3-16 f3-17 f3-18 f3-19 f3-20 f3-21 f3-22 f3-23 f3-24 f3-25 f3-26 f3-27 f3-28 f3-29 f3-30 f3-31 f3-32 f3-33 f3-34
++ bi3-0 bi3-1 bi3-2 bi3-3 bi3-4 bi3-5 bi3-6 bi3-7 bi3-8 bi3-9 bi3-10 bi3-11 bi3-12 bi3-13 bi3-14 bi3-15
++ s3-0 s3-1 s3-2 s3-3 s3-4 s3-5 s3-6 s3-7 s3-8 s3-9 s3-10 s3-11 s3-12 s3-13 s3-14 s3-15 s3-16 s3-17 s3-18 s3-19 s3-20 s3-21 s3-22 s3-23 s3-24 s3-25 s3-26 s3-27 s3-28 s3-29 s3-30 s3-31 s3-32 s3-33 s3-34 s3-35
++ ADDER35
+
 **Capacitor Definitions**
 Cclk clk GND 5fF
 Cse se GND 5fF
-C7 node7 GND 20fF
-
 
 **Simulation Control**
 Vrman rman GND PWL (0n 1 1n 1 1.001n 0 2n 0 2.001n 1)
 Vse se GND PULSE (0 1 5n 1p 1p 2.5n 5n)
 Vclk clk GND PULSE (0 1 6.7n 1p 1p 2.5n 5n)
+
+.MEASURE TRAN s0-0 FIND v(s0-0) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-1 FIND v(s0-1) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-2 FIND v(s0-2) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-3 FIND v(s0-3) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-4 FIND v(s0-4) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-5 FIND v(s0-5) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-6 FIND v(s0-6) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-7 FIND v(s0-7) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-8 FIND v(s0-8) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-9 FIND v(s0-9) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-10 FIND v(s0-10) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-11 FIND v(s0-11) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-12 FIND v(s0-12) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-13 FIND v(s0-13) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-14 FIND v(s0-14) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-15 FIND v(s0-15) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-16 FIND v(s0-16) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-17 FIND v(s0-17) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-18 FIND v(s0-18) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-19 FIND v(s0-19) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-20 FIND v(s0-20) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-21 FIND v(s0-21) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-22 FIND v(s0-22) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-23 FIND v(s0-23) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-24 FIND v(s0-24) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-25 FIND v(s0-25) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-26 FIND v(s0-26) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-27 FIND v(s0-27) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-28 FIND v(s0-28) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-29 FIND v(s0-29) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-30 FIND v(s0-30) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-31 FIND v(s0-31) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-32 FIND v(s0-32) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-33 FIND v(s0-33) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-34 FIND v(s0-34) when V(clk)=1V RISE=64
+.MEASURE TRAN s0-35 FIND v(s0-35) when V(clk)=1V RISE=64
+
+.MEASURE TRAN s1-0 FIND v(s1-0) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-1 FIND v(s1-1) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-2 FIND v(s1-2) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-3 FIND v(s1-3) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-4 FIND v(s1-4) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-5 FIND v(s1-5) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-6 FIND v(s1-6) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-7 FIND v(s1-7) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-8 FIND v(s1-8) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-9 FIND v(s1-9) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-10 FIND v(s1-10) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-11 FIND v(s1-11) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-12 FIND v(s1-12) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-13 FIND v(s1-13) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-14 FIND v(s1-14) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-15 FIND v(s1-15) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-16 FIND v(s1-16) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-17 FIND v(s1-17) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-18 FIND v(s1-18) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-19 FIND v(s1-19) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-20 FIND v(s1-20) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-21 FIND v(s1-21) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-22 FIND v(s1-22) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-23 FIND v(s1-23) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-24 FIND v(s1-24) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-25 FIND v(s1-25) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-26 FIND v(s1-26) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-27 FIND v(s1-27) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-28 FIND v(s1-28) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-29 FIND v(s1-29) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-30 FIND v(s1-30) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-31 FIND v(s1-31) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-32 FIND v(s1-32) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-33 FIND v(s1-33) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-34 FIND v(s1-34) when V(clk)=1V RISE=64
+.MEASURE TRAN s1-35 FIND v(s1-35) when V(clk)=1V RISE=64
+
+.MEASURE TRAN s2-0 FIND v(s2-0) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-1 FIND v(s2-1) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-2 FIND v(s2-2) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-3 FIND v(s2-3) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-4 FIND v(s2-4) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-5 FIND v(s2-5) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-6 FIND v(s2-6) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-7 FIND v(s2-7) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-8 FIND v(s2-8) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-9 FIND v(s2-9) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-10 FIND v(s2-10) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-11 FIND v(s2-11) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-12 FIND v(s2-12) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-13 FIND v(s2-13) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-14 FIND v(s2-14) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-15 FIND v(s2-15) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-16 FIND v(s2-16) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-17 FIND v(s2-17) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-18 FIND v(s2-18) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-19 FIND v(s2-19) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-20 FIND v(s2-20) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-21 FIND v(s2-21) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-22 FIND v(s2-22) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-23 FIND v(s2-23) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-24 FIND v(s2-24) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-25 FIND v(s2-25) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-26 FIND v(s2-26) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-27 FIND v(s2-27) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-28 FIND v(s2-28) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-29 FIND v(s2-29) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-30 FIND v(s2-30) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-31 FIND v(s2-31) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-32 FIND v(s2-32) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-33 FIND v(s2-33) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-34 FIND v(s2-34) when V(clk)=1V RISE=64
+.MEASURE TRAN s2-35 FIND v(s2-35) when V(clk)=1V RISE=64
+
+.MEASURE TRAN s3-0 FIND v(s3-0) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-1 FIND v(s3-1) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-2 FIND v(s3-2) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-3 FIND v(s3-3) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-4 FIND v(s3-4) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-5 FIND v(s3-5) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-6 FIND v(s3-6) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-7 FIND v(s3-7) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-8 FIND v(s3-8) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-9 FIND v(s3-9) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-10 FIND v(s3-10) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-11 FIND v(s3-11) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-12 FIND v(s3-12) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-13 FIND v(s3-13) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-14 FIND v(s3-14) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-15 FIND v(s3-15) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-16 FIND v(s3-16) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-17 FIND v(s3-17) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-18 FIND v(s3-18) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-19 FIND v(s3-19) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-20 FIND v(s3-20) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-21 FIND v(s3-21) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-22 FIND v(s3-22) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-23 FIND v(s3-23) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-24 FIND v(s3-24) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-25 FIND v(s3-25) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-26 FIND v(s3-26) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-27 FIND v(s3-27) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-28 FIND v(s3-28) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-29 FIND v(s3-29) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-30 FIND v(s3-30) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-31 FIND v(s3-31) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-32 FIND v(s3-32) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-33 FIND v(s3-33) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-34 FIND v(s3-34) when V(clk)=1V RISE=64
+.MEASURE TRAN s3-35 FIND v(s3-35) when V(clk)=1V RISE=64
 
 .TRAN 0.001n 350n
 
