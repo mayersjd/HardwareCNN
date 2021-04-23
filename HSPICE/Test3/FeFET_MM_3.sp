@@ -93,15 +93,15 @@ Vsl3-15 sl3-15 0 1
 
 *First input
 Vin0-0 in0-0 0 1
-Vin0-1 in0-1 0 0
-Vin0-2 in0-2 0 0
+Vin0-1 in0-1 0 1
+Vin0-2 in0-2 0 1
 Vin0-3 in0-3 0 0
-Vin0-4 in0-4 0 1
+Vin0-4 in0-4 0 0
 Vin0-5 in0-5 0 0
-Vin0-6 in0-6 0 0
+Vin0-6 in0-6 0 1
 Vin0-7 in0-7 0 0
-Vin0-8 in0-8 0 0
-Vin0-9 in0-9 0 0
+Vin0-8 in0-8 0 1
+Vin0-9 in0-9 0 1
 Vin0-10 in0-10 0 1
 Vin0-11 in0-11 0 0
 Vin0-12 in0-12 0 1
@@ -111,19 +111,19 @@ Vin0-15 in0-15 0 0
 
 *Second input
 Vin1-0 in1-0 0 0
-Vin1-1 in1-1 0 0
-Vin1-2 in1-2 0 0
+Vin1-1 in1-1 0 1
+Vin1-2 in1-2 0 1
 Vin1-3 in1-3 0 0
 Vin1-4 in1-4 0 0
 Vin1-5 in1-5 0 0
 Vin1-6 in1-6 0 0
-Vin1-7 in1-7 0 0
+Vin1-7 in1-7 0 1
 Vin1-8 in1-8 0 0
-Vin1-9 in1-9 0 
-Vin1-10 in1-10 0 0
+Vin1-9 in1-9 0 1
+Vin1-10 in1-10 0 1
 Vin1-11 in1-11 0 0
-Vin1-12 in1-12 0 0
-Vin1-13 in1-13 0 0
+Vin1-12 in1-12 0 1
+Vin1-13 in1-13 0 1
 Vin1-14 in1-14 0 0
 Vin1-15 in1-15 0 0
 
