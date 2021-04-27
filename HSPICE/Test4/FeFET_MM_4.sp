@@ -92,55 +92,55 @@ Vsl3-14 sl3-14 0 1
 Vsl3-15 sl3-15 0 1
 
 *First input
-Vin0-0 in0-0 0 1
+Vin0-0 in0-0 0 0
 Vin0-1 in0-1 0 1
 Vin0-2 in0-2 0 1
 Vin0-3 in0-3 0 0
-Vin0-4 in0-4 0 0
+Vin0-4 in0-4 0 1
 Vin0-5 in0-5 0 0
 Vin0-6 in0-6 0 1
-Vin0-7 in0-7 0 0
+Vin0-7 in0-7 0 1
 Vin0-8 in0-8 0 1
-Vin0-9 in0-9 0 1
-Vin0-10 in0-10 0 1
+Vin0-9 in0-9 0 0
+Vin0-10 in0-10 0 0
 Vin0-11 in0-11 0 0
-Vin0-12 in0-12 0 1
-Vin0-13 in0-13 0 1
+Vin0-12 in0-12 0 0
+Vin0-13 in0-13 0 0
 Vin0-14 in0-14 0 0
 Vin0-15 in0-15 0 0
 
 *Second input
-Vin1-0 in1-0 0 0
+Vin1-0 in1-0 0 1
 Vin1-1 in1-1 0 1
 Vin1-2 in1-2 0 1
 Vin1-3 in1-3 0 0
 Vin1-4 in1-4 0 0
 Vin1-5 in1-5 0 0
-Vin1-6 in1-6 0 0
+Vin1-6 in1-6 0 1
 Vin1-7 in1-7 0 1
 Vin1-8 in1-8 0 1
-Vin1-9 in1-9 0 1
-Vin1-10 in1-10 0 1
+Vin1-9 in1-9 0 0
+Vin1-10 in1-10 0 0
 Vin1-11 in1-11 0 0
-Vin1-12 in1-12 0 1
-Vin1-13 in1-13 0 1
+Vin1-12 in1-12 0 0
+Vin1-13 in1-13 0 0
 Vin1-14 in1-14 0 0
 Vin1-15 in1-15 0 0
 
 *First bias
-Vbi0-0 bi0-0 0 0
+Vbi0-0 bi0-0 0 1
 Vbi0-1 bi0-1 0 1
-Vbi0-2 bi0-2 0 1
-Vbi0-3 bi0-3 0 0
+Vbi0-2 bi0-2 0 0
+Vbi0-3 bi0-3 0 1
 Vbi0-4 bi0-4 0 1
 Vbi0-5 bi0-5 0 1
-Vbi0-6 bi0-6 0 1
+Vbi0-6 bi0-6 0 0
 Vbi0-7 bi0-7 0 0
-Vbi0-8 bi0-8 0 1
+Vbi0-8 bi0-8 0 0
 Vbi0-9 bi0-9 0 1
-Vbi0-10 bi0-10 0 0
+Vbi0-10 bi0-10 0 1
 Vbi0-11 bi0-11 0 1
-Vbi0-12 bi0-12 0 1
+Vbi0-12 bi0-12 0 0
 Vbi0-13 bi0-13 0 0
 Vbi0-14 bi0-14 0 0
 Vbi0-15 bi0-15 0 0
@@ -148,51 +148,51 @@ Vbi0-15 bi0-15 0 0
 *Second bias
 Vbi1-0 bi1-0 0 0
 Vbi1-1 bi1-1 0 0
-Vbi1-2 bi1-2 0 1
+Vbi1-2 bi1-2 0 0
 Vbi1-3 bi1-3 0 0
-Vbi1-4 bi1-4 0 0
+Vbi1-4 bi1-4 0 1
 Vbi1-5 bi1-5 0 1
 Vbi1-6 bi1-6 0 0
 Vbi1-7 bi1-7 0 0
-Vbi1-8 bi1-8 0 0
-Vbi1-9 bi1-9 0 0
+Vbi1-8 bi1-8 0 1
+Vbi1-9 bi1-9 0 1
 Vbi1-10 bi1-10 0 1
-Vbi1-11 bi1-11 0 0
-Vbi1-12 bi1-12 0 0
+Vbi1-11 bi1-11 0 1
+Vbi1-12 bi1-12 0 1
 Vbi1-13 bi1-13 0 1
 Vbi1-14 bi1-14 0 0
 Vbi1-15 bi1-15 0 0
 
 *Third bias
-Vbi2-0 bi2-0 0 1
+Vbi2-0 bi2-0 0 0
 Vbi2-1 bi2-1 0 1
-Vbi2-2 bi2-2 0 1
+Vbi2-2 bi2-2 0 0
 Vbi2-3 bi2-3 0 0
 Vbi2-4 bi2-4 0 0
 Vbi2-5 bi2-5 0 0
-Vbi2-6 bi2-6 0 1
-Vbi2-7 bi2-7 0 0
+Vbi2-6 bi2-6 0 0
+Vbi2-7 bi2-7 0 1
 Vbi2-8 bi2-8 0 1
 Vbi2-9 bi2-9 0 1
-Vbi2-10 bi2-10 0 0
+Vbi2-10 bi2-10 0 1
 Vbi2-11 bi2-11 0 0
-Vbi2-12 bi2-12 0 0
+Vbi2-12 bi2-12 0 1
 Vbi2-13 bi2-13 0 1
 Vbi2-14 bi2-14 0 0
 Vbi2-15 bi2-15 0 0
 
 *Fourth bias
-Vbi3-0 bi3-0 0 1
-Vbi3-1 bi3-1 0 1
+Vbi3-0 bi3-0 0 0
+Vbi3-1 bi3-1 0 0
 Vbi3-2 bi3-2 0 0
-Vbi3-3 bi3-3 0 0
-Vbi3-4 bi3-4 0 0
+Vbi3-3 bi3-3 0 1
+Vbi3-4 bi3-4 0 1
 Vbi3-5 bi3-5 0 1
 Vbi3-6 bi3-6 0 0
 Vbi3-7 bi3-7 0 0
 Vbi3-8 bi3-8 0 1
 Vbi3-9 bi3-9 0 1
-Vbi3-10 bi3-10 0 1
+Vbi3-10 bi3-10 0 0
 Vbi3-11 bi3-11 0 1
 Vbi3-12 bi3-12 0 1
 Vbi3-13 bi3-13 0 0
@@ -797,8 +797,116 @@ X2-nor2 rmanp rcclk rclk NOR2
 
 *Crossbar array of FeFETS (weights of kernel operation)
 .subckt CROSSBAR0 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
-X0-fefet-w0 bl0 wl0 sl0 n-fefet-LVT
+X0-fefet-w0 bl0 wl0 sl0 n-fefet-HVT
 X1-fefet-w0 bl1 wl0 sl1 n-fefet-LVT
+X2-fefet-w0 bl2 wl0 sl2 n-fefet-HVT
+X3-fefet-w0 bl3 wl0 sl3 n-fefet-LVT
+X4-fefet-w0 bl4 wl0 sl4 n-fefet-HVT
+X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
+X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
+X7-fefet-w0 bl7 wl0 sl7 n-fefet-LVT
+X8-fefet-w0 bl8 wl0 sl8 n-fefet-HVT
+X9-fefet-w0 bl9 wl0 sl9 n-fefet-HVT
+X10-fefet-w0 bl10 wl0 sl10 n-fefet-HVT
+X11-fefet-w0 bl11 wl0 sl11 n-fefet-HVT
+X12-fefet-w0 bl12 wl0 sl12 n-fefet-HVT
+X13-fefet-w0 bl13 wl0 sl13 n-fefet-HVT
+X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
+X15-fefet-w0 bl15 wl0 sl15 n-fefet-HVT
+
+X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
+X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
+X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
+X3-fefet-w1 bl3 wl1 sl3 n-fefet-LVT
+X4-fefet-w1 bl4 wl1 sl4 n-fefet-LVT
+X5-fefet-w1 bl5 wl1 sl5 n-fefet-HVT
+X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
+X7-fefet-w1 bl7 wl1 sl7 n-fefet-HVT
+X8-fefet-w1 bl8 wl1 sl8 n-fefet-HVT
+X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
+X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
+X11-fefet-w1 bl11 wl1 sl11 n-fefet-HVT
+X12-fefet-w1 bl12 wl1 sl12 n-fefet-HVT
+X13-fefet-w1 bl13 wl1 sl13 n-fefet-HVT
+X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
+X15-fefet-w1 bl15 wl1 sl15 n-fefet-HVT
+.ends
+
+.subckt CROSSBAR1 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
+X0-fefet-w0 bl0 wl0 sl0 n-fefet-HVT
+X1-fefet-w0 bl1 wl0 sl1 n-fefet-LVT
+X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
+X3-fefet-w0 bl3 wl0 sl3 n-fefet-HVT
+X4-fefet-w0 bl4 wl0 sl4 n-fefet-HVT
+X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
+X6-fefet-w0 bl6 wl0 sl6 n-fefet-HVT
+X7-fefet-w0 bl7 wl0 sl7 n-fefet-HVT
+X8-fefet-w0 bl8 wl0 sl8 n-fefet-HVT
+X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
+X10-fefet-w0 bl10 wl0 sl10 n-fefet-HVT
+X11-fefet-w0 bl11 wl0 sl11 n-fefet-HVT
+X12-fefet-w0 bl12 wl0 sl12 n-fefet-HVT
+X13-fefet-w0 bl13 wl0 sl13 n-fefet-HVT
+X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
+X15-fefet-w0 bl15 wl0 sl15 n-fefet-HVT
+
+X0-fefet-w1 bl0 wl1 sl0 n-fefet-LVT
+X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
+X2-fefet-w1 bl2 wl1 sl2 n-fefet-HVT
+X3-fefet-w1 bl3 wl1 sl3 n-fefet-HVT
+X4-fefet-w1 bl4 wl1 sl4 n-fefet-HVT
+X5-fefet-w1 bl5 wl1 sl5 n-fefet-LVT
+X6-fefet-w1 bl6 wl1 sl6 n-fefet-HVT
+X7-fefet-w1 bl7 wl1 sl7 n-fefet-HVT
+X8-fefet-w1 bl8 wl1 sl8 n-fefet-HVT
+X9-fefet-w1 bl9 wl1 sl9 n-fefet-HVT
+X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
+X11-fefet-w1 bl11 wl1 sl11 n-fefet-HVT
+X12-fefet-w1 bl12 wl1 sl12 n-fefet-HVT
+X13-fefet-w1 bl13 wl1 sl13 n-fefet-HVT
+X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
+X15-fefet-w1 bl15 wl1 sl15 n-fefet-HVT
+.ends
+
+.subckt CROSSBAR2 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
+X0-fefet-w0 bl0 wl0 sl0 n-fefet-LVT
+X1-fefet-w0 bl1 wl0 sl1 n-fefet-HVT
+X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
+X3-fefet-w0 bl3 wl0 sl3 n-fefet-HVT
+X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
+X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
+X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
+X7-fefet-w0 bl7 wl0 sl7 n-fefet-LVT
+X8-fefet-w0 bl8 wl0 sl8 n-fefet-HVT
+X9-fefet-w0 bl9 wl0 sl9 n-fefet-HVT
+X10-fefet-w0 bl10 wl0 sl10 n-fefet-HVT
+X11-fefet-w0 bl11 wl0 sl11 n-fefet-HVT
+X12-fefet-w0 bl12 wl0 sl12 n-fefet-HVT
+X13-fefet-w0 bl13 wl0 sl13 n-fefet-HVT
+X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
+X15-fefet-w0 bl15 wl0 sl15 n-fefet-HVT
+
+X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
+X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
+X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
+X3-fefet-w1 bl3 wl1 sl3 n-fefet-HVT
+X4-fefet-w1 bl4 wl1 sl4 n-fefet-HVT
+X5-fefet-w1 bl5 wl1 sl5 n-fefet-HVT
+X6-fefet-w1 bl6 wl1 sl6 n-fefet-HVT
+X7-fefet-w1 bl7 wl1 sl7 n-fefet-HVT
+X8-fefet-w1 bl8 wl1 sl8 n-fefet-LVT
+X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
+X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
+X11-fefet-w1 bl11 wl1 sl11 n-fefet-HVT
+X12-fefet-w1 bl12 wl1 sl12 n-fefet-HVT
+X13-fefet-w1 bl13 wl1 sl13 n-fefet-HVT
+X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
+X15-fefet-w1 bl15 wl1 sl15 n-fefet-HVT
+.ends
+
+.subckt CROSSBAR3 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
+X0-fefet-w0 bl0 wl0 sl0 n-fefet-LVT
+X1-fefet-w0 bl1 wl0 sl1 n-fefet-HVT
 X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
 X3-fefet-w0 bl3 wl0 sl3 n-fefet-LVT
 X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
@@ -806,138 +914,30 @@ X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
 X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
 X7-fefet-w0 bl7 wl0 sl7 n-fefet-HVT
 X8-fefet-w0 bl8 wl0 sl8 n-fefet-LVT
-X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
+X9-fefet-w0 bl9 wl0 sl9 n-fefet-HVT
 X10-fefet-w0 bl10 wl0 sl10 n-fefet-HVT
 X11-fefet-w0 bl11 wl0 sl11 n-fefet-HVT
-X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
-X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
+X12-fefet-w0 bl12 wl0 sl12 n-fefet-HVT
+X13-fefet-w0 bl13 wl0 sl13 n-fefet-HVT
 X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
 X15-fefet-w0 bl15 wl0 sl15 n-fefet-HVT
 
-X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
-X1-fefet-w1 bl1 wl1 sl1 n-fefet-HVT
-X2-fefet-w1 bl2 wl1 sl2 n-fefet-HVT
-X3-fefet-w1 bl3 wl1 sl3 n-fefet-LVT
-X4-fefet-w1 bl4 wl1 sl4 n-fefet-LVT
+X0-fefet-w1 bl0 wl1 sl0 n-fefet-LVT
+X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
+X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
+X3-fefet-w1 bl3 wl1 sl3 n-fefet-HVT
+X4-fefet-w1 bl4 wl1 sl4 n-fefet-HVT
 X5-fefet-w1 bl5 wl1 sl5 n-fefet-HVT
 X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
 X7-fefet-w1 bl7 wl1 sl7 n-fefet-LVT
-X8-fefet-w1 bl8 wl1 sl8 n-fefet-HVT
-X9-fefet-w1 bl9 wl1 sl9 n-fefet-HVT
-X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
-X11-fefet-w1 bl11 wl1 sl11 n-fefet-LVT
-X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
-X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
-X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
-X15-fefet-w1 bl15 wl1 sl15 n-fefet-HVT
-.ends
-
-.subckt CROSSBAR1 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
-X0-fefet-w0 bl0 wl0 sl0 n-fefet-LVT
-X1-fefet-w0 bl1 wl0 sl1 n-fefet-HVT
-X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
-X3-fefet-w0 bl3 wl0 sl3 n-fefet-HVT
-X4-fefet-w0 bl4 wl0 sl4 n-fefet-HVT
-X5-fefet-w0 bl5 wl0 sl5 n-fefet-LVT
-X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
-X7-fefet-w0 bl7 wl0 sl7 n-fefet-HVT
-X8-fefet-w0 bl8 wl0 sl8 n-fefet-HVT
-X9-fefet-w0 bl9 wl0 sl9 n-fefet-HVT
-X10-fefet-w0 bl10 wl0 sl10 n-fefet-HVT
-X11-fefet-w0 bl11 wl0 sl11 n-fefet-LVT
-X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
-X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
-X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
-X15-fefet-w0 bl15 wl0 sl15 n-fefet-HVT
-
-X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
-X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
-X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
-X3-fefet-w1 bl3 wl1 sl3 n-fefet-LVT
-X4-fefet-w1 bl4 wl1 sl4 n-fefet-HVT
-X5-fefet-w1 bl5 wl1 sl5 n-fefet-LVT
-X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
-X7-fefet-w1 bl7 wl1 sl7 n-fefet-HVT
-X8-fefet-w1 bl8 wl1 sl8 n-fefet-HVT
-X9-fefet-w1 bl9 wl1 sl9 n-fefet-HVT
-X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
-X11-fefet-w1 bl11 wl1 sl11 n-fefet-LVT
-X12-fefet-w1 bl12 wl1 sl12 n-fefet-HVT
-X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
-X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
-X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
-.ends
-
-.subckt CROSSBAR2 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
-X0-fefet-w0 bl0 wl0 sl0 n-fefet-HVT
-X1-fefet-w0 bl1 wl0 sl1 n-fefet-HVT
-X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
-X3-fefet-w0 bl3 wl0 sl3 n-fefet-HVT
-X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
-X5-fefet-w0 bl5 wl0 sl5 n-fefet-HVT
-X6-fefet-w0 bl6 wl0 sl6 n-fefet-LVT
-X7-fefet-w0 bl7 wl0 sl7 n-fefet-LVT
-X8-fefet-w0 bl8 wl0 sl8 n-fefet-LVT
-X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
-X10-fefet-w0 bl10 wl0 sl10 n-fefet-HVT
-X11-fefet-w0 bl11 wl0 sl11 n-fefet-HVT
-X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
-X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
-X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
-X15-fefet-w0 bl15 wl0 sl15 n-fefet-LVT
-
-X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
-X1-fefet-w1 bl1 wl1 sl1 n-fefet-HVT
-X2-fefet-w1 bl2 wl1 sl2 n-fefet-HVT
-X3-fefet-w1 bl3 wl1 sl3 n-fefet-HVT
-X4-fefet-w1 bl4 wl1 sl4 n-fefet-LVT
-X5-fefet-w1 bl5 wl1 sl5 n-fefet-LVT
-X6-fefet-w1 bl6 wl1 sl6 n-fefet-HVT
-X7-fefet-w1 bl7 wl1 sl7 n-fefet-HVT
-X8-fefet-w1 bl8 wl1 sl8 n-fefet-HVT
-X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
-X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
-X11-fefet-w1 bl11 wl1 sl11 n-fefet-LVT
-X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
-X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
-X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
-X15-fefet-w1 bl15 wl1 sl15 n-fefet-HVT
-.ends
-
-.subckt CROSSBAR3 bl0 bl1 bl2 bl3 bl4 bl5 bl6 bl7 bl8 bl9 bl10 bl11 bl12 bl13 bl14 bl15 wl0 wl1 sl0 sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15
-X0-fefet-w0 bl0 wl0 sl0 n-fefet-HVT
-X1-fefet-w0 bl1 wl0 sl1 n-fefet-LVT
-X2-fefet-w0 bl2 wl0 sl2 n-fefet-LVT
-X3-fefet-w0 bl3 wl0 sl3 n-fefet-HVT
-X4-fefet-w0 bl4 wl0 sl4 n-fefet-LVT
-X5-fefet-w0 bl5 wl0 sl5 n-fefet-HVT
-X6-fefet-w0 bl6 wl0 sl6 n-fefet-HVT
-X7-fefet-w0 bl7 wl0 sl7 n-fefet-HVT
-X8-fefet-w0 bl8 wl0 sl8 n-fefet-HVT
-X9-fefet-w0 bl9 wl0 sl9 n-fefet-LVT
-X10-fefet-w0 bl10 wl0 sl10 n-fefet-LVT
-X11-fefet-w0 bl11 wl0 sl11 n-fefet-HVT
-X12-fefet-w0 bl12 wl0 sl12 n-fefet-LVT
-X13-fefet-w0 bl13 wl0 sl13 n-fefet-LVT
-X14-fefet-w0 bl14 wl0 sl14 n-fefet-HVT
-X15-fefet-w0 bl15 wl0 sl15 n-fefet-LVT
-
-X0-fefet-w1 bl0 wl1 sl0 n-fefet-HVT
-X1-fefet-w1 bl1 wl1 sl1 n-fefet-LVT
-X2-fefet-w1 bl2 wl1 sl2 n-fefet-LVT
-X3-fefet-w1 bl3 wl1 sl3 n-fefet-HVT
-X4-fefet-w1 bl4 wl1 sl4 n-fefet-HVT
-X5-fefet-w1 bl5 wl1 sl5 n-fefet-HVT
-X6-fefet-w1 bl6 wl1 sl6 n-fefet-LVT
-X7-fefet-w1 bl7 wl1 sl7 n-fefet-HVT
 X8-fefet-w1 bl8 wl1 sl8 n-fefet-LVT
-X9-fefet-w1 bl9 wl1 sl9 n-fefet-LVT
-X10-fefet-w1 bl10 wl1 sl10 n-fefet-LVT
+X9-fefet-w1 bl9 wl1 sl9 n-fefet-HVT
+X10-fefet-w1 bl10 wl1 sl10 n-fefet-HVT
 X11-fefet-w1 bl11 wl1 sl11 n-fefet-HVT
-X12-fefet-w1 bl12 wl1 sl12 n-fefet-LVT
-X13-fefet-w1 bl13 wl1 sl13 n-fefet-LVT
+X12-fefet-w1 bl12 wl1 sl12 n-fefet-HVT
+X13-fefet-w1 bl13 wl1 sl13 n-fefet-HVT
 X14-fefet-w1 bl14 wl1 sl14 n-fefet-HVT
-X15-fefet-w1 bl15 wl1 sl15 n-fefet-LVT
+X15-fefet-w1 bl15 wl1 sl15 n-fefet-HVT
 .ends
 
 *Peripheral circuitry to enable easy implementation of multiple kernel ops
